@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="1 seconds">
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+    <jmxConfigurator/>
+<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder charset="UTF-8"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+    </encoder>
+</appender>
+<!--按天生成日志-->
+    <appender name="logFile"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+          <Prudent>true</Prudent> 
+          <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+               <FileNamePattern>
+                    poslog/%d{yyyy-MM-dd}.log
+               </FileNamePattern>
+          </rollingPolicy>
+          <layout class="ch.qos.logback.classic.PatternLayout">
+               <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} -%msg%n    
+               </Pattern>
+          </layout>
+    </appender>
+<root level="INFO">
+    <appender-ref ref="logFile"/>
+    <appender-ref ref="STDOUT" />
+</root>
+
+</configuration>

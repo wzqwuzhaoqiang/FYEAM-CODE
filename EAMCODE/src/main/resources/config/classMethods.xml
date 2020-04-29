@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<!-- 增加硬件资产 02012000000001 -->
+	<item id="02012000000001" class="com.fuyaogroup.eam.controller.AddAssetController" method="addAsset"/>
+		<!-- 转移资产 -->
+	<item id="02012000000002" class="com.fuyaogroup.eam.controller.TransferAssetController" method="transAsset" />
+	<!-- 增加维修工单 -->
+	<item id="02012000000003" class="com.fuyaogroup.eam.controller.EamFusionController" method="addAssetWorkOrder"/>
+</items>

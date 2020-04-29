@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.fuyaogroup.eam.controller.AddAssetController",
+      "sourceType": "com.fuyaogroup.eam.controller.AddAssetController"
+    },
+    {
+      "name": "",
+      "type": "com.fuyaogroup.eam.util.FusionRestUtil",
+      "sourceType": "com.fuyaogroup.eam.util.FusionRestUtil"
+    },
+    {
+      "name": "spring.datasource.eam",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.fuyaogroup.eam.common.datasources.DynamicDataSourceConfig",
+      "sourceMethod": "secondDataSource()"
+    },
+    {
+      "name": "spring.datasource.mes",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.fuyaogroup.eam.common.datasources.DynamicDataSourceConfig",
+      "sourceMethod": "firstDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
