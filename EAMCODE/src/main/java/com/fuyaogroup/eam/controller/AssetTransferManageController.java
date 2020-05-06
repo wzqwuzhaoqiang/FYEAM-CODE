@@ -47,7 +47,7 @@ import com.fuyaogroup.eam.util.FusionEAMAPIUtil;
 public class AssetTransferManageController {
 	
 	static SimpleDateFormat myFormatter = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
-	static SimpleDateFormat batFormatter = new SimpleDateFormat("yyMMdd", Locale.CHINA);
+	static SimpleDateFormat batFormatter = new SimpleDateFormat("yyMMddHHmm", Locale.CHINA);
 
 	static SimpleDateFormat infoFormatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US);
 	@Autowired

@@ -110,6 +110,7 @@ public class AssetManageController {
 					}
 				}
 			atList.get(0).setUpdateTime(new Date());
+			atList.get(0).setChangeTime(new Date());
 			assetSevice.updateOne(atList.get(0));
 		} catch (Exception e) {
 			log.error("{}:修改资产信息,失败:",e.getMessage());

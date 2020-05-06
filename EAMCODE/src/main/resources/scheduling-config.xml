@@ -9,12 +9,15 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!-- 要执行的方法 -->
 	<property name="targetMethod" value="createWorkOrderTasks"></property>
 	 </bean>
+	 
 	<bean id="createAndonRecordTaskTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
  	 <property name="jobDetail" ref="createAndonRecordJob" />
  	 <property name="cronExpression">
  	  <value>0 0/30 * * * ?</value>
   	</property>
 	 </bean>
+	 
+	 
 	 <!--更新按灯列表  -->
 	<bean id="updateWorkOrderAndonJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
  	<property name="targetObject" ref="updateWorkOrderJob"></property>
