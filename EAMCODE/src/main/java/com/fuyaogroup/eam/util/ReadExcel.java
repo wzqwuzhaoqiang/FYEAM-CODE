@@ -13,6 +13,7 @@ import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -181,46 +182,67 @@ public class ReadExcel {
                Cell cell = row.getCell(c);
                if (null != cell){
                    if(c==0){//第一列不读
+                	   cell.setCellType(CellType.STRING);
                 	   asset.setOrganizationName(cell.getStringCellValue());
                    } else if(c==1){
+                	   cell.setCellType(CellType.STRING);
                    asset.setFinancialCode(cell.getStringCellValue());}
                    else if(c==2){
+                	   cell.setCellType(CellType.STRING);
                    asset.setJobnum(cell.getStringCellValue());}
                    else if(c==3){
+                	   cell.setCellType(CellType.STRING);
                    asset.setUsername(cell.getStringCellValue());}
                    else if(c==4){
+                	   cell.setCellType(CellType.STRING);
                    asset.setDescription(cell.getStringCellValue());}
                    else if(c==5){
+                	   cell.setCellType(CellType.STRING);
                    asset.setAssetNumber(cell.getStringCellValue());}
                    else if(c==6){
                    asset.setHtcIncredible(new Integer((int) cell.getNumericCellValue()));}
                    else if(c==7){
+                	   cell.setCellType(CellType.STRING);
                    asset.setAssetmodel(cell.getStringCellValue());}
                    else if(c==8){
+                	   cell.setCellType(CellType.STRING);
                    asset.setSerialNumber(cell.getStringCellValue());}
                    else if(c==9){
+                	   cell.setCellType(CellType.STRING);
                    asset.setAllocation(cell.getStringCellValue());}
                    else if(c==10){
+                	   cell.setCellType(CellType.STRING);
                    asset.setDisplayer(cell.getStringCellValue());}
                    else if(c==11){
+                	   cell.setCellType(CellType.STRING);
                    asset.setMacaddress(cell.getStringCellValue());}
                    else if(c==12){
+                	   cell.setCellType(CellType.STRING);
                    asset.setServiceid(cell.getStringCellValue());}
                    else if(c==13){
+                	   cell.setCellType(CellType.STRING);
                    asset.setMouse(cell.getStringCellValue());}
                    else if(c==14){
+                	   cell.setCellType(CellType.STRING);
                    asset.setWifimac(cell.getStringCellValue());}
                    else if(c==15){
+                	   cell.setCellType(CellType.STRING);
                    asset.setKeyboard(cell.getStringCellValue());}
                    else if(c==16){
+                	   cell.setCellType(CellType.STRING);
                    asset.setPoweradapt(cell.getStringCellValue());}
                    else if(c==17){
-                	   if(cell.getStringCellValue()!=""&&cell.getStringCellValue()!=null)
-                		   	asset.setUsingstarttime(simpleDateFormat2.parse(cell.getStringCellValue()));
+                	   //cell.setCellType(CellType.STRING);
+//                	   if(cell.getStringCellValue()!=""&&cell.getStringCellValue()!=null)
+//                		   	asset.setUsingstarttime(simpleDateFormat2.parse(cell.getStringCellValue()));
+                	   Date d  =  cell.getDateCellValue();
+                	   asset.setUsingstarttime(d);
 				 }
                    else if(c==18){
+                	   cell.setCellType(CellType.STRING);
                    asset.setWorkCenterName(cell.getStringCellValue());}
                    else if(c==19){
+                	   cell.setCellType(CellType.STRING);
                    asset.setManufacturer(cell.getStringCellValue());}
                    else if(c==20){
                    asset.setWarrantyperiod((new Double(cell.getNumericCellValue())).intValue());}
@@ -229,6 +251,7 @@ public class ReadExcel {
                    else if(c==22){
                    asset.setStatus((new Double(cell.getNumericCellValue())).intValue());}
                    else if(c==23){
+                	   cell.setCellType(CellType.STRING);
                    asset.setRemark(cell.getStringCellValue());}
 
                }
