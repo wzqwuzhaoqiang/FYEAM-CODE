@@ -72,8 +72,11 @@ public class TransferAssetController {
 			assettf.setJobNum(reqRecord.getFieldValue("jobNum"));
 			assettf.setOABillNum(reqRecord.getFieldValue("OABillINum"));
 			assettf.setHandoverCpt(reqRecord.getFieldValue("handoverCpt"));
-			assettf.setAssetNumber(assetSerNum);
+			assettf.setAssetNumber(reqRecord.getFieldValue("AssetNumber"));
+			assettf.setUserName(reqRecord.getFieldValue("userName"));
+			assettf.setSerialNumber(assetSerNum);
 			assettf.setHandoverPerson(reqRecord.getFieldValue("handoverPerson"));//需要工号
+			assettf.setHandoverTime(simpleDateFormat.parse(reqRecord.getFieldValue("handoverTime")));
 			asset.setHandoverTime(simpleDateFormat.parse(reqRecord.getFieldValue("handoverTime")));
 			if (fuEAMUtil != null) {
 				asset = fuEAMUtil.updateAssetDescriptiveFields(asset,true);

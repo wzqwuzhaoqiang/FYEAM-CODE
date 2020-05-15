@@ -2,13 +2,13 @@
   "groups": [
     {
       "name": "",
-      "type": "com.fuyaogroup.eam.controller.AddAssetController",
-      "sourceType": "com.fuyaogroup.eam.controller.AddAssetController"
+      "type": "com.fuyaogroup.eam.util.FusionRestUtil",
+      "sourceType": "com.fuyaogroup.eam.util.FusionRestUtil"
     },
     {
       "name": "",
-      "type": "com.fuyaogroup.eam.util.FusionRestUtil",
-      "sourceType": "com.fuyaogroup.eam.util.FusionRestUtil"
+      "type": "com.fuyaogroup.eam.controller.AddAssetController",
+      "sourceType": "com.fuyaogroup.eam.controller.AddAssetController"
     },
     {
       "name": "spring.datasource.eam",
