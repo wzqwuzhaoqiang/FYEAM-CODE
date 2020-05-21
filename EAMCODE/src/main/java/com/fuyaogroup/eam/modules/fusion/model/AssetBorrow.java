@@ -11,15 +11,15 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("asset_borrow_trackrecord")
+@TableName("ASSET_BORROW_TRACKRECORD")
 public class AssetBorrow extends BaseEntity {
 
 	//oa表单ID
-	private String odId;
+	private String oaId;
 	//公司
 	private String company;
 	//日期，借用日期
-	private Date formDate;
+	private String formDate;
 	//借用人
 	private String borrower;
 	//部门
@@ -29,7 +29,7 @@ public class AssetBorrow extends BaseEntity {
 	//借用物品
 	private String borrowThing;
 	//数量
-	private int number;
+	private int numberCount;
 	//用途
 	private String purpose;
 	//资产编号
@@ -43,10 +43,10 @@ public class AssetBorrow extends BaseEntity {
 	//配置信息
 	private String configInfo;
 	//启用日期
-	private Date startDate;
+	private String startDate;
 	//借出时间
-	private Date borrowOutDate;
-	private Date borrowUseDate; //借用时间（单位天）
+	private String borrowOutDate;
+	private String borrowUseDate; //借用时间（单位天）
 	private String borrowOutman;//  出借人
 	private String returnIs;//  是否归还（归还，续借）
 	private String returntwoIs;//  是否归还;
@@ -54,7 +54,7 @@ public class AssetBorrow extends BaseEntity {
 	private String thingSituation;//  物品归还完整状况;
 	private String reciver;//  接收人;
 	
-	private Date returnDate;//  归还日期;
+	private String returnDate;//  归还日期;
 	
 	
 }

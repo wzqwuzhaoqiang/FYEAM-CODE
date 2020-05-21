@@ -848,7 +848,7 @@ public class FusionEAMAPIUtil {
 	 */
 	public Asset createOneAsset(Asset asset) throws Exception{
 		//1.获取ItemID和组织ID
-		Map map=this.getOneItemByOrgIdAndItemID(asset.getItemNumber(), asset.getOrganizationName());//生产设备,SHJC2
+		Map map=this.getOneItemByOrgIdAndItemID(asset.getItemNumber(), asset.getOrganizationName());//生产设备,SHJC2<生产设备，集团管理局>
 		asset.setItemId(map.get("ItemId").toString());
 		asset.setLocationOrganizationId(map.get("OrganizationId").toString());
 		//2.获取工作中心ID TODO 是否要做集成配置，或者动态存储

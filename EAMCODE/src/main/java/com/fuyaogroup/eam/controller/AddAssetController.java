@@ -68,9 +68,20 @@ public class AddAssetController {
 			return null;
 		try {
 			//解析reqMo
+			log.info("验收开始-------------------------");
 			Asset asset = this.getAssetFromIMsgObj(reqMo);
+//			Asset asset = new Asset();
+//			asset.setAssetNumber("ZB56500009");
+//			asset.setWarrantyperiod(2);
+//			asset.setAssetmodel("惠普");
+//			asset.setJobnum("024556");
+//			asset.setUsername("陈小龙");
+//			asset.setAmount(new BigDecimal(6800));
+//			asset.setOABillINum("FI202005022OA");
 			if (fuEAMUtil != null) {
+				log.info("asset的数据为---------------------"+asset.toString());
 				asset = fuEAMUtil.createOneAsset(asset);
+				log.info("经过fuEAMUtil接口的方法后asset的数据为---------------------"+asset.toString());
 				assetService.createOne(asset);//数据库增加，一条资产
 				List<GroupRecord> grs = new ArrayList<GroupRecord>();
 				grs.add(GroupRecordTool.convertToGroupRecord(asset));
@@ -80,6 +91,7 @@ public class AddAssetController {
 			}
 		} catch (Exception e) {
 			log.error("增加固定资产,失败,{}",e.getMessage());
+			log.info(e.getMessage());
 			e.printStackTrace();
 		}
 		log.info("{}:增加固定资产,结束...",LocalDateTime.now());
@@ -117,21 +129,35 @@ public class AddAssetController {
 	
 	
 	private Asset getAssetFromIMsgObj(IMsgObject reqMo) throws ParseException {
+		log.info("getAssetFromIMsgObj方法验收开始-------------------------");
 		Asset asset = new Asset();
 		//TODO 需要进行转换 组织名称->组织编码
+		log.info("reqMo.getReqGroupRecord(\"Asset\")方法验收开始-------------------------");
 		List<GroupRecord> gr = reqMo.getReqGroupRecord("Asset");
+		log.info("136");
 		GroupRecord reqRecord = gr.get(0);
+		log.info("137");
 		asset.setOrganizationName(EnumUtil.getByCode(reqRecord.getFieldValue("cmpCode"), OAOrgEnum.class).getMessage());
+		log.info("138");
 		asset.setWorkCenterName(reqRecord.getFieldValue("WorkCenterName"));
+		log.info("139");
 		asset.setItemNumber("生产设备");
+		log.info("140");
 		asset.setDescription(reqRecord.getFieldValue("Description"));
+		log.info("141");
 		asset.setFinancialCode(reqRecord.getFieldValue("FinancialCode"));
+		log.info("142");
 		asset.setJobnum(reqRecord.getFieldValue("jobNum"));
+		log.info("143");
 		asset.setDescription(reqRecord.getFieldValue("Descriptions"));
+		log.info("144");
 		//机型1:DELL笔记本;2:DELL移动工作站;3:笔记本;4:笔记本工作站;5:台式工作站;6:DELL移动工作站;7:台式机;8:显示器;9:移动工作站;10:其他;
 		asset.setHtcIncredible(Integer.parseInt(reqRecord.getFieldValue("htcIncredible")));
+		log.info("145");
 		asset.setAssetmodel(reqRecord.getFieldValue("assetModel"));
+		log.info("146");
 		asset.setSerialNumber(reqRecord.getFieldValue("SerialNumber"));
+		log.info("中间位置方法验收开始-------------------------");
 		asset.setAssetNumber(reqRecord.getFieldValue("AssetNumber"));
 		asset.setAllocation(reqRecord.getFieldValue("allocation"));
 		asset.setDisplayer(reqRecord.getFieldValue("displayer"));
@@ -147,11 +173,14 @@ public class AddAssetController {
 		asset.setRemark(reqRecord.getFieldValue("remark"));
 		asset.setManufacturer(reqRecord.getFieldValue("manufacturer"));
 		//保修期 按月
+		log.info("数据装换前方法验收开始-------------------------");
 		asset.setWarrantyperiod(Integer.parseInt(reqRecord.getFieldValue("warrantyPeriod")));
+		
 		asset.setAmount(new BigDecimal(reqRecord.getFieldValue("amount")));
+		
 		//1：在用；2:闲置;3:待报废;4:报废;5:调设备使用;6.过期
-		asset.setStatus(Integer.parseInt(reqRecord.getFieldValue("status")));
-
+		asset.setStatus(Integer.parseInt(reqRecord.getFieldValue("status")));//reqRecord.getFieldValue("status")
+		log.info("装换后方法验收开始-------------------------");
 		return asset;
 	}
 	

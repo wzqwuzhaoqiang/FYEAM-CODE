@@ -3,6 +3,7 @@ package com.fuyaogroup.eam.controller;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -26,11 +27,15 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import cn.hutool.core.collection.CollectionUtil;
 
+import com.alibaba.druid.util.StringUtils;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.fuyaogroup.eam.common.enums.AssetTypeEnum;
 import com.fuyaogroup.eam.common.enums.OrgEnum;
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
 import com.fuyaogroup.eam.common.model.Page;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
@@ -56,7 +61,64 @@ public class AssetManageController {
 	private String ERROR_MESSAGE = "";//导入EXCEL页面提示
 	private static Integer PageSize = 10;
 
-	static Integer totalRow;
+	static Integer totalRow;//getLifeRecoredBySerialize
+	
+	
+	@RequestMapping(value = "/getLifeRecoredByNum",method = RequestMethod.POST)//, produces = "application/json; charset=utf-8")
+	public @ResponseBody
+	List<AssetLifeRecored> getLifeRecoredBySerialize(@RequestBody String request) throws IOException{
+
+		JSONObject ap = (JSONObject) JSONArray.parse(request);
+		String assetNumber = (String)ap.get("assetNumber");
+		System.out.println("传入参数为：++++++"+assetNumber);
+		List<AssetLifeRecored> list = new ArrayList<AssetLifeRecored>();
+		List<AssetLifeRecored> repair = new ArrayList<AssetLifeRecored>();
+		List<AssetLifeRecored> borrow = new ArrayList<AssetLifeRecored>();
+		List<AssetLifeRecored> scrap = new ArrayList<AssetLifeRecored>();
+		AssetLifeRecored as = assetSevice.getAssetByNumber(assetNumber);
+		if(as!=null) {
+			as.setAction("接收启用");
+			list.add(as);
+		}
+		//借用信息获取
+		borrow = assetSevice.getBorrowRecored(assetNumber);
+		if(!CollectionUtils.isEmpty(borrow)) {
+			for(AssetLifeRecored alr:borrow) {
+				alr.setAction("借出");
+				alr.setStartDate(alr.getBorrowOutDate());
+			}
+			list.addAll(borrow);
+		}
+		//维修信息获取
+		repair = assetSevice.getRepairRecored(assetNumber);
+		if(!CollectionUtils.isEmpty(repair)) {
+			for(AssetLifeRecored alr:repair) {
+				alr.setAction("维修");
+			}
+			list.addAll(repair);
+		}
+		//报废信息获取
+		scrap = assetSevice.getScrapRecored(assetNumber);
+		if(!CollectionUtils.isEmpty(scrap)) {
+			for(AssetLifeRecored alr:scrap) {
+				alr.setAction("报废");
+			}
+			list.addAll(scrap);
+		}
+		
+		list.sort(as);
+		return list;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	@RequestMapping(value = "/assetList",method = RequestMethod.POST)//, produces = "application/json; charset=utf-8")
 	public @ResponseBody

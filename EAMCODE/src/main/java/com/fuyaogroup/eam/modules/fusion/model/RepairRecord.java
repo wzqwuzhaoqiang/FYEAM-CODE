@@ -16,7 +16,7 @@ import lombok.experimental.Accessors;
 public class RepairRecord extends BaseEntity {
 
 	//oa表单ID
-	private String odId;
+	private String oaId;
 	//公司
 	private String company;
 	//单据编号

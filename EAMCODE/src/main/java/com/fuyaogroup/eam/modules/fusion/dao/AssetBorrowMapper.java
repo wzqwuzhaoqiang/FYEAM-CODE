@@ -11,7 +11,7 @@ import com.fuyaogroup.eam.modules.fusion.model.AssetBorrow;
 @Mapper
 public interface AssetBorrowMapper extends BaseMapper<AssetBorrow> {
 
-	@Select("select * from  \"asset_borrow_trackrecord\"")
+	@Select("select * from  ASSET_BORROW_TRACKRECORD")
 	List<AssetBorrow> queryList();
 
 }

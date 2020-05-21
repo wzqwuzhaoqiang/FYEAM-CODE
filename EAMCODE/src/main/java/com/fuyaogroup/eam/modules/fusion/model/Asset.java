@@ -109,12 +109,15 @@ public class Asset extends BaseEntity{
 	
 	private Date  updateTime;
 	
+	
 	//修改人
 	private String updateName;
 	//修改操作的备注
 	private String changeRemark;
 	//修改时间
 	private Date  changeTime;
+	//资产状态
+	private int assetStatus;
 
 
 }

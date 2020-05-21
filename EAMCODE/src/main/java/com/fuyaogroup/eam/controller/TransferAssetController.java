@@ -68,6 +68,7 @@ public class TransferAssetController {
 			asset.setHandoverCpt(reqRecord.getFieldValue("handoverCpt"));
 			asset.setHandoverPerson(reqRecord.getFieldValue("handoverPerson"));//需要工号
 			asset.setHandoverTime(simpleDateFormat.parse(reqRecord.getFieldValue("handoverTime")));
+			asset.setUsername(reqRecord.getFieldValue("userName"));
 			AssetTransfer assettf = new AssetTransfer();
 			assettf.setJobNum(reqRecord.getFieldValue("jobNum"));
 			assettf.setOABillNum(reqRecord.getFieldValue("OABillINum"));

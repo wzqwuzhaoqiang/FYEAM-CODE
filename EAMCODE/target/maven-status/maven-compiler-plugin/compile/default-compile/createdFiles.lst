@@ -1,5 +1,6 @@
 com\fuyaogroup\eam\common\datasources\DataSourceNames.class
 com\fuyaogroup\eam\common\Exception\GlobalException.class
+com\fuyaogroup\eam\modules\fusion\dao\AssetScrapMapper.class
 com\fuyaogroup\eam\common\enums\FactoryEnum.class
 com\fuyaogroup\eam\common\activemq\MessageConsumer.class
 com\fuyaogroup\eam\modules\mes\service\impl\AndonServiceImpl.class
@@ -35,20 +36,24 @@ com\fuyaogroup\eam\util\FusionRestUtil$TrustAnyTrustManager.class
 com\fuyaogroup\eam\util\EmailUtil.class
 com\fuyaogroup\eam\modules\fusion\dao\ConfigMapper.class
 com\fuyaogroup\eam\common\service\WeixinMessageService$4.class
+com\fuyaogroup\eam\modules\fusion\service\IAssetScrapService.class
 com\fuyaogroup\eam\modules\fusion\service\impl\WorkOrderServiceImpl.class
 com\fuyaogroup\eam\modules\mes\dao\RepairBillMapper.class
 com\fuyaogroup\eam\common\enums\ComputerTypeEnum.class
 com\fuyaogroup\eam\controller\TransferAssetController.class
 com\fuyaogroup\eam\util\ReadExcel.class
 com\fuyaogroup\eam\modules\mes\service\impl\AndontempServiceImpl.class
+com\fuyaogroup\eam\controller\AssetBorrowController.class
 com\fuyaogroup\eam\common\activemq\ActiveMqQueueConfig.class
 com\fuyaogroup\eam\common\activemq\ActiveMqClient.class
 com\fuyaogroup\eam\common\enums\OAOrgEnum.class
+com\fuyaogroup\eam\modules\fusion\service\AssetBorrowService.class
 com\fuyaogroup\eam\common\activemq\MessageConsumer$1.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetMapper.class
 com\fuyaogroup\eam\common\service\WeixinMessageService.class
 com\fuyaogroup\eam\job\UpdateAllAssetJob.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetServiceImpl.class
+com\fuyaogroup\eam\modules\fusion\service\impl\AssetScrapServiceImpl.class
 com\fuyaogroup\eam\modules\mes\service\AndonTempService.class
 com\fuyaogroup\eam\common\properities\MultipartConfig.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetTransferServiceImpl.class
@@ -61,6 +66,7 @@ com\fuyaogroup\eam\common\Json\JsonBean.class
 com\fuyaogroup\eam\modules\fusion\model\Config.class
 META-INF\spring-configuration-metadata.json
 com\fuyaogroup\eam\modules\fusion\service\impl\RepairRecordImpl.class
+com\fuyaogroup\eam\controller\AssetScrapController.class
 com\fuyaogroup\eam\common\enums\ComputerStatusEnum.class
 com\fuyaogroup\eam\modules\fusion\model\WorkOrder.class
 com\fuyaogroup\eam\modules\fusion\service\AssetTransferService.class
@@ -72,6 +78,7 @@ com\fuyaogroup\eam\modules\fusion\model\Operation.class
 com\fuyaogroup\eam\common\service\WeixinMessageService$2.class
 com\fuyaogroup\eam\util\WDWUtil.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AndonAssetServiceImpl.class
+com\fuyaogroup\eam\modules\fusion\service\impl\AssetBorrowServiceImpl.class
 com\fuyaogroup\eam\util\MqHandler.class
 com\fuyaogroup\eam\modules\mes\service\AndonService.class
 com\fuyaogroup\eam\util\GroupRecordTool.class
@@ -94,6 +101,7 @@ com\fuyaogroup\eam\common\model\BaseEntity.class
 com\fuyaogroup\eam\modules\fusion\model\AssetSoftware.class
 com\fuyaogroup\eam\common\datasources\DruidConfig.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetrPdMapper.class
+com\fuyaogroup\eam\modules\fusion\dao\AssetBorrowMapper.class
 com\fuyaogroup\eam\util\Invoke.class
 com\fuyaogroup\eam\common\listen\MqListener.class
 com\fuyaogroup\eam\job\WeixinInfoTransferJob.class
@@ -113,6 +121,7 @@ com\fuyaogroup\eam\modules\fusion\service\AssetPdService.class
 com\fuyaogroup\eam\modules\mes\model\RepairBill.class
 com\fuyaogroup\eam\controller\WeixinManagerController.class
 com\fuyaogroup\eam\util\EmailUtil$1.class
+com\fuyaogroup\eam\modules\fusion\model\AssetScrap.class
 com\fuyaogroup\eam\common\enums\AssetTypeEnum.class
 com\fuyaogroup\eam\modules\mes\model\AndonHis.class
 com\fuyaogroup\eam\modules\fusion\model\AssetTransfer.class
@@ -127,6 +136,7 @@ com\fuyaogroup\eam\controller\WorkOrderManageController.class
 com\fuyaogroup\eam\util\FusionRestUtil$1.class
 com\fuyaogroup\eam\common\enums\CenterEnum.class
 com\fuyaogroup\eam\modules\fusion\dao\AndonAssetMapper.class
+com\fuyaogroup\eam\modules\fusion\model\AssetBorrow.class
 com\fuyaogroup\eam\util\SignUtil.class
 com\fuyaogroup\eam\common\Json\LogPara.class
 com\fuyaogroup\eam\common\Filter\HttpBearerAuthFilter.class

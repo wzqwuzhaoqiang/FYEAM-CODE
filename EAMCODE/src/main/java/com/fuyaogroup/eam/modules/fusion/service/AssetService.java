@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.fuyaogroup.eam.common.enums.AssetTypeEnum;
 import com.fuyaogroup.eam.common.service.IBaseService;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
 
 
 /**
@@ -72,6 +73,31 @@ public interface AssetService extends IBaseService<Asset>{
 	public List<Asset> getByAssetNumber(String AssetNumber);
 
 	public void updateOne(Asset asset);
+	/**
+	 * 获取指定资产信息
+	 */
+	public AssetLifeRecored getAssetByNumber(String AssetNumber);
+
+	/**
+	 * 获取借用记录
+	 * @param assetNumber
+	 * @return
+	 */
+	public List<AssetLifeRecored> getBorrowRecored(String assetNumber);
+
+	/**
+	 * 获取维修记录
+	 * @param assetNumber
+	 * @return
+	 */
+	public List<AssetLifeRecored> getRepairRecored(String assetNumber);
+
+	/**
+	 * 获取报废信息
+	 * @param assetNumber
+	 * @return
+	 */
+	public List<AssetLifeRecored> getScrapRecored(String assetNumber);
 	
 	
 }

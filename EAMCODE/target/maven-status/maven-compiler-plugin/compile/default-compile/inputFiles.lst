@@ -13,10 +13,12 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\Co
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Json\JsonBean.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetrPdMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetPdBat.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\AssetBorrowService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\WDWUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\service\impl\AndontempServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\OrgEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ImageUtil.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetScrap.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\MyAuthenticator.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\OAOrgEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\model\AndonHis.java
@@ -24,6 +26,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\As
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\AssetTransferService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ReflexObjectUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\WeixinManagerController.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AssetScrapController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\CodeEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\SignUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\DynamicDataSourceConfig.java
@@ -42,6 +45,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\DruidC
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\MasterDataSourceConfig.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\RepairRecordController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Json\JsonResult.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetBorrowServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\ConfigMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\EnumUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\listen\BeanDefinedListener.java
@@ -68,9 +72,11 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\EmailUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AddAssetController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\aspect\DataSourceAspect.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\model\Page.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetBorrowMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\Asset.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\FactoryEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AssetTransferManageController.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetScrapMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\job\CreateWorkOrderJob.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\SHOperationEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\job\WeixinInfoTransferJob.java
@@ -102,6 +108,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\activemq\ActiveMqC
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\dao\AndonHisMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\service\AndonTempService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ExcelUtil.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\IAssetScrapService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\dao\RepairBillMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\job\UpdateWorkOrderJob.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ReadExcel.java
@@ -109,11 +116,14 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\As
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetPdServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AndonAsset.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ValidatorUtils.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetBorrow.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\annotation\DataSource.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\DataSourceNames.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\FaultTypeEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\GroupRecordTool.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\AssetTypeEnum.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetScrapServiceImpl.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AssetBorrowController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\properities\MyWebConfig.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\BaseServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetPd.java

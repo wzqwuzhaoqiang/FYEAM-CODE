@@ -22,6 +22,8 @@ public class AssetBorrowController {
 	@PostMapping("/getBorrowRecordList")
 	public List<AssetBorrow> getBorrowRecordList(){
 		
+//		String str = "insert into asset_borrow_trackrecord (OAID,company,formDate,borrower,department,contactInfor,borrowThing,number,purpose,assertNumber,assertName,model,serialNumber,configInfo,startDate,borrowOutDate,borrowUseDate,borrowOutman,returnIs,returntwoIs,renewDateNumber,thingSituation,reciver,returnDate)values(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)";
+//		System.out.println(str.toUpperCase());
 		return abs.queryList();
 	}
 }

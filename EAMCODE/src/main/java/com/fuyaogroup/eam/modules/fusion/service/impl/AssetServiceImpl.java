@@ -14,6 +14,7 @@ import com.fuyaogroup.eam.common.enums.AssetTypeEnum;
 import com.fuyaogroup.eam.common.service.BaseServiceImpl;
 import com.fuyaogroup.eam.modules.fusion.dao.AssetMapper;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 @Service
 @Slf4j
@@ -80,6 +81,30 @@ public class AssetServiceImpl extends BaseServiceImpl<AssetMapper, Asset> implem
 	public List<Asset> getByAssetNumber(String AssetNumber) {
 		// TODO Auto-generated method stub
 		return assetMapper.getByAssetNumber(AssetNumber);
+	}
+
+	@Override
+	public AssetLifeRecored getAssetByNumber(String AssetNumber) {
+		// TODO Auto-generated method stub
+		return assetMapper.getAssetByNumber(AssetNumber);
+	}
+
+	@Override
+	public List<AssetLifeRecored> getBorrowRecored(String assetNumber) {
+		// TODO Auto-generated method stub
+		return assetMapper.getBorrowRecored(assetNumber);
+	}
+
+	@Override
+	public List<AssetLifeRecored> getRepairRecored(String assetNumber) {
+		// TODO Auto-generated method stub
+		return assetMapper.getRepairRecored(assetNumber);
+	}
+
+	@Override
+	public List<AssetLifeRecored> getScrapRecored(String assetNumber) {
+		// TODO Auto-generated method stub
+		return assetMapper.getScrpRecored(assetNumber);
 	}
 	
 	
