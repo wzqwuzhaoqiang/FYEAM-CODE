@@ -108,6 +108,9 @@ public class PdAssetManageController {
 			} catch (Exception e) {
 				log.error(this.getClass().getName()+"：查询列表失败："+e.getMessage());
 			}
+		for(int i=0;i<list.size();i++) {
+			System.out.println("时间："+list.get(i).toString());
+		}
 		return list;
 		 //刚开始的页面为第一页
 //	    if (page.getCurrentPage() == null){

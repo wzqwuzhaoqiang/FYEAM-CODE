@@ -258,6 +258,39 @@ public class AssetManageController {
 		return ERROR_MESSAGE;
 	}
 	
+		@RequestMapping(value = "/importSoftAssets",method = RequestMethod.POST, produces = "application/json; charset=utf-8")//, produces = "application/json; charset=utf-8")
+		public @ResponseBody String importSoftAssets(HttpServletRequest request) throws IOException{
+			MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
+		String msg = "添加成功";
+		// 获得文件
+		MultipartFile multipartFile = multipartRequest.getFile("file");// 与前端设置的fileDataName
+		
+			List<Asset> list = new ArrayList<Asset>();
+			String fileName=multipartFile.getOriginalFilename();
+			System.out.println("文件名：、、、、、、、、、"+fileName);
+			try {
+				list = new ReadExcel().getExcelInfoOfSoft(fileName, multipartFile);
+				System.out.println("内容数据--------------"+list.toString());
+			} catch (Exception e) {
+				msg = "导入数据转换出错";
+				return msg;
+			}
+			List<Asset> assetList = this.createAllAssetToFusion(list);
+			if(assetList.size()>0)
+				this.createAllAsset(assetList);
+			else{
+				this.createAllAsset(list);
+			}
+			
+			if(ERROR_MESSAGE.isEmpty()){
+				return msg;
+			}
+			return ERROR_MESSAGE;
+		}
+		
+		
+		
+		
 	@Async
 	private void createAllAsset(List<Asset> list) {
 		// TODO Auto-generated method stub

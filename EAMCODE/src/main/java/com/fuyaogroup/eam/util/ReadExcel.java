@@ -125,6 +125,97 @@ public class ReadExcel {
       return AssetList;
   }
   /**
+   * 导入软件信息
+   * @param fileName
+   * @param Mfile
+   * @return
+   * @throws Exception
+   */
+  public List<Asset> getExcelInfoOfSoft(String fileName,MultipartFile Mfile) throws Exception{
+      if(null==filePath){
+    	  filePath="D:/data/eamapi/fileupdate/";
+      }
+      //把spring文件上传的MultipartFile转换成CommonsMultipartFile类型
+       File file = new  File(filePath);
+       //创建一个目录 （它的路径名由当前 File 对象指定，包括任一必须的父路径。）
+       if (!file.exists()) file.mkdirs();
+       //新建一个文件
+       File file1 = new File(filePath ,simpleDateFormat.format(new Date()) + ".xlsx"); 
+       //将上传的文件写入新建的文件中
+       try {
+    	   Mfile.transferTo(file1);
+       } catch (Exception e) {
+    	   System.out.print("上传文件失败");
+    	   e.printStackTrace();
+    	   throw e;
+           
+       }
+       
+       //初始化客户信息的集合    
+       List<Asset> AssetList=new ArrayList<Asset>();
+       //初始化输入流
+       InputStream is = null;  
+       try{
+          //验证文件名是否合格
+          if(!validateExcel(fileName)){
+              return null;
+          }
+          //根据文件名判断文件是2003版本还是2007版本
+          boolean isExcel2003 = true; 
+          if(WDWUtil.isExcel2007(fileName)){
+              isExcel2003 = false;  
+          }
+          //根据新建的文件实例化输入流
+          is = new FileInputStream(file1);
+          //根据excel里面的内容读取客户信息
+          AssetList = getExcelInfoOfSoft(is, isExcel2003); 
+          is.close();
+      }catch(Exception e){
+          e.printStackTrace();
+      } finally{
+          if(is !=null)
+          {
+              try{
+                  is.close();
+              }catch(IOException e){
+                  is = null;    
+                  e.printStackTrace();  
+              }
+          }
+      }
+      return AssetList;
+  }
+  
+  /**
+   * 根据excel里面的内容读取客户信息
+   * @param is 输入流
+   * @param isExcel2003 excel是2003还是2007版本
+   * @return
+ * @throws ParseException 
+   * @throws IOException
+   */
+  public  List<Asset> getExcelInfoOfSoft(InputStream is,boolean isExcel2003) throws ParseException{
+       List<Asset> AssetList=null;
+       try{
+           /** 根据版本选择创建Workbook的方式 */
+           Workbook wb = null;
+           //当excel是2003时
+           if(isExcel2003){
+               wb = new HSSFWorkbook(is); 
+           }
+           else{//当excel是2007时
+               wb = new XSSFWorkbook(is); 
+           }
+           //读取Excel里面客户的信息
+           AssetList=readExcelValueOfSoft(wb);
+       }
+       catch (IOException e)  {  
+           e.printStackTrace();  
+       }  
+       return AssetList;
+  }
+  
+  /**
    * 根据excel里面的内容读取客户信息
    * @param is 输入流
    * @param isExcel2003 excel是2003还是2007版本
@@ -263,5 +354,99 @@ public class ReadExcel {
   }
   
 
+  
+  /**
+   * 读取Excel里面客户的信息
+   * @param wb
+   * @return
+ * @throws ParseException 
+   */
+  private List<Asset> readExcelValueOfSoft(Workbook wb) throws ParseException{ 
+      //得到第一个shell  
+       Sheet sheet=wb.getSheetAt(0);
+       
+      //得到Excel的行数
+       this.totalRows=sheet.getPhysicalNumberOfRows();
+       
+      //得到Excel的列数(前提是有行数)
+       if(totalRows>=1 && sheet.getRow(0) != null){
+            this.totalCells=sheet.getRow(0).getPhysicalNumberOfCells();
+       }
+       
+       List<Asset> AssetList=new ArrayList<Asset>();
+      //循环Excel行数,从第二行开始。标题不入库
+       for(int r=1;r<totalRows;r++){
+           Row row = sheet.getRow(r);
+           if (row == null) continue;
+           Asset asset= new Asset();
+           Date d = new Date();
+           //循环Excel的列
+           for(int c = 0; c <this.totalCells; c++){    
+               Cell cell = row.getCell(c);
+               if (null != cell){
+                   if(c==0){//第一列不读
+                	   cell.setCellType(CellType.STRING);
+                	   asset.setOrganizationName(cell.getStringCellValue());
+                   } else if(c==1){
+                	   cell.setCellType(CellType.STRING);
+                	   asset.setJobnum(cell.getStringCellValue());
+        }
+                   else if(c==2){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setDescription(cell.getStringCellValue());}
+                   else if(c==3){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setAssetNumber(cell.getStringCellValue());}
+                   else if(c==4){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setAssetmodel(cell.getStringCellValue());}
+                   else if(c==5){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setSoftType(2);}
+                   else if(c==6){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setOABillINum(cell.getStringCellValue());}
+                   else if(c==7){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setManufacturer(cell.getStringCellValue());}
+                   else if(c==8){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setSoftwarestatus(Integer.valueOf(cell.getStringCellValue()));}
+                   else if(c==9){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setSource(Integer.valueOf(cell.getStringCellValue()));}
+                   else if(c==10){
+                	   Date date  =  cell.getDateCellValue();
+                   asset.setUsingstarttime(date);}
+                   else if(c==11){
+                	   Date dt  =  cell.getDateCellValue();
+                   asset.setWarrantdate(dt);
+                   int mm = dt.getMonth();
+            	   if(mm>3) {
+            		   dt.setMonth(mm-3);
+            	   }else {
+            		   dt.setYear(dt.getYear()-1);
+            		   dt.setMonth(dt.getMonth()+9);
+            	   }
+               asset.setWarrantyreminderdate(dt);
+                   }
+                   else if(c==12){
+                	  // Date time =  d;
+                	   }
+                   else if(c==13){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setSuite(Integer.valueOf(cell.getStringCellValue()));}
+                   else if(c==14){
+                	   cell.setCellType(CellType.STRING);
+                   asset.setWifimac(cell.getStringCellValue());}
+                   
+           }
+           //添加客户
+           AssetList.add(asset);
+       }
+       
+  
 
+       }
+       return AssetList;}
 }

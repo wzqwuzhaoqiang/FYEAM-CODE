@@ -94,6 +94,7 @@ com\fuyaogroup\eam\common\datasources\annotation\DataSource.class
 com\fuyaogroup\eam\common\Json\AccessToken.class
 com\fuyaogroup\eam\modules\fusion\service\ConfigService.class
 com\fuyaogroup\eam\modules\mes\dao\AndonHisMapper.class
+com\fuyaogroup\eam\modules\fusion\model\AssetLifeRecored.class
 com\fuyaogroup\eam\modules\fusion\model\Asset.class
 com\fuyaogroup\eam\modules\fusion\model\RepairRecord.class
 com\fuyaogroup\eam\modules\fusion\model\AssetPd.class

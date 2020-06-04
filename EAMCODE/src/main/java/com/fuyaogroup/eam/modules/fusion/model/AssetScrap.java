@@ -29,10 +29,10 @@ public class AssetScrap extends BaseEntity {
 	private String supplusLife;//  剩余年限
 	private String bondedAttribute;//  保税属性
 	private int count;//数量
-	private BigDecimal assetNatValue;//  资产净值
+	private String assetNatValue;//  资产净值
 	private String reason;//  报废原因
 	private String handingSuggestions;//  处理建议
-	private BigDecimal sumMoney;//  合计金额
+	private String sumMoney;//  合计金额
 	private String measures;//  非正常报废的纠正措施
 	
 

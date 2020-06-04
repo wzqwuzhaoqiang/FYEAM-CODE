@@ -61,6 +61,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\ComputerType
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\PdAssetManageController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\EamFusionController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\FaultStatusEnum.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetLifeRecored.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetTransferServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Json\Audience.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\CenterEnum.java

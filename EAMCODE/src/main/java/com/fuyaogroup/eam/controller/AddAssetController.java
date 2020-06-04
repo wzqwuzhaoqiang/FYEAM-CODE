@@ -80,7 +80,7 @@ public class AddAssetController {
 //			asset.setOABillINum("FI202005022OA");
 			if (fuEAMUtil != null) {
 				log.info("asset的数据为---------------------"+asset.toString());
-				asset = fuEAMUtil.createOneAsset(asset);
+				//asset = fuEAMUtil.createOneAsset(asset);
 				log.info("经过fuEAMUtil接口的方法后asset的数据为---------------------"+asset.toString());
 				assetService.createOne(asset);//数据库增加，一条资产
 				List<GroupRecord> grs = new ArrayList<GroupRecord>();
@@ -109,7 +109,7 @@ public class AddAssetController {
 			//解析reqMo
 			Asset asset = this.getSoftAssetFromIMsgObj(reqMo);
 			if (fuEAMUtil != null) {
-				asset = fuEAMUtil.createOneAsset(asset);
+				//asset = fuEAMUtil.createOneAsset(asset);
 				List<GroupRecord> grs = new ArrayList<GroupRecord>();
 				grs.add(GroupRecordTool.convertToGroupRecord(asset));
 				reqMo.setResGroupRecord(grs);
