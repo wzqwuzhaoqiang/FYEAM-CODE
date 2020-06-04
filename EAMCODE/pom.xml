@@ -38,7 +38,7 @@
 		<swagger.version>2.7.0</swagger.version>
 		<joda.time.version>2.9.9</joda.time.version>
 		<fastjson.version>1.2.47</fastjson.version>
-		<hutool.version>4.1.1</hutool.version>
+		<hutool.version>4.1.12</hutool.version>
 		<velocity.engine.core.version>2.0</velocity.engine.core.version>
 		<freemarker.version>2.3.28</freemarker.version>
 		<jsch.version>0.1.55</jsch.version>
