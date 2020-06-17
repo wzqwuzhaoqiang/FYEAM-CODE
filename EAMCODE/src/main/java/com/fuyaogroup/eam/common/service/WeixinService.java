@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.databind.ObjectMapper;
 @Slf4j
 @Service
 public class WeixinService {
@@ -80,6 +81,7 @@ public class WeixinService {
             HttpGet hg = new HttpGet("https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token=" + accesstoken + "&code=" + code);
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
             String responseBody = httpclient.execute(hg, responseHandler);
+            logger.info("响应体数据为 +++++++++++   "+responseBody);
 //            logger.info("远程获取Userid：" + responseBody + "");
             JsonFactory factory = new JsonFactory();
             JsonParser parser = factory.createJsonParser(responseBody);
@@ -231,5 +233,36 @@ public class WeixinService {
 		
 	}
 	
+	
+	/**
+	 * 获取用户信息
+	 */
+	public String getUsername(String UserId) {
+        String accesstoken = accessToken == null ? this.getAccessTokenFromWX() : accessToken;
+        String username="";
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet hg = new HttpGet("https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=" + accesstoken + "&userid=" + UserId);
+            ResponseHandler<String> responseHandler = new BasicResponseHandler();
+            String responseBody = httpclient.execute(hg, responseHandler);
+            log.info("远程获取UserName：" + responseBody + "");
+            JsonFactory factory = new JsonFactory();
+            JsonParser parser = factory.createJsonParser(responseBody);
+
+            while (parser.nextToken() != JsonToken.END_OBJECT) {
+                //out.println((parser.getCurrentToken() == JsonToken.FIELD_NAME) + "    " + parser.getValueAsString());
+                if (parser.getCurrentToken() == JsonToken.VALUE_STRING && parser.getCurrentName().equals("name")) {
+                    //out.println(parser.getCurrentName().equals("access_token"));
+                	username = parser.getValueAsString().toString();
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.toString());
+//            e.printStackTrace();
+            return null;
+        }
+        return username;
+    }
 
 }

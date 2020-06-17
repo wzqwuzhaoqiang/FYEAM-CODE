@@ -144,7 +144,7 @@ public class AssetManageController {
 		System.out.println("///////////////////////////////----------------------------");
 		System.out.println("///////////////////////////////----------------------------");
 		System.out.println("///////////////////////////////----------------------------");
-		System.out.println("///////////////////////////////----------------------------");
+		System.out.println("///////////////////////////////-"+request);
 		log.info("{}:修改资产信息,开始...",LocalDateTime.now());
 		List<Asset> atList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,Asset.class);
 		if(CollectionUtil.isEmpty(atList)){

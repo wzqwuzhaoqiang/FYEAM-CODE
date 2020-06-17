@@ -1,3 +1,4 @@
+com\fuyaogroup\eam\common\service\qtfwWeixinMessageService$4.class
 com\fuyaogroup\eam\common\datasources\DataSourceNames.class
 com\fuyaogroup\eam\common\Exception\GlobalException.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetScrapMapper.class
@@ -26,10 +27,12 @@ com\fuyaogroup\eam\job\CreateWorkOrderJob.class
 com\fuyaogroup\eam\common\datasources\DynamicDataSourceConfig.class
 com\fuyaogroup\eam\common\service\BaseServiceImpl.class
 com\fuyaogroup\eam\common\Filter\AccessControlAllowOriginFilter.class
+com\fuyaogroup\eam\common\service\qtfwWeixinMessageService$3.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetPdServiceImpl.class
 com\fuyaogroup\eam\controller\AddAssetController.class
 com\fuyaogroup\eam\modules\fusion\service\WorkOrderService.class
 com\fuyaogroup\eam\modules\fusion\service\impl\ConfigServiceImpl.class
+com\fuyaogroup\eam\modules\fusion\service\WindowServerService.class
 com\fuyaogroup\eam\common\enums\PdStatusEnum.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetrPdBatMapper.class
 com\fuyaogroup\eam\util\FusionRestUtil$TrustAnyTrustManager.class
@@ -49,6 +52,7 @@ com\fuyaogroup\eam\common\activemq\ActiveMqClient.class
 com\fuyaogroup\eam\common\enums\OAOrgEnum.class
 com\fuyaogroup\eam\modules\fusion\service\AssetBorrowService.class
 com\fuyaogroup\eam\common\activemq\MessageConsumer$1.class
+com\fuyaogroup\eam\modules\fusion\service\impl\WindowServerServiceImpl.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetMapper.class
 com\fuyaogroup\eam\common\service\WeixinMessageService.class
 com\fuyaogroup\eam\job\UpdateAllAssetJob.class
@@ -58,6 +62,7 @@ com\fuyaogroup\eam\modules\mes\service\AndonTempService.class
 com\fuyaogroup\eam\common\properities\MultipartConfig.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetTransferServiceImpl.class
 com\fuyaogroup\eam\common\datasources\DynamicDataSource.class
+com\fuyaogroup\eam\common\service\qtfwWeixinService.class
 com\fuyaogroup\eam\modules\fusion\service\AssetService.class
 com\fuyaogroup\eam\util\EnumUtil.class
 com\fuyaogroup\eam\job\AssetCheckInfoJob.class
@@ -74,11 +79,14 @@ com\fuyaogroup\eam\job\UpdateWorkOrderJob.class
 com\fuyaogroup\eam\common\activemq\MessageProducer.class
 com\fuyaogroup\eam\common\Json\JsonResult.class
 com\fuyaogroup\eam\util\FusionRestUtil.class
+com\fuyaogroup\eam\common\service\qtfwWeixinMessageService$1.class
+com\fuyaogroup\eam\common\service\qtfwWeixinMessageService.class
 com\fuyaogroup\eam\modules\fusion\model\Operation.class
 com\fuyaogroup\eam\common\service\WeixinMessageService$2.class
 com\fuyaogroup\eam\util\WDWUtil.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AndonAssetServiceImpl.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetBorrowServiceImpl.class
+com\fuyaogroup\eam\modules\fusion\dao\WindowServerMapper.class
 com\fuyaogroup\eam\util\MqHandler.class
 com\fuyaogroup\eam\modules\mes\service\AndonService.class
 com\fuyaogroup\eam\util\GroupRecordTool.class
@@ -97,6 +105,7 @@ com\fuyaogroup\eam\modules\mes\dao\AndonHisMapper.class
 com\fuyaogroup\eam\modules\fusion\model\AssetLifeRecored.class
 com\fuyaogroup\eam\modules\fusion\model\Asset.class
 com\fuyaogroup\eam\modules\fusion\model\RepairRecord.class
+com\fuyaogroup\eam\common\service\qtfwWeixinMessageService$2.class
 com\fuyaogroup\eam\modules\fusion\model\AssetPd.class
 com\fuyaogroup\eam\common\model\BaseEntity.class
 com\fuyaogroup\eam\modules\fusion\model\AssetSoftware.class
@@ -116,6 +125,7 @@ com\fuyaogroup\eam\controller\PdAssetManageController.class
 com\fuyaogroup\eam\modules\fusion\service\IRepairRecordService.class
 com\fuyaogroup\eam\common\listen\BeanDefinedListener.class
 com\fuyaogroup\eam\modules\mes\dao\AndonHisTempMapper.class
+com\fuyaogroup\eam\modules\fusion\model\WindowServer.class
 com\fuyaogroup\eam\common\enums\CodeEnum.class
 com\fuyaogroup\eam\common\service\WeixinMessageService$1.class
 com\fuyaogroup\eam\modules\fusion\service\AssetPdService.class
@@ -130,6 +140,7 @@ com\fuyaogroup\eam\common\activemq\ActiveMqServer.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetPdBatServiceImpl.class
 com\fuyaogroup\eam\util\MyAuthenticator.class
 com\fuyaogroup\eam\modules\fusion\model\AssetPdBat.class
+com\fuyaogroup\eam\controller\weixintestController.class
 com\fuyaogroup\eam\common\properities\MyWebConfig.class
 com\fuyaogroup\eam\common\datasources\aspect\DataSourceAspect.class
 com\fuyaogroup\eam\common\Json\Audience.class

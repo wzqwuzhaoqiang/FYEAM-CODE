@@ -2,8 +2,11 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\model\BaseEntity.j
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\RepairRecordImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\service\AndonService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetTransferMapper.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\weixintestController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetPdBatServiceImpl.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\WindowServerServiceImpl.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\WindowServerService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\ConfigServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\model\AndonHisTemp.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\PdStatusEnum.java
@@ -58,6 +61,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\WeixinServ
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\RepairRecordMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\ComputerStatusEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\ComputerTypeEnum.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\WindowServerMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\PdAssetManageController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\EamFusionController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\FaultStatusEnum.java
@@ -67,6 +71,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Json\Audience.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\CenterEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Filter\JsonWebTokenController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\WorkOrderManageController.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\WindowServer.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\activemq\ActiveMqQueueConfig.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AssetManageController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\EmailUtil.java
@@ -92,7 +97,9 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\Repa
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\FusionRestUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\datasources\DynamicDataSource.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\dao\AndonHisTempMapper.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\qtfwWeixinService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetTransfer.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\qtfwWeixinMessageService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\TransferAssetController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\EamApplication.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\WorkOrder.java

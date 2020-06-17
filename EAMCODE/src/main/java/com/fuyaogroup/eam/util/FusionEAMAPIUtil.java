@@ -950,6 +950,8 @@ public class FusionEAMAPIUtil {
 		}else{
 			 otherObjs.put("financialCode",asset.getFinancialCode());//财务编码
 			 otherObjs.put("jobnum",asset.getJobnum());//工号
+			 otherObjs.put("username",asset.getUsername());//使用人名称
+			 otherObjs.put("prolinename",asset.getWorkCenterName());//使用人部门
 			 otherObjs.put("assetmodel",asset.getAssetmodel());//型号
 			 otherObjs.put("allocation",asset.getAllocation());//基本配置
 			 otherObjs.put("displayer",asset.getDisplayer());//显示器
@@ -1079,8 +1081,9 @@ public class FusionEAMAPIUtil {
 //		 if(asset.getWorkCenterId()!=null)
 //			 otherObjs.put("WorkCenterId",asset.getWorkCenterId());
 		JSONObject jsonObj = new JSONObject(otherObjs);
-	
+	log.info("修改信息-------------："+url);
 		String reponseStr = frUtil.patch(url,jsonObj.toString(),deaultUserName,deaultPassword);
+		log.info("修改返回值信息-------------："+reponseStr);
 		assetList = this.getFusionListFromOjbect(reponseStr,Asset.class);
 		}catch(Exception e){
 			log.error("Fusion获取资产失败，原因："+e.getMessage());
