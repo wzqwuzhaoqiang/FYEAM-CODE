@@ -18,7 +18,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("WINDOW_SERVER")
 /**
- * Fusion资产模块
+ * 前台办公资产模块
  */
 public class WindowServer extends BaseEntity{
 
@@ -46,6 +46,10 @@ public class WindowServer extends BaseEntity{
 	private String backConfirm;
 	//PHOTO
 	private String photo;
+	//
+	private String mobile;
+	//
+	private String serial;
 	
 	
 	

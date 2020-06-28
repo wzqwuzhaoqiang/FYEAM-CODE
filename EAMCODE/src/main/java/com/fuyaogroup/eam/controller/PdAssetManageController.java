@@ -3,6 +3,7 @@ package com.fuyaogroup.eam.controller;
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -64,6 +65,12 @@ public class PdAssetManageController {
 	   @Value("${file.img.path}")
 		private  String filePath;
 	   
+	   @Value("${file.RBimg.path}")
+		private  String rbfilePath;
+	   
+	   @Value("${file.RBimg.url}")
+		private  String rbfileUrl;
+		
 	   @Value("${file.img.url}")
 	 		private  String fileUrl;
 	@Autowired
@@ -381,6 +388,27 @@ public class PdAssetManageController {
 	            InputStream is=new FileInputStream(file);
 	            BufferedImage bi=ImageIO.read(is);
 	            ImageIO.write(bi, "jpg", response.getOutputStream());
+	    }
+	 
+	 @RequestMapping(value="/getRBBiImg")
+	 @ResponseBody
+	    public void getRBBiImg(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		 
+		        log.info("jinru图片展示：");
+	            response.setHeader("Pragma", "no-cache");  
+	            response.setHeader("Cache-Control", "no-cache");  
+	            response.setDateHeader("Expires", 0);  
+	            response.setContentType("image/jpg");  
+	            String resp = request.getParameter("pdCode");
+	            File dirFile = new File(rbfilePath);
+	            if(!dirFile.exists()){
+	            	dirFile.mkdir();
+	            }
+	            File file=new File(rbfilePath+resp+".jpg");//获取图片这个文件
+	            InputStream is=new FileInputStream(file);
+	            BufferedImage bi=ImageIO.read(is);
+	            ImageIO.write(bi, "jpg", response.getOutputStream());
+	            log.info("jinru图片展示结束：");
 	    }
 	
 	

@@ -44,7 +44,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
             success: function(res) {
                 // 回调
                 
-            	window.location.href="createBorrowMessage?command="+res.resultStr;
+            	window.location.href="createReturnBackMessage?command="+res.resultStr;
             },
             error: function(res) {
                 if (res.errMsg.indexOf('function_not_exist') > 0) {

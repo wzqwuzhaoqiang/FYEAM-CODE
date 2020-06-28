@@ -37,8 +37,10 @@ import com.fuyaogroup.eam.common.model.Page;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
+import com.fuyaogroup.eam.modules.fusion.model.QtfwThing;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
+import com.fuyaogroup.eam.modules.fusion.service.WindowServerService;
 import com.fuyaogroup.eam.util.EnumUtil;
 import com.fuyaogroup.eam.util.FusionEAMAPIUtil;
 import com.fuyaogroup.eam.util.ReadExcel;
@@ -53,6 +55,8 @@ public class AssetManageController {
 	@Autowired
 	AssetPdService assetPdService;
 	
+	@Autowired
+	WindowServerService wss;
 	
 	@Autowired
 	private FusionEAMAPIUtil fuEAMUtil=new FusionEAMAPIUtil();
@@ -257,6 +261,36 @@ public class AssetManageController {
 		}
 		return ERROR_MESSAGE;
 	}
+		
+		/**
+		 * 前台资产导入
+		 * @param request
+		 * @return
+		 * @throws IOException
+		 */
+		@RequestMapping(value = "/importAssetsqtzc",method = RequestMethod.POST, produces = "application/json; charset=utf-8")//, produces = "application/json; charset=utf-8")
+		public @ResponseBody String importAssetsqtzc(HttpServletRequest request) throws IOException{
+			MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
+		String msg = "添加成功";
+		// 获得文件
+		MultipartFile multipartFile = multipartRequest.getFile("file");// 与前端设置的fileDataName
+		
+			List<QtfwThing> list = new ArrayList<QtfwThing>();
+			String fileName=multipartFile.getOriginalFilename();
+			try {
+				list = new ReadExcel().getExcelInfoqtzc(fileName, multipartFile);
+				for(QtfwThing qft:list) {
+					wss.addqtfw(qft);
+				}
+			} catch (Exception e) {
+				msg = e.getMessage();
+				return msg;
+			}
+			if(ERROR_MESSAGE.isEmpty()){
+				return msg;
+			}
+			return ERROR_MESSAGE;
+		}
 	
 		@RequestMapping(value = "/importSoftAssets",method = RequestMethod.POST, produces = "application/json; charset=utf-8")//, produces = "application/json; charset=utf-8")
 		public @ResponseBody String importSoftAssets(HttpServletRequest request) throws IOException{

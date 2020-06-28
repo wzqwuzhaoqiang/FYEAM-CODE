@@ -110,6 +110,7 @@ com\fuyaogroup\eam\modules\fusion\model\AssetPd.class
 com\fuyaogroup\eam\common\model\BaseEntity.class
 com\fuyaogroup\eam\modules\fusion\model\AssetSoftware.class
 com\fuyaogroup\eam\common\datasources\DruidConfig.class
+com\fuyaogroup\eam\modules\fusion\model\QtfwThing.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetrPdMapper.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetBorrowMapper.class
 com\fuyaogroup\eam\util\Invoke.class

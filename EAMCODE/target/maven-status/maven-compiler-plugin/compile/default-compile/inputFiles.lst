@@ -102,6 +102,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\Asse
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\qtfwWeixinMessageService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\TransferAssetController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\EamApplication.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\QtfwThing.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\WorkOrder.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\WeixinMessageService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\model\RepairBill.java

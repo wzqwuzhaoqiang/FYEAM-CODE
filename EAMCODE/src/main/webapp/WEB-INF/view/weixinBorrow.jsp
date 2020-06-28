@@ -42,11 +42,12 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 	 <div class="animated">
 	<div id="title-pd">物品借用</div>
 	<p></p>
-	<div class="field-wrapper" ><label>借用人工号</label><input   class="input-style" type="text" name="userid" value=${userid}  readonly	/></div>
-	<div class="field-wrapper" ><label>借用人名字</label><input   class="input-style" type="text" name="userName" value=${userName}  readonly	/></div>
-	<div class="field-wrapper" ><label>物品名称</label><input  id="thingName"  class="input-style" type="text" name="thingName"	/></div>
-	<div class="field-wrapper" ><label>数量</label><input   id="count" class="input-style"  type="text" name="count"	/></div>
-	<div class="field-wrapper" ><label>借用时间</label><input  class="input-style" type="text" name="currentTime" value=${currentTime} readonly	/></div>
+	<div class="field-wrapper" ><label>借用人工号</label><input   class="input-style" type="text" name="userid" value="${userid}"  readonly	/></div>
+	<div class="field-wrapper" ><label>借用人名字</label><input   class="input-style" type="text" name="userName" value="${userName}"  readonly	/></div>
+	<div class="field-wrapper" ><label>物品名称</label><input  id="thingName"  class="input-style" type="text" name="thingName" value="${thingName}"	readonly/></div>
+	<div class="field-wrapper" ><label>数量</label><input   id="count" class="input-style"  type="text" name="count" value="1" readonly	/></div>
+	<div class="field-wrapper" ><label>借用时间</label><input  class="input-style" type="text" name="currentTime" value="${currentTime}" readonly	/></div>
+	<div class="field-wrapper" ><label>联系方式</label><input  class="input-style" type="text" name="mobile" value="${mobile}" readonly	/></div>
 	<div><label class="label-style2">请仔细核对以上信息，是否和本人一致。</label></div>
 	<div class="field-wrapper" ><input type="button" class = "verify-button" value="确认" onclick="fsubmit()"/></div>
 	</div>
