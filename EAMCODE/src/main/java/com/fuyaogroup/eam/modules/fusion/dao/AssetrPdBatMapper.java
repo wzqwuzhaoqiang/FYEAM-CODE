@@ -43,10 +43,10 @@ public interface AssetrPdBatMapper extends BaseMapper<AssetPdBat>{
 	 List<AssetPdBat> queryByDate(@Param("nowDate") Date nowDate);
 	 
 	 @Insert("INSERT INTO ASSETPDBAT("
-				+ "pdBatId,pdBatCode,pdStartDate,pdEndDate ,iSAll ,orgList "
+				+ "pdBatId,pdBatCode,pdStartDate,pdEndDate ,iSAll ,orgList,headId"
 				+")"+" VALUES("
 				+"#{pdBatId}, #{ pdBatCode},"
 				+ " #{pdStartDate}, #{pdEndDate},"
-				+ " #{iSAll},#{orgList})")
+				+ " #{iSAll},#{orgList},#{headId})")
 	    void insertPdBat(AssetPdBat bat);
 }

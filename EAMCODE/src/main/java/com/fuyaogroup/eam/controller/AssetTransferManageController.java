@@ -35,8 +35,10 @@ import cn.hutool.core.collection.CollectionUtil;
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
 import com.fuyaogroup.eam.common.model.Page;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetErrorCord;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 import com.fuyaogroup.eam.modules.fusion.model.AssetTransfer;
+import com.fuyaogroup.eam.modules.fusion.service.AssetErrorCordService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetTransferService;
@@ -67,6 +69,9 @@ public class AssetTransferManageController {
 	
 	@Autowired
 	AssetTransferService assetTransferSevice;
+	
+	@Autowired
+	AssetErrorCordService aecService;
 	
 	@Autowired
 	AssetService assetService;
@@ -250,5 +255,21 @@ public class AssetTransferManageController {
             }
         }
 	}
+    
+    
+    
+    
+    @RequestMapping(value = "/assetTransError",method = RequestMethod.POST)//, produces = "application/json; charset=utf-8")
+	public @ResponseBody List<AssetErrorCord> assetTransError(HttpServletRequest request, HttpServletResponse response) throws IOException{
+
+    	System.out.println(aecService.queryList());
+    	
+		return aecService.queryList();
+		
+	}
+    
+    
+    
+    
 }
 

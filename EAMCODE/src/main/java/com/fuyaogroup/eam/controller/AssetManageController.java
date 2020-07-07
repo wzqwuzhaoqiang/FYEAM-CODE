@@ -180,6 +180,7 @@ public class AssetManageController {
 			assetSevice.updateOne(atList.get(0));
 		} catch (Exception e) {
 			log.error("{}:修改资产信息,失败:",e.getMessage());
+			System.out.println(e.getMessage());
 			return "修改失败："+e.getMessage();
 
 		}

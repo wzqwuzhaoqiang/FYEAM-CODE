@@ -2,6 +2,7 @@ package com.fuyaogroup.eam.modules.fusion.service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
@@ -24,4 +25,6 @@ public interface AssetPdService  extends IBaseService<AssetPd>{
 	public List<AssetPd> getBySerialNum(String serialNum,Integer status);
 
 	public void insertPdRecord(AssetPd assetPd);
+
+	public List<AssetPd> queryAllUnDoByBatId(Long batId);
 }

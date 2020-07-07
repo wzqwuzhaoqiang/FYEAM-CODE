@@ -964,7 +964,7 @@ public class WeixinManagerController {
 		log.info("进入toShowBorrowPage");
 		String userId = qtfwwx.getUserid(code);
 		log.info("记录userId："+userId);
-		if("101798".equals(userId)) {
+		if("999911".equals(userId)) {
 			
 			List<WindowServer> wsList = wss.queryListByCondition();
 			log.info("查询记录："+wsList);
@@ -979,7 +979,7 @@ public class WeixinManagerController {
 			session.setAttribute("end",wsList.size()>10?10:wsList.size());
 			return "WEB-INF/view/weixinInBorrowListLookByAdmin.jsp";
 		}else {
-			log.info("用户不为101798：");
+			log.info("用户不为999911：");
 			List<WindowServer> wsList = wss.queryListByUserId(userId);
 			if(wsList.size()<1){
 				return "WEB-INF/view/weixinQueryError.jsp";

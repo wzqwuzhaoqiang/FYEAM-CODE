@@ -975,6 +975,8 @@ public class FusionEAMAPIUtil {
 		}
 		
 		 JSONObject jsonObj = new JSONObject(otherObjs);
+		 System.out.println("修改请求URL---  "+url);
+		 System.out.println("修改请求数据---  "+jsonObj.toString());
 		 String	otherworkresult = frUtil.post(url, jsonObj.toString(),deaultUserName,deaultPassword);
 
 		return asset;
@@ -1067,8 +1069,10 @@ public class FusionEAMAPIUtil {
 	}
 	
 	public Asset updateOneAsset(Asset asset){
+		
 		FusionRestUtil frUtil = new FusionRestUtil()  ;
 		List<Asset> assetList = null;
+		Asset as = null;
 		try{
 		String url = fusionRest+"/fscmRestApi/resources/11.13.18.05/maintenanceAssets/"+asset.getAssetId();
 		//2.获取工作中心ID TODO 是否要做集成配置，或者动态存储
@@ -1085,10 +1089,12 @@ public class FusionEAMAPIUtil {
 		String reponseStr = frUtil.patch(url,jsonObj.toString(),deaultUserName,deaultPassword);
 		log.info("修改返回值信息-------------："+reponseStr);
 		assetList = this.getFusionListFromOjbect(reponseStr,Asset.class);
+		as = assetList.get(0);
+		as.setAssetStatus(asset.getAssetStatus()); 
 		}catch(Exception e){
 			log.error("Fusion获取资产失败，原因："+e.getMessage());
 			return null;
 		}
-		return assetList.get(0);
+		return as;
 	}
 }

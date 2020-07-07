@@ -4,11 +4,13 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\service\Andon
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetTransferMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\weixintestController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetMapper.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetErrorCordServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\AssetPdBatServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\WindowServerServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\WindowServerService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\impl\ConfigServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\mes\model\AndonHisTemp.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetErrorCord.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\PdStatusEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Filter\HttpBearerAuthFilter.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\activemq\MessageProducer.java
@@ -29,6 +31,7 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\As
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\AssetTransferService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\ReflexObjectUtil.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\WeixinManagerController.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\service\AssetErrorCordService.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\controller\AssetScrapController.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\CodeEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\util\SignUtil.java
@@ -137,5 +140,6 @@ D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\properities\MyWebC
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\service\BaseServiceImpl.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\AssetPd.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\model\Config.java
+D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\modules\fusion\dao\AssetErrorCordMapper.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\enums\ToolEnum.java
 D:\FYEAM-CODE\EAMCODE\src\main\java\com\fuyaogroup\eam\common\Exception\GlobalException.java

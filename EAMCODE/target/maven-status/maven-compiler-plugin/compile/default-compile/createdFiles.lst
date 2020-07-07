@@ -51,6 +51,7 @@ com\fuyaogroup\eam\common\activemq\ActiveMqQueueConfig.class
 com\fuyaogroup\eam\common\activemq\ActiveMqClient.class
 com\fuyaogroup\eam\common\enums\OAOrgEnum.class
 com\fuyaogroup\eam\modules\fusion\service\AssetBorrowService.class
+com\fuyaogroup\eam\modules\fusion\dao\AssetErrorCordMapper.class
 com\fuyaogroup\eam\common\activemq\MessageConsumer$1.class
 com\fuyaogroup\eam\modules\fusion\service\impl\WindowServerServiceImpl.class
 com\fuyaogroup\eam\modules\fusion\dao\AssetMapper.class
@@ -58,6 +59,7 @@ com\fuyaogroup\eam\common\service\WeixinMessageService.class
 com\fuyaogroup\eam\job\UpdateAllAssetJob.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetServiceImpl.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetScrapServiceImpl.class
+com\fuyaogroup\eam\modules\fusion\service\AssetErrorCordService.class
 com\fuyaogroup\eam\modules\mes\service\AndonTempService.class
 com\fuyaogroup\eam\common\properities\MultipartConfig.class
 com\fuyaogroup\eam\modules\fusion\service\impl\AssetTransferServiceImpl.class
@@ -78,6 +80,7 @@ com\fuyaogroup\eam\modules\fusion\service\AssetTransferService.class
 com\fuyaogroup\eam\job\UpdateWorkOrderJob.class
 com\fuyaogroup\eam\common\activemq\MessageProducer.class
 com\fuyaogroup\eam\common\Json\JsonResult.class
+com\fuyaogroup\eam\modules\fusion\service\impl\AssetErrorCordServiceImpl.class
 com\fuyaogroup\eam\util\FusionRestUtil.class
 com\fuyaogroup\eam\common\service\qtfwWeixinMessageService$1.class
 com\fuyaogroup\eam\common\service\qtfwWeixinMessageService.class
@@ -143,6 +146,7 @@ com\fuyaogroup\eam\util\MyAuthenticator.class
 com\fuyaogroup\eam\modules\fusion\model\AssetPdBat.class
 com\fuyaogroup\eam\controller\weixintestController.class
 com\fuyaogroup\eam\common\properities\MyWebConfig.class
+com\fuyaogroup\eam\modules\fusion\model\AssetErrorCord.class
 com\fuyaogroup\eam\common\datasources\aspect\DataSourceAspect.class
 com\fuyaogroup\eam\common\Json\Audience.class
 com\fuyaogroup\eam\controller\WorkOrderManageController.class

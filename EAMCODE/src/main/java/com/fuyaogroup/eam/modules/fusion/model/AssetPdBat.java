@@ -27,4 +27,5 @@ public class AssetPdBat extends BaseEntity{
 	private Date pdEndDate ;//盘点结束时间
 	private String iSAll ;//是否是全体公司,默认是0/null都是全体
 	private String orgList;//公司用分号分开比如 万达公司;吉利公司
+	private String headId;
 }

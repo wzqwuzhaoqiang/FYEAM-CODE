@@ -26,7 +26,7 @@ public interface WindowServerMapper extends BaseMapper<WindowServer> {
 	@Select("SELECT * FROM WINDOW_SERVER where TABLEID=#{tableId}")
 	WindowServer queryByTableId(@Param("tableId") String tableId);
 
-	@Update("update WINDOW_SERVER set STATUS=#{ws.status,jdbcType=VARCHAR},BORROWCONFIRM=#{ws.borrowConfirm,jdbcType=VARCHAR},RETURNTIME=#{ws.returnTime,jdbcType=VARCHAR},BACKCONFIRM=#{ws.backConfirm, jdbcType=VARCHAR}")
+	@Update("update WINDOW_SERVER set STATUS=#{ws.status,jdbcType=VARCHAR},BORROWCONFIRM=#{ws.borrowConfirm,jdbcType=VARCHAR},RETURNTIME=#{ws.returnTime,jdbcType=VARCHAR},BACKCONFIRM=#{ws.backConfirm, jdbcType=VARCHAR} where TABLEID = #{ws.tableID, jdbcType=VARCHAR}")
 	void updateByOBJ(@Param("ws") WindowServer wsobj);
 
 	@Delete("DELETE FROM WINDOW_SERVER WHERE TABLEID=#{id}")

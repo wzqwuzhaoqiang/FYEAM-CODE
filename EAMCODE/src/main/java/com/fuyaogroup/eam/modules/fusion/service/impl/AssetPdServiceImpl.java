@@ -2,6 +2,7 @@ package com.fuyaogroup.eam.modules.fusion.service.impl;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -76,6 +77,12 @@ public class AssetPdServiceImpl extends BaseServiceImpl<AssetrPdMapper, AssetPd>
 			String pdImgPath) {
 		assetrPd.updatePdRecord(status, pdTime, pdCode, pdImgPath);
 		
+	}
+
+	@Override
+	public List<AssetPd> queryAllUnDoByBatId(Long batId) {
+		// TODO Auto-generated method stub
+		return assetrPd.queryAllUnDoByBatId(batId);
 	}
 	
 

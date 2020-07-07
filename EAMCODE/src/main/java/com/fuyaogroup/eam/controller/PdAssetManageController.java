@@ -12,9 +12,11 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +42,8 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
 import com.fuyaogroup.eam.common.model.Page;
+import com.fuyaogroup.eam.common.service.WeixinMessageService;
+import com.fuyaogroup.eam.common.service.WeixinService;
 import com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
@@ -84,6 +88,12 @@ public class PdAssetManageController {
 	static Integer PAGE_SIZE=10;//每页的条数-10条
 	Page page = new Page();
 	String currentPage;
+	
+	@Autowired
+	WeixinMessageService wxService;
+	
+	@Autowired
+	WeixinService wx;
 	
 	@Autowired
 	AssetPdBatService assetPdBatSevice;
@@ -411,6 +421,73 @@ public class PdAssetManageController {
 	            log.info("jinru图片展示结束：");
 	    }
 	
-	
+	 
+	 @RequestMapping(value = "/addExceptionBat",method = RequestMethod.POST)
+		@CrossOrigin(origins = "*")
+		@ResponseBody
+		public String addExceptionBat(@RequestBody String request) throws Exception{
+			log.info("增加盘点批次开始！");
+			AssetPdBat bat = null;
+			Date nowDate = new Date();
+			List<AssetPdBat> batList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,AssetPdBat.class);
+			if(CollectionUtil.isNotEmpty(batList)) {
+				bat = batList.get(0);
+			}else {
+				return "操作失败，盘点批次读取异常";
+			}
+			if(!nowDate.after(bat.getPdEndDate())){
+				return "增加失败，原盘点还未结束";
+			}
+			String batId = bat.getPdBatId();
+			List<AssetPd> resultlist = new ArrayList<AssetPd>();
+			resultlist = assetPdSevice.queryAllUnDoByBatId(Long.valueOf(batId));
+			if(CollectionUtil.isEmpty(resultlist)) {
+				return "增加异常盘点失败，没有异常！已全部完成盘点";
+			}else {
+
+				String batIdstr = batFormatter.format(nowDate) ;
+				Integer i= new java.util.Random().nextInt(900)+100;
+//				String orgList = bat.getOrgList();
+//				orgList = orgList.substring(1,orgList.length()-1);
+//				orgList = orgList.replaceAll("\"", "");
+				bat.setPdStartDate(nowDate);
+				Calendar c = Calendar.getInstance();
+				c.setTime(nowDate);
+				c.add(Calendar.DATE, 14);
+				bat.setPdEndDate(c.getTime());
+				bat.setPdBatId(batIdstr+i.toString());
+				bat.setPdBatCode(batIdstr.substring(2));
+				bat.setISAll("1");//都选不是
+				bat.setHeadId(batId);
+				assetPdBatSevice.insertOne(bat);
+				for(AssetPd apd:resultlist){
+					apd.setPdBatId(Long.valueOf(bat.getPdBatId()));
+					assetPdSevice.updateAssetPd(apd);
+					
+					wx.getAccessToken();
+					 wxService.send(apd.getJobNum(), "", "<"+myFormatter.format(bat.getPdStartDate())+"~"+myFormatter.format(bat.getPdEndDate())+"限期计算机资产盘点通知>\n您需要盘点资产如下:\n"
+					 +"资产编号:"+apd.getAssetNumber()+"\n"
+					 +"序列号:"+apd.getSerialNumber()+"\n"
+					 +"型号:"+apd.getAssetModel()+"\n"
+					 +"配置:"+apd.getAllocation()+"\n"
+					 		+ "(内部测试  )");
+					 //由于此次盘点时间结束！您还没完成资产盘点。 请点击微信下方“扫一扫”，扫描您的办公资产上粘贴的二维码
+					
+				}
+				//this.createChecks(bat);//添加盘点
+				return "增加成功！";
+			}
+			
+			
+			
+			
+			
+			//List<AssetPdBat> batList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,AssetPdBat.class);
+			
+			
+			
+
+		}
+	 
 }
 

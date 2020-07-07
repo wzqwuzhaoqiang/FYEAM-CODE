@@ -3,7 +3,9 @@ package com.fuyaogroup.eam.controller;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,8 +16,10 @@ import cn.hutool.core.collection.CollectionUtil;
 
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetErrorCord;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 import com.fuyaogroup.eam.modules.fusion.model.AssetTransfer;
+import com.fuyaogroup.eam.modules.fusion.service.AssetErrorCordService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetTransferService;
@@ -39,6 +43,8 @@ public class TransferAssetController {
 	@Autowired
 	AssetPdService assetPdService;
 	
+	@Autowired
+	AssetErrorCordService aecService;
 	
 	
 	@Autowired
@@ -94,10 +100,27 @@ public class TransferAssetController {
 				return reqMo;
 			}
 		} catch (Exception e) {
+			log.info("固定资产转移失败......................记录表开始工作");
+			List<GroupRecord> gr = reqMo.getReqGroupRecord("Asset");
+			GroupRecord reqRecord = gr.get(0);
+			String assetSerNum = reqRecord.getFieldValue("SerialNumber");
+			Asset asset = fuEAMUtil.getOneAssetBySerNum(assetSerNum);
+			AssetErrorCord aec = new AssetErrorCord();
+			aec.setOabilliNum(reqRecord.getFieldValue("OABillINum"));
+			aec.setTranMan(asset.getUsername());
+			aec.setTranid(asset.getJobnum());
+			aec.setReceiveid(reqRecord.getFieldValue("jobNum"));
+			aec.setReceiveMan(reqRecord.getFieldValue("userName"));
+			aec.setAssetName(asset.getAssetNumber());
+			aec.setSerial(assetSerNum);
+			aec.setMyid(UUID.randomUUID().toString().substring(0, 12));
+			aec.setCreateDate(new Date());
+			aecService.addOne(aec);
 			log.error("变更固定资产,失败,{}",e.getMessage());
 			e.printStackTrace();
 		}
 		log.info("{}:变更固定资产,结束...",LocalDateTime.now());
+		log.info("固定资产转移成功......................");
 		return null;
 		
 	//执行请求

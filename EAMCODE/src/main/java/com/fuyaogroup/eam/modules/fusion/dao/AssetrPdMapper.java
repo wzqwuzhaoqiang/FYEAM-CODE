@@ -2,6 +2,7 @@ package com.fuyaogroup.eam.modules.fusion.dao;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
@@ -53,9 +54,14 @@ public interface AssetrPdMapper extends BaseMapper<AssetPd>{
          +" where pdCode=#{pdCode}")
 	 void updatePdRecord(@Param("status") int status,@Param("pdTime") Date pdTime,@Param("pdCode")Long pdCode,@Param("pdImgPath")String pdImgPath);
 	 
-	 @Update("update ASSETPD SET jobNum=#{pd.jobNum,jdbcType=VARCHAR},SerialNumber=#{pd.SerialNumber,jdbcType=VARCHAR},AssetNumber=#{pd.AssetNumber,jdbcType=VARCHAR},userName=#{pd.userName, jdbcType=VARCHAR},OrganizationName=#{pd.OrganizationName, jdbcType=VARCHAR},department=#{pd.department, jdbcType=VARCHAR}"
+	 @Update("update ASSETPD SET jobNum=#{pd.jobNum,jdbcType=VARCHAR},SerialNumber=#{pd.SerialNumber,jdbcType=VARCHAR},AssetNumber=#{pd.AssetNumber,jdbcType=VARCHAR},userName=#{pd.userName, jdbcType=VARCHAR},OrganizationName=#{pd.OrganizationName, jdbcType=VARCHAR},department=#{pd.department, jdbcType=VARCHAR},pdBatId=#{pd.pdBatId,jdbcType=NUMERIC}"
 	         +" where pdCode=#{pd.pdCode}")
 		 void updatePd(@Param("pd") AssetPd pd);
+	 
+	 
+	 
+	 @Select("SELECT * FROM ASSETPD a where a.pdBatId = #{pdBatId} and a.status='0'")
+	 List<AssetPd> queryAllUnDoByBatId(@Param("pdBatId")Long pdBatId);
 	 
 
 }
