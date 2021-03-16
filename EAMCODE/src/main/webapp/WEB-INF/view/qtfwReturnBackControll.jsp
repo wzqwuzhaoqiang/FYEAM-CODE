@@ -50,10 +50,10 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 <div class="field-wrapper" ><label>归还时间</label><input   id="currentTime" name="currentTime" class="input-style" type="text" value="${waitrbConfirmObj.returnTime}" readonly	/></div>
 <div class="field-wrapper" ><label>状态</label><input   id="status" name="backConfirm" class="input-style" type="text" value="${waitrbConfirmObj.backConfirm}" readonly	/></div>
 <div class="field-wrapper" ><label>联系方式</label><input   id="mobile" name="mobile" class="input-style" type="text" value="${waitrbConfirmObj.mobile}" readonly	/></div>
-<div class="field-wrapper" ><input type="button" class = "verify-button" value="通过申请" onclick="fsubmit('pass')"/></div>
+<div class="field-wrapper" ><input type="button" class = "verify-button" value="通过申请" onclick="fsubmit('${obj.tools}')"/></div>
 <p></p>
 
-<div class="field-wrapper" ><input type="button" class = "verify-button" value="取消申请" onclick="fsubmit('cancel')"/></div>
+<div class="field-wrapper" ><input type="button" class = "verify-button" value="取消申请" onclick="reset('${obj.tools}')"/></div>
 </div>
 </div>
 </form>
@@ -69,29 +69,54 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         
         
         
-        var _loging;
-        function fsubmit(command) {
+        //var _loging;
+        function fsubmit(tableID) {
         	//alert(imgurl);
         		$.ajax({
                     type: "GET",//方法类型
                     dataType: "json",//预期服务器返回的数据类型
-                    url: "/eam/rbcomfirmAction?acname="+command,//url
+                    url: "/eam/rbcomfirmAction?acname=pass&idvalue="+tableID,//url
                     //contentType: "application/x-www-form-urlencoded; charset=utf-8",
                     success: function (result) {
-                    	 layer.close(_loging);
+                    	 //layer.close(_loging);
                     	//result = $.parseJSON(result.replace(/<.*?>/ig,""));
                     	firm(result.message);
                     	//turnback = "success";
                        	//alert(result.message);
                     },
                     error : function(result) {
-                    	 layer.close(_loging);
+                    	 //layer.close(_loging);
                     	 firm(result.message);
                         //alert("盘点有误，非本人操作。如未进行内部转移，请先填写OA单据：固定资产内部转移登记表。");
                     	 //turnback = "false";
                     }
                 });
         }
+        
+        
+        function reset(tableID) {
+        	//alert(imgurl);
+        		$.ajax({
+                    type: "GET",//方法类型
+                    dataType: "json",//预期服务器返回的数据类型
+                    url: "/eam/rbcomfirmAction?acname=cancel&idvalue="+tableID,//url
+                    //contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (result) {
+                    	 //layer.close(_loging);
+                    	//result = $.parseJSON(result.replace(/<.*?>/ig,""));
+                    	firm(result.message);
+                    	//turnback = "success";
+                       	//alert(result.message);
+                    },
+                    error : function(result) {
+                    	 //layer.close(_loging);
+                    	 firm(result.message);
+                        //alert("盘点有误，非本人操作。如未进行内部转移，请先填写OA单据：固定资产内部转移登记表。");
+                    	 //turnback = "false";
+                    }
+                });
+        }
+        
         
         function compressImage(url,filename){  
             var name="_doc/upload/"+filename;

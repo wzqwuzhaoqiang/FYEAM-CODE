@@ -1001,7 +1001,7 @@ public class WeixinManagerController {
      * @return
      * @throws ParseException
      */
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @RequestMapping(value = "/rbcomfirmAction",method = RequestMethod.GET)
     @ResponseBody
     public Map<String, Object> rbcomfirmAction(HttpServletRequest request,HttpServletResponse response) throws ParseException{
