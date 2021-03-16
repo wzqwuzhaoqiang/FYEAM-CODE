@@ -2,6 +2,7 @@ package com.fuyaogroup.eam.modules.fusion.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import com.fuyaogroup.eam.common.model.Page;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import com.fuyaogroup.eam.common.service.BaseServiceImpl;
 import com.fuyaogroup.eam.modules.fusion.dao.AssetMapper;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
+import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 @Service
 @Slf4j
@@ -84,9 +86,9 @@ public class AssetServiceImpl extends BaseServiceImpl<AssetMapper, Asset> implem
 	}
 
 	@Override
-	public AssetLifeRecored getAssetByNumber(String AssetNumber) {
+	public AssetLifeRecored getAssetByNumberr(String AssetNumber) {
 		// TODO Auto-generated method stub
-		return assetMapper.getAssetByNumber(AssetNumber);
+		return assetMapper.getAssetByNumberr(AssetNumber);
 	}
 
 	@Override
@@ -105,6 +107,43 @@ public class AssetServiceImpl extends BaseServiceImpl<AssetMapper, Asset> implem
 	public List<AssetLifeRecored> getScrapRecored(String assetNumber) {
 		// TODO Auto-generated method stub
 		return assetMapper.getScrpRecored(assetNumber);
+	}
+
+	@Override
+	public List<Asset> getbujiuAssets() {
+		// TODO Auto-generated method stub
+		return assetMapper.getbujiuAssets();
+	}
+
+	@Override
+	public List<AssetPd> getUnpdAsset() {
+		// TODO Auto-generated method stub
+		return assetMapper.getUnpdAsset();
+	}
+
+	@Override
+	public void updateSoftAssetOne(Asset asset) {
+		// TODO Auto-generated method stub
+		assetMapper.updateSoftAssetOne(asset);
+		
+	}
+
+	@Override
+	public List<Asset> getAllSoftAsset() {
+		// TODO Auto-generated method stub
+		return assetMapper.getAllSoftAsset();
+	}
+
+	@Override
+	public List<Map<String,Object>> getBeShowData() {
+		// TODO Auto-generated method stub
+		return assetMapper.getBeShowData();
+	}
+
+	@Override
+	public int deleteSoft(String assetNumber) {
+		// TODO Auto-generated method stub
+		 return assetMapper.deleteSoft(assetNumber);
 	}
 	
 	

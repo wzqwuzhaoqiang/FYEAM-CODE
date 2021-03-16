@@ -24,5 +24,6 @@ public class AssetTransfer  extends BaseEntity{
 	String handoverCpt;
 	Boolean isFT;
 	String downloadFile;
+	String department;
 	
 }

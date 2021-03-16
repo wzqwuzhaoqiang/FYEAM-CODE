@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -21,9 +22,11 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,10 +43,12 @@ import cn.hutool.core.collection.CollectionUtil;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
 import com.fuyaogroup.eam.common.model.Page;
 import com.fuyaogroup.eam.common.service.WeixinMessageService;
 import com.fuyaogroup.eam.common.service.WeixinService;
+import com.fuyaogroup.eam.common.service.qtfwWeixinService;
 import com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
@@ -52,6 +57,7 @@ import com.fuyaogroup.eam.modules.fusion.service.AssetPdBatService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 import com.fuyaogroup.eam.util.FusionEAMAPIUtil;
+import com.google.common.base.Joiner;
 
 @Slf4j
 @Controller
@@ -106,6 +112,10 @@ public class PdAssetManageController {
 	
 	@Autowired
 	AssetrPdMapper assetPd;
+	
+	@Autowired
+	qtfwWeixinService qtfws;
+	
 	
 	@Autowired
 	private FusionEAMAPIUtil fuEAMUtil=new FusionEAMAPIUtil();
@@ -282,6 +292,10 @@ public class PdAssetManageController {
 		String batId = batFormatter.format(nowDate) ;
 		List<AssetPdBat> batList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,AssetPdBat.class);
 		AssetPdBat bat = batList.get(0);
+		Date std = myFormatter.parse(myFormatter.format(bat.getPdStartDate()));
+		Date et = myFormatter.parse(myFormatter.format(bat.getPdEndDate()));
+		bat.setPdStartDate(std);
+		bat.setPdEndDate(et);
 		if(DateUtils.isSameDay(nowDate,bat.getPdStartDate())||nowDate.after(bat.getPdStartDate())){
 			return "增加失败，盘点开始日期，不能小于当前日期";
 		}
@@ -293,6 +307,7 @@ public class PdAssetManageController {
 		bat.setPdBatCode(batId.substring(2));
 		bat.setOrgList(orgList);
 		bat.setISAll("1");//都选不是
+		bat.setHeadId("");
 		if(isCanAddBat(bat)){
 			assetPdBatSevice.insertOne(bat);
 			this.createChecks(bat);
@@ -470,7 +485,7 @@ public class PdAssetManageController {
 					 +"序列号:"+apd.getSerialNumber()+"\n"
 					 +"型号:"+apd.getAssetModel()+"\n"
 					 +"配置:"+apd.getAllocation()+"\n"
-					 		+ "(内部测试  )");
+					 		);
 					 //由于此次盘点时间结束！您还没完成资产盘点。 请点击微信下方“扫一扫”，扫描您的办公资产上粘贴的二维码
 					
 				}
@@ -489,5 +504,113 @@ public class PdAssetManageController {
 
 		}
 	 
+	 @RequestMapping(value = "/bujiuControll",method = RequestMethod.POST)
+		@CrossOrigin(origins = "*")
+		@ResponseBody
+		private String bujiuControll() {
+//		 List<Asset> list = assetSevice.getbujiuAssets();
+//		 if(!CollectionUtil.isEmpty(list)) {
+//			 assetPdSevice.createAllAssetPd(Long.parseLong(200615708+""), list);
+//			 return "操作成功";
+//		 }
+//		 return "操作失败";
+		 String serial = "";
+		 List<AssetPd> pdlist = assetSevice.getUnpdAsset();
+		 for(AssetPd pd:pdlist) {
+			 serial = pd.getSerialNumber();
+			 if(serial!=null&&!serial.equals("")) {
+				 List<Asset> asset = assetSevice.getBySerialNumber(serial);
+				 if(asset.size()>0) {
+					 pd.setAssetNumber(asset.get(0).getAssetNumber());
+						pd.setUserName(asset.get(0).getUsername());
+						pd.setDepartment(asset.get(0).getWorkCenterName());
+						pd.setOrganizationName(asset.get(0).getOrganizationName());
+						pd.setJobNum(asset.get(0).getJobnum());
+						pd.setDescription(asset.get(0).getDescription());
+						pd.setAssetModel(asset.get(0).getAssetmodel());
+						pd.setAllocation(asset.get(0).getAllocation());
+						assetPdSevice.updateAssetPd(pd);
+				 } 
+			 }
+			 
+		 }
+		 
+		 return "操作成功";
+		}
+	 
+	 
+	 @RequestMapping(value = "/toSendMessageAgain",method = RequestMethod.POST)
+		@CrossOrigin(origins = "*")
+		@ResponseBody
+		private String toSendMessageAgain(@RequestBody String request) {
+			log.info("盘点提醒信息重新开始发送，开始！");
+			JSONObject ap = (JSONObject) JSONArray.parse(request);
+			String pdBatId = ap.get("pdBatId").toString();
+			List<AssetPd> pdlist= assetPdSevice.sendAgain(pdBatId);
+			System.out.println("批次ID:"+ap.get("pdBatId").toString());
+			System.out.println("批次ID:"+pdlist);
+			//如果您已经盘点了，很抱歉要麻烦您再盘点一下。
+			for(AssetPd apd:pdlist) {
+				wx.getAccessToken();
+				 wxService.send(apd.getJobNum(), "", "需要盘点资产如下:\n"
+				 +"资产编号:"+apd.getAssetNumber()+"\n"
+				 +"序列号:"+apd.getSerialNumber()+"\n"
+				 +"型号:"+apd.getAssetModel()+"\n"
+				 +"配置:"+apd.getAllocation()+"\n"
+				 		+ "(给您带来不便还请见谅，如果未找到资产请联系信息部叶修龙（18811579184）)");
+			}
+		 return "发送成功"+ap.get("pdBatId").toString();
+	 }
+		 
+	 @CrossOrigin(origins = "*")
+	 @RequestMapping(value = "/getLoginUserName",method = RequestMethod.POST)//
+		public @ResponseBody Map<String, String> getLoginUserName(HttpServletRequest request, HttpServletResponse response) throws IOException{
+		 
+		 HttpSession session = request.getSession();
+		 String uname = String.valueOf(session.getAttribute("username")) ;
+		 Map<String, String> map = new HashMap<String, String>(16,(float) 0.75);
+		 map.put("uname", uname);
+		 System.out.println("///////////////////"+uname+"session:"+session);
+		 return map;
+		 
+	 }
+	 
+	 @CrossOrigin(origins = "*")
+	 @RequestMapping(value = "/AssetPdUpdateSubmit",method = RequestMethod.POST)//
+		public @ResponseBody String AssetPdUpdateSubmit(@RequestBody String request) throws IOException{
+		 
+		 List<AssetPd> batList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,AssetPd.class);
+		 if(CollectionUtils.isNotEmpty(batList)&&batList.size()>0) {
+			 AssetPd apd = batList.get(0);
+			 assetPdSevice.updateAssetPd(apd);
+			 return "修改成功";
+		 }else {
+			 return "修改失败，出现异常错误";
+		 }
+	 }
+	 
+	 @RequestMapping(value = "/toSendEmail",method = RequestMethod.POST)
+		@CrossOrigin(origins = "*")
+		@ResponseBody
+		private String toSendEmail(@RequestBody String request) {
+			log.info("盘点提醒信息重新开始发送，开始！");
+			JSONObject ap = (JSONObject) JSONArray.parse(request);
+			String pdBatId = ap.get("pdBatId").toString();
+			List<AssetPd> pdlist= assetPdSevice.sendAgain(pdBatId);
+			System.out.println("批次ID:"+ap.get("pdBatId").toString());
+			System.out.println("批次ID:"+pdlist);
+			//如果您已经盘点了，很抱歉要麻烦您再盘点一下。
+			List<String> lists = new ArrayList<String>();
+			for(AssetPd apd:pdlist) {
+				 String email = qtfws.getUserEmail(apd.getJobNum());
+				 lists.add(email);
+			}
+			String result = Joiner.on(",").join(lists);
+			boolean res = assetPdSevice.sendEmail(result);
+			if(res) {
+				return "发送成功"+ap.get("pdBatId").toString();
+			}
+			return "发送失败"+ap.get("pdBatId").toString();
+	 }
 }
 

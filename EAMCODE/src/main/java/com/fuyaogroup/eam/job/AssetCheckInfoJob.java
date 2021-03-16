@@ -84,37 +84,39 @@ public class AssetCheckInfoJob{
 					 +"序列号:"+asset.getSerialNumber()+"\n"
 					 +"型号:"+asset.getAssetmodel()+"\n"
 					 +"配置:"+asset.getAllocation()+"\n"
-					 		+ "(请点击微信下方“扫一扫”，扫描您的办公资产上粘贴的二维码，完成今年的资产盘点。)");
+					 		+ "(请点击福耀企业微信-EAM系统通知-下方的“盘点扫码”，扫描您的办公资产上粘贴的二维码，完成今年的资产盘点。如果未找到资产请联系信息部叶修龙（18811579184）)");
 				}
 			}
 		}
 		
 	}
 	
-	protected void softWareInfo()
-			throws  JobExecutionException  {
-		log.info("{}:执行定时任务-"+this.getClass().getName()+",软件推送开始...",LocalDateTime.now());
-		Date nowDate = new Date();
-		//1.查找所有软件
-		List<Asset> list  = assetService.getAllCmpAsset(AssetTypeEnum.CMP__SOFT_ASSET);
-				for(Asset asset:list){
-					if(DateUtils.isSameDay(asset.getWarrantyreminderdate(), nowDate)){
-					 wx.getAccessToken();
-					 wxService.send(asset.getJobnum().toString(), "",  "软件维保通知:\n"+asset.getDescription()+","+asset.getAssetmodel()+"\n软件将在"+myFormatter.format(asset.getWarrantdate())+",合同号："+asset.getOABillINum()+"过期，请及时维护！");
-					 EmailUtil eutil = new EmailUtil();
-					List<Config> confList = configService.getEmailList(3);//configType = 3 是邮件组
-					List<String> address = new ArrayList<String>();
-					for(Config config:confList){
-						address.add(config.getConfigVal());//从配置表里面，获取邮件池 configType=3
-					}
-					try {
-						eutil.sendEmail(address, "软件维保通知", "软件维保通知:\n"+asset.getDescription()+","+asset.getAssetmodel()+",合同号："+asset.getOABillINum()+"\n软件将在"+myFormatter.format(asset.getWarrantdate())+"过期，请及时维护！");
-					} catch (Exception e) {
-						throw new JobExecutionException(e.toString());
-					}
-					}
-				}
-			}
+//	protected void softWareInfo()
+//			throws  JobExecutionException  {
+//		System.out.println("111111111111111111111111111111");
+//		System.out.println("111111111111111111111111111111");
+//		log.info("{}:执行定时任务-"+this.getClass().getName()+",软件推送开始...",LocalDateTime.now());
+//		Date nowDate = new Date();
+//		//1.查找所有软件
+//		List<Asset> list  = assetService.getAllCmpAsset(AssetTypeEnum.CMP__SOFT_ASSET);
+//				for(Asset asset:list){
+//					if(DateUtils.isSameDay(asset.getWarrantyreminderdate(), nowDate)){
+//					 wx.getAccessToken();
+//					 wxService.send(asset.getJobnum().toString(), "",  "软件维保通知:\n"+asset.getDescription()+","+asset.getAssetmodel()+"\n软件将在"+myFormatter.format(asset.getWarrantdate())+",合同号："+asset.getOABillINum()+"过期，请及时维护！");
+//					 EmailUtil eutil = new EmailUtil();
+//					List<Config> confList = configService.getEmailList(3);//configType = 3 是邮件组
+//					List<String> address = new ArrayList<String>();
+//					for(Config config:confList){
+//						address.add(config.getConfigVal());//从配置表里面，获取邮件池 configType=3
+//					}
+//					try {
+//						eutil.sendEmail(address, "软件维保通知", "软件维保通知:\n"+asset.getDescription()+","+asset.getAssetmodel()+",合同号："+asset.getOABillINum()+"\n软件将在"+myFormatter.format(asset.getWarrantdate())+"过期，请及时维护！");
+//					} catch (Exception e) {
+//						throw new JobExecutionException(e.toString());
+//					}
+//					}
+//				}
+//			}
 	
 		
 }

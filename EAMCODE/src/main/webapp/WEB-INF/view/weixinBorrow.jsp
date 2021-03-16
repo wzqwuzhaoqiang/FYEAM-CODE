@@ -31,7 +31,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 </head>
 
 <body>
-<h1 style="display: none;">物品借用</h1>
+<h3 style="display: none;">物品借用</h3>
 <div class="maka-canvas" >
   <div class="maka-page maka-page-0" >
   <div class="page-bg-0" >
@@ -63,7 +63,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
     <script type="text/javascript">
     var _loging;
 function fsubmit() {
-	//alert(imgurl);
+	//alert("成功提交");
 	var turnback;
 	var re = new RegExp("^[0-9]*[1-9][0-9]*$");
 	var tn = document.getElementById("thingName").value;
@@ -109,10 +109,8 @@ function fsubmit() {
 	
         }
 function firm(message){
-	if(confirm(message+",是否退出？")){ 
-		WeixinJSBridge.call('closeWindow');
-}
-
+	confirm(message);
+	WeixinJSBridge.call('closeWindow');
 	    }
 </script>
   <style type="text/css">

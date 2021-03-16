@@ -1,0 +1,1303 @@
+2020-09-03 00:13:44 -2020-09-03T00:13:44.621:执行定时任务更新资产开始...
+2020-09-03 00:13:44 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:49 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:49 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:52 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:52 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:53 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:53 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:54 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:54 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:55 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:55 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:56 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:56 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:57 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:57 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:58 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:58 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:59 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:37:59 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:00 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:00 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:01 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:01 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:02 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:02 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:03 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:03 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:04 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:06 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-09-03 07:38:37 -=====The Result of FusionRestUtil get is=====>Authorization Required
+2020-09-03 07:38:37 -=====The Result of FusionRestUtil get is=====>null
+2020-09-03 07:38:37 -更新失败，原因+java.lang.NullPointerException
+2020-09-03 07:38:37 -2020-09-03T07:38:37.305:执行定时任务更新资产开始...
+2020-09-03 08:30:33 -Starting EamApplication on gnb781 with PID 18508 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-03 08:30:33 -The following profiles are active: prod
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:30:34 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-03 08:30:34 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-03 08:30:34 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-03 08:30:34 -Finished Spring Data repository scanning in 40ms. Found 0 repository interfaces.
+2020-09-03 08:30:35 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c7ef17d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-03 08:30:35 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-03 08:30:38 -Tomcat initialized with port(s): 9001 (http)
+2020-09-03 08:30:38 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-03 08:30:38 -Starting service [Tomcat]
+2020-09-03 08:30:38 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-03 08:30:38 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-03 08:30:38 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 08:30:38 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 08:30:38 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-03 08:30:38 -Initializing Spring embedded WebApplicationContext
+2020-09-03 08:30:38 -Root WebApplicationContext: initialization completed in 5777 ms
+2020-09-03 08:30:39 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-03 08:30:39 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-03 08:30:39 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 08:30:39 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 08:30:40 -Using default implementation for ThreadExecutor
+2020-09-03 08:30:40 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-03 08:30:40 -Quartz Scheduler v.2.3.0 created.
+2020-09-03 08:30:40 -RAMJobStore initialized.
+2020-09-03 08:30:40 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-03 08:30:40 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-03 08:30:40 -Quartz scheduler version: 2.3.0
+2020-09-03 08:30:40 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5af40e45
+2020-09-03 08:30:40 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 08:30:41 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-03 08:30:41 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-03 08:30:41 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-03 08:30:41 -Clear EntityHelper entityTableMap cache.
+2020-09-03 08:30:42 -Initializing ExecutorService 'taskScheduler'
+2020-09-03 08:30:42 -Starting Quartz Scheduler now
+2020-09-03 08:30:42 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-03 08:30:42 -Loaded the Bouncy Castle security provider.
+2020-09-03 08:30:43 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-03 08:30:43 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-03 08:30:43 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-53324-1599093043077-0:1) is starting
+2020-09-03 08:30:43 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-53324-1599093043077-0:1) started
+2020-09-03 08:30:43 -For help or more information please see: http://activemq.apache.org
+2020-09-03 08:30:43 -Connector vm://localhost started
+2020-09-03 08:30:43 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-03 08:30:43 -Using a shared selector for servlet write/read
+2020-09-03 08:30:43 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-03 08:30:43 -Started EamApplication in 11.031 seconds (JVM running for 12.81)
+2020-09-03 08:31:25 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 08:31:25 -Initializing Servlet 'dispatcherServlet'
+2020-09-03 08:31:25 -Completed initialization in 12 ms
+2020-09-03 08:31:26 -{dataSource-1} inited
+2020-09-03 08:31:26 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 08:31:26 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 08:31:26 -<==      Total: 1
+2020-09-03 08:31:26 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 08:31:26 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 08:31:26 -<==      Total: 1
+2020-09-03 08:31:29 -2020-09-03T08:31:29.349:查询盘点批次列表,开始...
+2020-09-03 08:31:29 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-03 08:31:29 -==> Parameters: 
+2020-09-03 08:31:29 -<==      Total: 13
+2020-09-03 08:31:35 -2020-09-03T08:31:35.060:查询盘点列表,开始...
+2020-09-03 08:31:35 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-03 08:31:35 -==> Parameters: 200604449(Long)
+2020-09-03 08:31:35 -<==      Total: 617
+2020-09-03 08:31:35 -2020-09-03T08:31:35.492:查询盘点列表,结束...
+2020-09-03 08:32:20 -2020-09-03T08:32:20.202:查询盘点列表,开始...
+2020-09-03 08:32:21 -2020-09-03T08:32:21.958:查询盘点列表,结束...
+2020-09-03 08:37:09 -Starting EamApplication on gnb781 with PID 59112 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-03 08:37:09 -The following profiles are active: prod
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 08:37:11 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-03 08:37:11 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-03 08:37:11 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-03 08:37:11 -Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2020-09-03 08:37:12 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$64554b0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-03 08:37:12 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-03 08:37:14 -Tomcat initialized with port(s): 9001 (http)
+2020-09-03 08:37:14 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-03 08:37:14 -Starting service [Tomcat]
+2020-09-03 08:37:14 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-03 08:37:14 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-03 08:37:15 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 08:37:15 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 08:37:15 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-03 08:37:15 -Initializing Spring embedded WebApplicationContext
+2020-09-03 08:37:15 -Root WebApplicationContext: initialization completed in 5566 ms
+2020-09-03 08:37:15 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-03 08:37:15 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-03 08:37:15 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 08:37:16 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 08:37:16 -Using default implementation for ThreadExecutor
+2020-09-03 08:37:16 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-03 08:37:16 -Quartz Scheduler v.2.3.0 created.
+2020-09-03 08:37:16 -RAMJobStore initialized.
+2020-09-03 08:37:16 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-03 08:37:16 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-03 08:37:16 -Quartz scheduler version: 2.3.0
+2020-09-03 08:37:16 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1a336906
+2020-09-03 08:37:17 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 08:37:17 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-03 08:37:17 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-03 08:37:17 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-03 08:37:17 -Clear EntityHelper entityTableMap cache.
+2020-09-03 08:37:18 -Initializing ExecutorService 'taskScheduler'
+2020-09-03 08:37:19 -Starting Quartz Scheduler now
+2020-09-03 08:37:19 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-03 08:37:19 -Loaded the Bouncy Castle security provider.
+2020-09-03 08:37:19 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-03 08:37:19 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-03 08:37:19 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-53537-1599093439515-0:1) is starting
+2020-09-03 08:37:19 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-53537-1599093439515-0:1) started
+2020-09-03 08:37:19 -For help or more information please see: http://activemq.apache.org
+2020-09-03 08:37:19 -Connector vm://localhost started
+2020-09-03 08:37:19 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-03 08:37:19 -Using a shared selector for servlet write/read
+2020-09-03 08:37:19 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-03 08:37:19 -Started EamApplication in 10.838 seconds (JVM running for 12.447)
+2020-09-03 08:38:00 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 08:38:00 -Initializing Servlet 'dispatcherServlet'
+2020-09-03 08:38:00 -Completed initialization in 16 ms
+2020-09-03 08:38:00 -{dataSource-1} inited
+2020-09-03 08:38:00 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 08:38:00 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 08:38:00 -<==      Total: 1
+2020-09-03 08:38:01 -2020-09-03T08:38:01.510:查询盘点列表,开始...
+2020-09-03 08:38:01 -==>  Preparing: SELECT * FROM ASSETPD where 1=1 
+2020-09-03 08:38:01 -==> Parameters: 
+2020-09-03 08:38:03 -<==      Total: 2989
+2020-09-03 08:38:03 -2020-09-03T08:38:03.041:查询盘点列表,结束...
+2020-09-03 08:38:45 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 08:38:45 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 08:38:45 -<==      Total: 1
+2020-09-03 08:39:45 -2020-09-03T08:39:45.907:查询盘点批次列表,开始...
+2020-09-03 08:39:45 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-03 08:39:45 -==> Parameters: 
+2020-09-03 08:39:45 -<==      Total: 13
+2020-09-03 08:39:52 -2020-09-03T08:39:52.115:查询盘点列表,开始...
+2020-09-03 08:39:52 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-03 08:39:52 -==> Parameters: 200604449(Long)
+2020-09-03 08:39:52 -<==      Total: 617
+2020-09-03 08:39:52 -2020-09-03T08:39:52.382:查询盘点列表,结束...
+2020-09-03 08:49:48 -2020-09-03T08:49:48.445:查询盘点批次列表,开始...
+2020-09-03 08:49:53 -2020-09-03T08:49:53.270:查询盘点列表,开始...
+2020-09-03 08:49:53 -2020-09-03T08:49:53.591:查询盘点列表,结束...
+2020-09-03 08:50:18 -2020-09-03T08:50:18.699:查询盘点批次列表,开始...
+2020-09-03 08:50:23 -2020-09-03T08:50:23.454:查询盘点列表,开始...
+2020-09-03 08:50:23 -2020-09-03T08:50:23.768:查询盘点列表,结束...
+2020-09-03 10:07:26 -2020-09-03T10:07:26.521:查询盘点批次列表,开始...
+2020-09-03 11:10:00 -2020-09-03T11:10:00.022:执行定时任务-com.fuyaogroup.eam.job.QtfwMessageJob,开始...
+2020-09-03 11:10:00 -进入定时任务的循环...............................
+2020-09-03 11:10:00 -进入定时任务的循环...............................
+2020-09-03 11:10:02 -invalid access_token
+2020-09-03 13:50:34 -Starting EamApplication on gnb781 with PID 67084 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-03 13:50:34 -The following profiles are active: prod
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 13:50:36 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-03 13:50:36 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-03 13:50:36 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-03 13:50:36 -Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2020-09-03 13:50:37 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$78a62506] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-03 13:50:37 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-03 13:50:40 -Tomcat initialized with port(s): 9001 (http)
+2020-09-03 13:50:40 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-03 13:50:40 -Starting service [Tomcat]
+2020-09-03 13:50:40 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-03 13:50:40 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-03 13:50:40 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 13:50:40 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 13:50:40 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-03 13:50:40 -Initializing Spring embedded WebApplicationContext
+2020-09-03 13:50:40 -Root WebApplicationContext: initialization completed in 5746 ms
+2020-09-03 13:50:41 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-03 13:50:41 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-03 13:50:41 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 13:50:41 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 13:50:42 -Using default implementation for ThreadExecutor
+2020-09-03 13:50:42 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-03 13:50:42 -Quartz Scheduler v.2.3.0 created.
+2020-09-03 13:50:42 -RAMJobStore initialized.
+2020-09-03 13:50:42 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-03 13:50:42 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-03 13:50:42 -Quartz scheduler version: 2.3.0
+2020-09-03 13:50:42 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6c1f15df
+2020-09-03 13:50:42 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 13:50:43 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-03 13:50:43 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-03 13:50:43 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-03 13:50:43 -Clear EntityHelper entityTableMap cache.
+2020-09-03 13:50:44 -Initializing ExecutorService 'taskScheduler'
+2020-09-03 13:50:44 -Starting Quartz Scheduler now
+2020-09-03 13:50:44 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-03 13:50:44 -Loaded the Bouncy Castle security provider.
+2020-09-03 13:50:45 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-03 13:50:45 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-03 13:50:45 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-59180-1599112245123-0:1) is starting
+2020-09-03 13:50:45 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-59180-1599112245123-0:1) started
+2020-09-03 13:50:45 -For help or more information please see: http://activemq.apache.org
+2020-09-03 13:50:45 -Connector vm://localhost started
+2020-09-03 13:50:45 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-03 13:50:45 -Using a shared selector for servlet write/read
+2020-09-03 13:50:45 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-03 13:50:45 -Started EamApplication in 11.163 seconds (JVM running for 12.915)
+2020-09-03 13:52:35 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 13:52:35 -Initializing Servlet 'dispatcherServlet'
+2020-09-03 13:52:35 -Completed initialization in 16 ms
+2020-09-03 13:52:36 -{dataSource-1} inited
+2020-09-03 13:52:36 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:52:36 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:52:36 -<==      Total: 1
+2020-09-03 13:52:36 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:52:36 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:52:37 -<==      Total: 1
+2020-09-03 13:57:37 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:57:37 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:57:37 -<==      Total: 1
+2020-09-03 13:59:02 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:59:02 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:59:02 -<==      Total: 1
+2020-09-03 13:59:02 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:59:02 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:59:02 -<==      Total: 1
+2020-09-03 13:59:56 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 13:59:56 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 13:59:56 -<==      Total: 1
+2020-09-03 14:05:12 -Starting EamApplication on gnb781 with PID 46512 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-03 14:05:12 -The following profiles are active: prod
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-03 14:05:13 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-03 14:05:14 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-03 14:05:14 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-03 14:05:14 -Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2020-09-03 14:05:14 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4f1e04b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-03 14:05:14 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-03 14:05:17 -Tomcat initialized with port(s): 9001 (http)
+2020-09-03 14:05:17 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-03 14:05:17 -Starting service [Tomcat]
+2020-09-03 14:05:17 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-03 14:05:17 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-03 14:05:18 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 14:05:18 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-03 14:05:18 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-03 14:05:18 -Initializing Spring embedded WebApplicationContext
+2020-09-03 14:05:18 -Root WebApplicationContext: initialization completed in 5822 ms
+2020-09-03 14:05:18 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-03 14:05:18 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-03 14:05:18 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 14:05:18 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-03 14:05:19 -Using default implementation for ThreadExecutor
+2020-09-03 14:05:19 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-03 14:05:19 -Quartz Scheduler v.2.3.0 created.
+2020-09-03 14:05:19 -RAMJobStore initialized.
+2020-09-03 14:05:19 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-03 14:05:19 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-03 14:05:19 -Quartz scheduler version: 2.3.0
+2020-09-03 14:05:19 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7ecb9e17
+2020-09-03 14:05:20 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-03 14:05:20 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-03 14:05:20 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-03 14:05:20 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-03 14:05:20 -Clear EntityHelper entityTableMap cache.
+2020-09-03 14:05:21 -Initializing ExecutorService 'taskScheduler'
+2020-09-03 14:05:22 -Starting Quartz Scheduler now
+2020-09-03 14:05:22 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-03 14:05:22 -Loaded the Bouncy Castle security provider.
+2020-09-03 14:05:22 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-03 14:05:22 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-03 14:05:22 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-59586-1599113122389-0:1) is starting
+2020-09-03 14:05:22 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-59586-1599113122389-0:1) started
+2020-09-03 14:05:22 -For help or more information please see: http://activemq.apache.org
+2020-09-03 14:05:22 -Connector vm://localhost started
+2020-09-03 14:05:22 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-03 14:05:22 -Using a shared selector for servlet write/read
+2020-09-03 14:05:22 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-03 14:05:22 -Started EamApplication in 11.178 seconds (JVM running for 13.0)
+2020-09-03 14:06:08 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-03 14:06:08 -Initializing Servlet 'dispatcherServlet'
+2020-09-03 14:06:08 -Completed initialization in 19 ms
+2020-09-03 14:06:09 -{dataSource-1} inited
+2020-09-03 14:06:09 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:06:09 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:06:09 -<==      Total: 1
+2020-09-03 14:06:09 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:06:09 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:06:09 -<==      Total: 1
+2020-09-03 14:06:18 -2020-09-03T14:06:18.901:查询盘点批次列表,开始...
+2020-09-03 14:06:18 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-03 14:06:18 -==> Parameters: 
+2020-09-03 14:06:18 -<==      Total: 13
+2020-09-03 14:06:23 -2020-09-03T14:06:23.893:查询盘点列表,开始...
+2020-09-03 14:06:24 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-03 14:06:24 -==> Parameters: 200604449(Long)
+2020-09-03 14:06:24 -<==      Total: 617
+2020-09-03 14:06:24 -2020-09-03T14:06:24.475:查询盘点列表,结束...
+2020-09-03 14:09:13 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:09:13 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:09:13 -<==      Total: 1
+2020-09-03 14:09:13 -2020-09-03T14:09:13.902:查询盘点列表,开始...
+2020-09-03 14:09:13 -==>  Preparing: SELECT * FROM ASSETPD where 1=1 
+2020-09-03 14:09:13 -==> Parameters: 
+2020-09-03 14:09:15 -<==      Total: 2989
+2020-09-03 14:09:15 -2020-09-03T14:09:15.482:查询盘点列表,结束...
+2020-09-03 14:09:17 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:09:17 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:09:17 -<==      Total: 1
+2020-09-03 14:09:45 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:09:45 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:09:45 -<==      Total: 1
+2020-09-03 14:09:45 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:09:45 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:09:45 -<==      Total: 1
+2020-09-03 14:09:47 -2020-09-03T14:09:47.882:查询盘点批次列表,开始...
+2020-09-03 14:09:47 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-03 14:09:47 -==> Parameters: 
+2020-09-03 14:09:47 -<==      Total: 13
+2020-09-03 14:09:51 -2020-09-03T14:09:51.027:查询盘点列表,开始...
+2020-09-03 14:09:51 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-03 14:09:51 -==> Parameters: 191218481(Long)
+2020-09-03 14:09:51 -<==      Total: 532
+2020-09-03 14:09:51 -2020-09-03T14:09:51.252:查询盘点列表,结束...
+2020-09-03 14:17:23 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-03 14:17:23 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-03 14:17:23 -<==      Total: 1

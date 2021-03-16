@@ -31,7 +31,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 </head>
 
 <body>
-<h1 style="display: none;">归还物品</h1>
+<h3 style="display: none;">归还物品</h3>
 <div class="maka-canvas" >
   <div class="maka-page maka-page-0" >
   <div class="page-bg-0" >
@@ -46,10 +46,10 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 <div class="field-wrapper" ><label>借用人工号</label><input id="userid" name="userid" class="input-style" type="text" value="${windowServer.borrowerId}" readonly	/></div>
 <div class="field-wrapper" ><label>借用人名字</label><input id="userName" name="userName" class="input-style" type="text" value="${windowServer.borrowerName}" readonly/></div>
 <div class="field-wrapper" ><label>物品名称</label><input   id="thingName" name="thingName" class="input-style" type="text" value="${windowServer.tools}"	readonly/></div>
-<div class="field-wrapper" ><label>数量</label><input      id="count" name="count" class="input-style"  	value="${windowServer.count}"	readonly/></div>
+<!--  <div class="field-wrapper" ><label>数量</label><input      id="count" name="count" class="input-style"  	value="${windowServer.count}"	readonly/></div> -->
 <div class="field-wrapper" ><label>借用时间</label><input   id="borrowTime" name="borrowTime" class="input-style" type="text" value="${windowServer.borrowTime}" readonly	/></div>
 <div class="field-wrapper" ><label>归还时间</label><input   id="currentTime" name="currentTime" class="input-style" type="text" value="${currentTime}" readonly	/></div>
-<div class="field-wrapper" ><label>联系方式</label><input   id="mobile" name="mobile" class="input-style" type="text" value="${windowServer.mobile}" readonly	/></div>
+<!--<div class="field-wrapper" ><label>联系方式</label><input   id="mobile" name="mobile" class="input-style" type="text" value="${windowServer.mobile}" readonly	/></div>-->
 <div><label class="label-style2">请仔细核对以上信息，是否和本人一致。</label></div>
 <div class="field-wrapper" ><input type="button" class = "verify-button" value="确认" onclick="fsubmit()"/></div>
 </div>
@@ -92,11 +92,8 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         	
                 }
         	function firm(message){
-        		if(confirm(message+",是否退出吗？")){ 
-        			
-        			WeixinJSBridge.call('closeWindow');
-        }
-        	
+        		confirm(message) 
+        		WeixinJSBridge.call('closeWindow');
         		    }
 
 </script>

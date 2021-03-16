@@ -27,6 +27,7 @@ import com.fuyaogroup.eam.modules.fusion.model.QtfwThing;
 
 @Service
 public class ReadExcel {
+	private static  SimpleDateFormat simpleDateFormat3=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static  SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-ddHHmmss");
 	private static  SimpleDateFormat simpleDateFormat2=new SimpleDateFormat("yyyy-MM-dd");
 
@@ -556,7 +557,7 @@ public class ReadExcel {
                    asset.setAssetmodel(cell.getStringCellValue());}
                    else if(c==5){
                 	   cell.setCellType(CellType.STRING);
-                   asset.setSoftType(2);}
+                   asset.setSoftType(Integer.valueOf(cell.getStringCellValue()));}
                    else if(c==6){
                 	   cell.setCellType(CellType.STRING);
                    asset.setOABillINum(cell.getStringCellValue());}
@@ -570,20 +571,30 @@ public class ReadExcel {
                 	   cell.setCellType(CellType.STRING);
                    asset.setSource(Integer.valueOf(cell.getStringCellValue()));}
                    else if(c==10){
-                	   Date date  =  cell.getDateCellValue();
-                   asset.setUsingstarttime(date);}
+                	   cell.setCellType(CellType.STRING);
+                	   String starttime = cell.getStringCellValue();
+                	   if(starttime!=null&&!"".equals(starttime)) {
+                		   Date date  = simpleDateFormat3.parse(starttime);
+                           asset.setUsingstarttime(date);}
+                	   }
+                	   
                    else if(c==11){
-                	   Date dt  =  cell.getDateCellValue();
-                   asset.setWarrantdate(dt);
-                   int mm = dt.getMonth();
-            	   if(mm>3) {
-            		   dt.setMonth(mm-3);
-            	   }else {
-            		   dt.setYear(dt.getYear()-1);
-            		   dt.setMonth(dt.getMonth()+9);
-            	   }
-               asset.setWarrantyreminderdate(dt);
-                   }
+                	   
+                	   cell.setCellType(CellType.STRING);
+                	   String starttime = cell.getStringCellValue();
+                	   if(starttime!=null&&!"".equals(starttime)) {
+                		   Date dt  = simpleDateFormat3.parse(starttime);
+                		   asset.setWarrantdate(dt);
+                		   int mm = dt.getMonth();
+                    	   if(mm>3) {
+                    		   dt.setMonth(mm-3);
+                    	   }else {
+                    		   dt.setYear(dt.getYear()-1);
+                    		   dt.setMonth(dt.getMonth()+9);
+                    	   }
+                       asset.setWarrantyreminderdate(dt);
+                           }
+                	   }
                    else if(c==12){
                 	  // Date time =  d;
                 	   }
@@ -592,15 +603,13 @@ public class ReadExcel {
                    asset.setSuite(Integer.valueOf(cell.getStringCellValue()));}
                    else if(c==14){
                 	   cell.setCellType(CellType.STRING);
-                   asset.setWifimac(cell.getStringCellValue());}
+                   asset.setRemark(cell.getStringCellValue());}
                    
            }
-           //添加客户
-           AssetList.add(asset);
+           
        }
-       
-  
-
+         //添加客户
+           AssetList.add(asset);
        }
        return AssetList;}
 }

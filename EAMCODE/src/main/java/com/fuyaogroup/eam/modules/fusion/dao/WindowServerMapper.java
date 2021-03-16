@@ -35,7 +35,7 @@ public interface WindowServerMapper extends BaseMapper<WindowServer> {
 	@Select("SELECT * FROM WINDOW_SERVER where BORROWERID=#{userId} and STATUS='在借' ")
 	List<WindowServer> queryListByUserId(@Param("userId") String userId);
 
-	@Select("SELECT * FROM WINDOW_SERVER_THING where SERIAL=#{serial}")
+	@Select("SELECT * FROM WINDOW_SERVER_THING where SERIAL=#{serial} and \"status\" = '0'")
 	QtfwThing getQtfwThingById(@Param("serial") String command);
 
 	@Select("SELECT * FROM WINDOW_SERVER where SERIAL=#{serial} and STATUS='在借'")
@@ -46,7 +46,28 @@ public interface WindowServerMapper extends BaseMapper<WindowServer> {
 
 	@Insert("INSERT INTO WINDOW_SERVER_THING(SERIAL,NAME,DEPARTNAME)VALUES(#{serial, jdbcType=VARCHAR},#{name, jdbcType=VARCHAR},#{departName, jdbcType=VARCHAR})")
 	void addqtfw(QtfwThing qft);
+
+	@Select("SELECT * FROM WINDOW_SERVER where SERIAL=#{serial} and STATUS='借用申请' ")
+	WindowServer getSQrecord(@Param("serial")String command);
+
+	@Select("SELECT * FROM WINDOW_SERVER where STATUS='借用申请' ORDER BY BORROWTIME DESC")
+	List<WindowServer> queryAllBorrowByCondition();
+
+	@Select("SELECT * FROM WINDOW_SERVER where BACKCONFIRM='待确认' ORDER BY RETURNTIME DESC")
+	List<WindowServer> queryAllReturnByCondition();
+
+	@Select("SELECT * FROM WINDOW_SERVER where SERIAL=#{serial} and BACKCONFIRM='待确认'  ")
+	WindowServer getReturnSQrecord(@Param("serial")String command);
+
+	@Select("SELECT * FROM WINDOW_SERVER ORDER BY status")
+	List<WindowServer> queryAll();
 	
-	
+	@Select("SELECT * FROM WINDOW_SERVER ORDER BY BORROWTIME DESC")
+	List<WindowServer> queryAllByDescBorrowTime();
+
+	@Update("update WINDOW_SERVER set STATUS=#{ws.status,jdbcType=VARCHAR} where TABLEID = #{ws.tableID, jdbcType=VARCHAR}")
+	void updateWindowServer(@Param("ws")WindowServer ws);
+	@Update("update WINDOW_SERVER_THING set \"status\"=#{ws.status,jdbcType=VARCHAR} where SERIAL = #{ws.serial, jdbcType=VARCHAR}")
+	void updateWindowServerThing(@Param("ws")QtfwThing qtfwThing);
 
 }

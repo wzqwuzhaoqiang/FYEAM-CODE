@@ -33,20 +33,36 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 <body>
 <table cellpadding="0" cellspacing="0" style="margin: 0 auto" width="100%">
                 <tr>
-                    <td width="30%">借用物品        </td>
-                    <td width="30%">数量        </td>
-                    <td width="30%">状态        </td>
+                    <td width="10%">操作        </td>
+                    <td width="10%">借用物品        </td>
+                   <!--   <td width="10%">数量        </td>-->
+                    <td width="10%">状态        </td>
+                    
                 </tr>
 <c:forEach items="${inBorrowList}" var="obj">
                  <tr>
-                     <td width="30%">${obj.tools}</td>
-                     <td width="30%">${obj.count}</td>
-                     <td width="30%">${obj.status}</td>
+                     <td width="10%"><button value="${obj.serial}" onclick="rebackSQ(this.value)">申请归还</button></td>
+                     <td width="10%">${obj.tools}</td>
+                   <!--   <td width="10%">${obj.count}</td>-->
+                     <td width="10%">${obj.status}</td>
+                     
                  </tr>
 </c:forEach>
 </table>
     <script type="text/javascript">
 
+    //var _loging;
+    function rebackSQ(serial) {
+    	//var serial = "FYJT-DN-001";
+    	window.location.href="createReturnBackMessage?command="+serial;
+		
+	}
+    function firm(message){
+    	if(confirm(message+",是否退出？")){ 
+    		WeixinJSBridge.call('closeWindow');
+    }
+
+    	    }
 </script>
   <style type="text/css">
     img {

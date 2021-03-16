@@ -36,31 +36,53 @@ int end= (int)session.getAttribute("end");
 <body>
 <table width="100%">
                 <tr>
-                    <td width="20%">借用人工号        </td>
+                    <td width="20%">操作        </td>
+                    <td width="30%">借用时间        </td>
+                    <td width="30%">借用物品        </td>
+                    <!-- <td width="20%">联系方式        </td>
+                    <td width="20%">借用人工号        </td> -->
                     <td width="20%">借用人姓名        </td>
-                    <td width="20%">借用物品        </td>
-                    <td width="20%">联系方式        </td>
-                    <td width="20%">借用时间        </td>
+                    
+                    
+                    
                 </tr>
                 
 <c:forEach items="${listSize}" var="obj" begin="<%=start %>" end="<%=end %>">
 <br><div style="position:relative; width:600; height:1px; background-color:break;"></div></br>
                  <tr>
-                     <td width="20%">${obj.borrowerId}</td>
+                     <td width="20%"><button value="${obj.tableID}" onclick="rebackSQ(this.value)">催还</button></td>
+                     <td width="30%">${obj.borrowTime}</td>
+                     <td width="30%">${obj.tools}</td>
+                    <!--  <td width="20%">${obj.mobile}</td>
+                     <td width="20%">${obj.borrowerId}</td> -->
                      <td width="20%">${obj.borrowerName}</td>
-                     <td width="20%">${obj.tools}</td>
-                     <td width="20%">${obj.mobile}</td>
-                     <td width="20%">${obj.borrowTime}</td>
+                     
+                     
+                     
                  </tr>
 </c:forEach>
 </table>
 <p></p>
 <p></p>
 <div class="jz">
-<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc625758e50b5ced1&redirect_uri=http%3a%2f%2fwxtest.fuyaogroup.com%3a8888%2feam%2ftoAddShow&response_type=code&scope=snsapi_base&state=#wechat_redirect">上一页</a>&nbsp;&nbsp;&nbsp;<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc625758e50b5ced1&redirect_uri=http%3a%2f%2fwxtest.fuyaogroup.com%3a8888%2feam%2ftoDetShow&response_type=code&scope=snsapi_base&state=#wechat_redirect">下一页</a>
+<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc625758e50b5ced1&redirect_uri=http%3a%2f%2feam.fuyaogroup.com%2feam%2ftoAddShow&response_type=code&scope=snsapi_base&state=#wechat_redirect">上一页</a>&nbsp;&nbsp;&nbsp;<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc625758e50b5ced1&redirect_uri=http%3a%2f%2feam.fuyaogroup.com%2feam%2ftoDetShow&response_type=code&scope=snsapi_base&state=#wechat_redirect">下一页</a>
 </div>
     <script type="text/javascript">
 
+    function rebackSQ(tableID) {
+    	alert("归还提醒信息发送成功!");
+    	window.location.href="hurrybgcontroll?idvalue="+tableID;
+	}
+    function rebackDS(tableID,tools) {
+    	if (confirm("请再次确认"+tools+"是否丢失")==true){ 
+    		window.location.href="dsbgcontroll?idvalue="+tableID;
+    		 }else{ 
+    		  return false; 
+    		 } 
+    	
+	}
+    
+    
 </script>
   <style type="text/css">
     img {

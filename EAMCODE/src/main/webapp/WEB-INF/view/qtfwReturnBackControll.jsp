@@ -52,6 +52,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 <div class="field-wrapper" ><label>联系方式</label><input   id="mobile" name="mobile" class="input-style" type="text" value="${waitrbConfirmObj.mobile}" readonly	/></div>
 <div class="field-wrapper" ><input type="button" class = "verify-button" value="通过申请" onclick="fsubmit('pass')"/></div>
 <p></p>
+
 <div class="field-wrapper" ><input type="button" class = "verify-button" value="取消申请" onclick="fsubmit('cancel')"/></div>
 </div>
 </div>
@@ -64,6 +65,10 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 
 </div></div>
         <script type="text/javascript">
+        
+        
+        
+        
         var _loging;
         function fsubmit(command) {
         	//alert(imgurl);
@@ -105,11 +110,8 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         }
         
         	function firm(message){
-        		if(confirm(message+",是否退出吗？")){ 
-        			
-        			WeixinJSBridge.call('closeWindow');
-        }
-        	
+        		confirm(message);
+        		WeixinJSBridge.call('closeWindow');
         		    }
 
 </script>

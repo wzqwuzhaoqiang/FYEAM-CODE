@@ -18,11 +18,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import com.alibaba.druid.util.StringUtils;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fuyaogroup.eam.modules.fusion.model.WindowServer;
+import com.fuyaogroup.eam.util.ChineseToEnglish;
 @Slf4j
 @Service
 public class qtfwWeixinService {
@@ -258,6 +260,7 @@ public class qtfwWeixinService {
                 if (parser.getCurrentToken() == JsonToken.VALUE_STRING && parser.getCurrentName().equals("name")) {
                     //out.println(parser.getCurrentName().equals("access_token"));
                 	username = parser.getValueAsString().toString();
+                	break;
                 }
             }
 
@@ -298,5 +301,49 @@ public class qtfwWeixinService {
         return mobile;
     }
 
+	/**
+	 * 获取用户信息邮箱信息
+	 */
+	public String getUserEmail(String UserId) {
+        String accesstoken = accessToken == null ? this.getAccessTokenFromWX() : accessToken;
+        String email="";
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet hg = new HttpGet("https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=" + accesstoken + "&userid=" + UserId);
+            ResponseHandler<String> responseHandler = new BasicResponseHandler();
+            String responseBody = httpclient.execute(hg, responseHandler);
+            log.info("远程获取UserName的URL：" +"https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token=" + accesstoken + "&userid=" + UserId);
+            log.info("远程获取UserName：" + responseBody + "");
+            JsonFactory factory = new JsonFactory();
+            JsonParser parser = factory.createJsonParser(responseBody);
+
+            while (parser.nextToken() != JsonToken.END_OBJECT) {
+                //out.println((parser.getCurrentToken() == JsonToken.FIELD_NAME) + "    " + parser.getValueAsString());
+                if (parser.getCurrentToken() == JsonToken.VALUE_STRING && parser.getCurrentName().equals("email")) {
+                    //out.println(parser.getCurrentName().equals("access_token"));
+                	email = parser.getValueAsString().toString();
+                	if(StringUtils.isEmpty(email)) {
+                		JsonParser parser1 = factory.createJsonParser(responseBody);
+                		while (parser1.nextToken() != JsonToken.END_OBJECT) {
+                		if (parser1.getCurrentToken() == JsonToken.VALUE_STRING && parser1.getCurrentName().equals("name")) {
+                            //out.println(parser.getCurrentName().equals("access_token"));
+                        	String name = parser1.getValueAsString().toString();
+                        	name = name.substring(1)+"."+name.substring(0,1)+"@fuyaogroup.com";
+                        	email = ChineseToEnglish.getPingYin(name);
+                        	break;
+                        }
+                		}
+                	}
+                	break;
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.toString());
+//            e.printStackTrace();
+            return null;
+        }
+        return email;
+    }
 
 }

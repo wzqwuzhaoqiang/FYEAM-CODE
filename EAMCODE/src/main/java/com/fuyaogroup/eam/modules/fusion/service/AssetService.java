@@ -1,6 +1,7 @@
 package com.fuyaogroup.eam.modules.fusion.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.fuyaogroup.eam.common.model.Page;
 import org.springframework.dao.DataAccessException;
@@ -10,6 +11,7 @@ import com.fuyaogroup.eam.common.enums.AssetTypeEnum;
 import com.fuyaogroup.eam.common.service.IBaseService;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetLifeRecored;
+import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 
 
 /**
@@ -76,7 +78,7 @@ public interface AssetService extends IBaseService<Asset>{
 	/**
 	 * 获取指定资产信息
 	 */
-	public AssetLifeRecored getAssetByNumber(String AssetNumber);
+	public AssetLifeRecored getAssetByNumberr(String AssetNumber);
 
 	/**
 	 * 获取借用记录
@@ -98,6 +100,19 @@ public interface AssetService extends IBaseService<Asset>{
 	 * @return
 	 */
 	public List<AssetLifeRecored> getScrapRecored(String assetNumber);
+
+	public List<Asset> getbujiuAssets();
+
+	public List<AssetPd> getUnpdAsset();
+
+	public void updateSoftAssetOne(Asset asset);
+
+	public List<Asset> getAllSoftAsset();
+
+	public List<Map<String,Object>> getBeShowData();
+
+	public int deleteSoft(String assetNumber);
+
 	
 	
 }

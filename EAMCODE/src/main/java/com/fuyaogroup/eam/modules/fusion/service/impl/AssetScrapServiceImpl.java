@@ -30,6 +30,16 @@ public class AssetScrapServiceImpl extends BaseServiceImpl<AssetScrapMapper, Ass
 		Integer rowEndNum = page.getStar()+page.getPageSize();
 		return asm.queryScrapListByPage(rowStartNum,rowEndNum);
 	}
+	@Override
+	public List<AssetScrap> getUnDoMessager() {
+		// TODO Auto-generated method stub
+		return asm.getUnDoMessager();
+	}
+	@Override
+	public int update(String AssetNumber) {
+		// TODO Auto-generated method stub
+		return asm.update(AssetNumber);
+	}
 
 
 }

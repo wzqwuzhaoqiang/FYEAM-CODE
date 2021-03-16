@@ -1,0 +1,373 @@
+2020-06-29 07:33:26 -2020-06-29T07:33:26.357:执行定时任务更新资产开始...
+2020-06-29 07:33:28 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:30 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:31 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:31 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:32 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:34 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:37 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:39 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:42 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:44 -create connection SQLException, url: jdbc:oracle:thin:@10.112.17.28/capp, errorCode 17002, state null
+java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:389)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:454)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:802)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-06-29 07:33:47 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? 
+2020-06-29 07:33:47 -==> Parameters: 1(Integer)
+2020-06-29 07:33:47 -<==      Total: 3
+2020-06-29 07:33:59 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:33:59 -==> Parameters: 300000006704418(String)
+2020-06-29 07:33:59 -<==      Total: 1
+2020-06-29 07:34:04 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:04 -==> Parameters: 300000003746075(String), G-DEL482(String), BDVWKF2(String), 300000006715159(String), GDEL482(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 024556(String), 4(Integer), DELL 7040(String), i7-6700@3.40GHZ/8G/1T/19寸宽屏(String), null, null, null, null, null, null, null, 2016-09-08(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, 20200500682(String), 陈小龙(String), G-DEL482(String), BDVWKF2(String)
+2020-06-29 07:34:04 -<==    Updates: 1
+2020-06-29 07:34:04 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:04 -==> Parameters: 300000006705294(String)
+2020-06-29 07:34:04 -<==      Total: 1
+2020-06-29 07:34:06 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:06 -==> Parameters: 300000003746075(String), G-NB629(String), 2ZCCYF2(String), 300000006715159(String), GNB629(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 000441(String), 1(Integer), DELL E5470(String), I5-6200-8G-500G-S(String), null, null, null, CN-049TWY-73826-6CR-046L(String), null, null, CN-06TFFF-75661-72H-08HZ(String), 2017-03-17(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 郭宗禹(String), G-NB629(String), 2ZCCYF2(String)
+2020-06-29 07:34:06 -<==    Updates: 1
+2020-06-29 07:34:06 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:06 -==> Parameters: 300000006719140(String)
+2020-06-29 07:34:06 -<==      Total: 1
+2020-06-29 07:34:08 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:08 -==> Parameters: 300000003746075(String), 0001(String), null, 300000006715159(String), 电子邮箱客户端(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 000002(String), null, 2017版(String), null, null, null, null, null, null, null, null, 2019-10-01(Date), null, null, 搜狐公司(String), 36(Integer), 0(Integer), 67899(BigDecimal), 0(Integer), null, null, null, null, OB964300(String), 池良青(String), 0001(String), null
+2020-06-29 07:34:08 -<==    Updates: 1
+2020-06-29 07:34:08 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:08 -==> Parameters: 300000006704413(String)
+2020-06-29 07:34:08 -<==      Total: 1
+2020-06-29 07:34:11 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:11 -==> Parameters: 300000003746075(String), G-DEL579(String), CGBN4R2(String), 300000006715159(String), GDEL579(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 001676(String), 4(Integer), DELL 7060(String), I7-32G-256G-1T(String), CN-085KND-TV100-86F-OKAD(String), null, null, CN-0DV0RH-LO300-86K-1A35(String), null, null, null, 2018-08-08(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 苏秀(String), G-DEL579(String), CGBN4R2(String)
+2020-06-29 07:34:11 -<==    Updates: 1
+2020-06-29 07:34:11 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:11 -==> Parameters: 300000006704423(String)
+2020-06-29 07:34:11 -<==      Total: 1
+2020-06-29 07:34:12 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:12 -==> Parameters: 300000003746075(String), G-DEL406(String), 3XPTMZ1(String), 300000006715159(String), GDEL406(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 000441(String), 4(Integer), DELL 9020(String), core i7-3370M 3.4GHZ/8G/1T/19"LCD（宽屏）(String), null, null, null, CN-0HPJ3M-64180-3AV-02UU(String), null, null, null, 2013-12-02(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 郭宗禹(String), G-DEL406(String), 3XPTMZ1(String)
+2020-06-29 07:34:12 -<==    Updates: 1
+2020-06-29 07:34:12 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:12 -==> Parameters: 300000006707930(String)
+2020-06-29 07:34:12 -<==      Total: 1
+2020-06-29 07:34:13 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:13 -==> Parameters: 300000003746075(String), G-NB624(String), 4TGGWF2(String), 300000006715159(String), GNB624(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 112520(String), 1(Integer), DELL E5470(String), I7-6600-8G-1T-摄像-独显(String), null, null, null, 1639HS00MDM8(String), null, null, CN-06TFFF-75661-71D-00WC(String), null, null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, 4TGGWF2200326(String), 池良青(String), G-NB624(String), 4TGGWF2(String)
+2020-06-29 07:34:13 -<==    Updates: 1
+2020-06-29 07:34:13 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:13 -==> Parameters: 300000006707935(String)
+2020-06-29 07:34:13 -<==      Total: 1
+2020-06-29 07:34:15 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:15 -==> Parameters: 300000003746075(String), GN-B543(String), F5C9QC2(String), 300000006715159(String), GNB543(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 109636(String), 1(Integer), DELL E5470(String), I7-6600U@2.6GHZ/8G/1T/摄像头/独立显卡2G(String), null, null, null, 1622hs061699(String), null, null, CN-0JNKWD-72438-686-1F35(String), 2016-09-08(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 张一弓(String), GN-B543(String), F5C9QC2(String)
+2020-06-29 07:34:15 -<==    Updates: 1
+2020-06-29 07:34:15 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:15 -==> Parameters: 300000006705280(String)
+2020-06-29 07:34:15 -<==      Total: 1
+2020-06-29 07:34:16 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:16 -==> Parameters: 300000003746075(String), G-NB504(String), 87K8LC2(String), 300000006715159(String), GNB504(String), 300000006643319(String), 生产设备(String), 生产设备(String), 信息部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 083380(String), 1(Integer), DELL 5470(String), I5-6200U@2.3GHZ/8G/500G/摄像头(String), null, null, null, 1617HS022E19(String), null, null, CN-0JNKWD-72438-66F-8065-A04(String), 2016-07-26(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 杨丽锋(String), G-NB504(String), 87K8LC2(String)
+2020-06-29 07:34:16 -<==    Updates: 1
+2020-06-29 07:34:16 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:16 -==> Parameters: 300000007184657(String)
+2020-06-29 07:34:16 -<==      Total: 1
+2020-06-29 07:34:17 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:17 -==> Parameters: 300000003746075(String), G-NB554(String), 95FNQC2(String), 300000006715159(String), GNB554(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 084054(String), 2(Integer), DELL 7510(String), I7-6820@2.7GHZ-32G-1T-摄(String), null, null, null, null, null, null, E4-A7-A0-4F-E3-A9(String), null, null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 陈印成(String), G-NB554(String), 95FNQC2(String)
+2020-06-29 07:34:17 -<==    Updates: 1
+2020-06-29 07:34:17 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:17 -==> Parameters: 300000007195393(String)
+2020-06-29 07:34:17 -<==      Total: 1
+2020-06-29 07:34:19 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:19 -==> Parameters: 300000003746075(String), G-NB356(String), HZDQL12(String), 300000006715159(String), GNB356(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 045402(String), 2(Integer), DELL M4800(String), I7-4700MQ/16G（2*8G）1600/1T/独立显卡2 GB NVIDIA K2100M/DVD刻录(String), null, null, null, CN-0MF3JY-71581-44L-09OD(String), null, null, CN-0DW5G3-73245-474-02N4(String), 2014-09-16(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 廖少华(String), G-NB356(String), HZDQL12(String)
+2020-06-29 07:34:19 -<==    Updates: 1
+2020-06-29 07:34:19 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:19 -==> Parameters: 300000007207731(String)
+2020-06-29 07:34:19 -<==      Total: 1
+2020-06-29 07:34:20 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:20 -==> Parameters: 300000003746075(String), G-NB794(String), 5MT50N2(String), 300000006715159(String), GNB794(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 004288(String), 1(Integer),  DELL 5480(String), I5-8G-500G(String), null, null, null, 1735HS018H89(String), null, null, CN-0G4X7T-LOCOO-81U-4814(String), 2018-03-13(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 林丽平(String), G-NB794(String), 5MT50N2(String)
+2020-06-29 07:34:20 -<==    Updates: 1
+2020-06-29 07:34:20 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:20 -==> Parameters: 300000007195406(String)
+2020-06-29 07:34:20 -<==      Total: 1
+2020-06-29 07:34:21 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:21 -==> Parameters: 300000003746075(String), G-NB386(String), 562HN32(String), 300000006715159(String), GNB386(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 050631(String), 2(Integer), DELL M4800(String), i7-4610M 3.0GHZ/16G/500G/DVD-CDROM(String),  (String), null, null, 1412009529(String), null, null, CN-0WW4XY-48661-53C-1KS6(String), 2015-04-24(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 林启明(String), G-NB386(String), 562HN32(String)
+2020-06-29 07:34:21 -<==    Updates: 1
+2020-06-29 07:34:21 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:21 -==> Parameters: 300000007195414(String)
+2020-06-29 07:34:21 -<==      Total: 1
+2020-06-29 07:34:22 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:22 -==> Parameters: 300000003746075(String), G-NB929(String), 5CD9037M9W(String), 300000006715159(String), GNB929(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 073559(String), 2(Integer), HP ZBOOK 15G5(String), E3-64G-256G-1T(String), null, null, null, MPMMFB180266142(String), null, null, WGGAC0BARBN0ZK(String), 2019-02-11(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 林寿(String), G-NB929(String), 5CD9037M9W(String)
+2020-06-29 07:34:22 -<==    Updates: 1
+2020-06-29 07:34:22 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:22 -==> Parameters: 300000007195422(String)
+2020-06-29 07:34:22 -<==      Total: 1
+2020-06-29 07:34:24 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:24 -==> Parameters: 300000003746075(String), g-nb600(String), 285TRF2(String), 300000006715159(String), gnb600(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 003734(String), 2(Integer), DELL E7510(String), I7-6820HQ-2.7GHZ-32G-1T+256G-摄像头(String), null, null, null, CN-049TWY-73826-6B5-04E4(String), null, null, CN-0DW5G3-73245-6BU-01C5(String), 2017-01-10(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 欧秀勇(String), g-nb600(String), 285TRF2(String)
+2020-06-29 07:34:24 -<==    Updates: 1
+2020-06-29 07:34:24 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:24 -==> Parameters: 300000007207771(String)
+2020-06-29 07:34:24 -<==      Total: 1
+2020-06-29 07:34:25 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:25 -==> Parameters: 300000003746075(String), G-NB510(String), JWN5LC2(String), 300000006715159(String), GNB510(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 107634(String), 2(Integer), DELL 7510(String), I7-6820HQ@2.7GHZ/32G/1T/摄像头(String), null, null, null, 1617HS022DN9(String), null, null, CN-0WW4XY-48661-66S-422Q-A06(String), 2016-07-27(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 王磊(String), G-NB510(String), JWN5LC2(String)
+2020-06-29 07:34:25 -<==    Updates: 1
+2020-06-29 07:34:25 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:25 -==> Parameters: 300000007195446(String)
+2020-06-29 07:34:25 -<==      Total: 1
+2020-06-29 07:34:26 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:26 -==> Parameters: 300000003746075(String), G-NB459(String), J4JQM72(String), 300000006715159(String), GNB459(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 079546(String), 2(Integer), DELL 7510(String), I7-6820U@2.7GHZ/32G/1T/摄像头(String), null, null, null, 1551HS05V809(String), null, null, CN-0WW4XY-48661-61J-0F7V-A05(String), 2016-03-15(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 王敏(String), G-NB459(String), J4JQM72(String)
+2020-06-29 07:34:26 -<==    Updates: 1
+2020-06-29 07:34:26 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:26 -==> Parameters: 300000007207779(String)
+2020-06-29 07:34:26 -<==      Total: 1
+2020-06-29 07:34:27 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:27 -==> Parameters: 300000003746075(String), G-NB557(String), 15SJQC2(String), 300000006715159(String), GNB557(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 002934(String), 2(Integer), DELL 7510(String), I7-6820@2.7GHZ-32G-1T-摄(String), null, null, null, 1620HS04VGN9(String), null, null, CN-0WW4XY-48661-68A-54BP(String), 2016-09-08(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 王志鑫(String), G-NB557(String), 15SJQC2(String)
+2020-06-29 07:34:27 -<==    Updates: 1
+2020-06-29 07:34:27 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:27 -==> Parameters: 300000007207784(String)
+2020-06-29 07:34:27 -<==      Total: 1
+2020-06-29 07:34:29 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:29 -==> Parameters: 300000003746075(String), G-NB539(String), 26C9QC2(String), 300000006715159(String), GNB539(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 023458(String), 1(Integer), DELL E5470(String), i7-6600@2.6GHZ/8G/1T/摄像头(String), null, null, null, 1622HS0606C9(String), null, null, CN-0JNKWD-72438-684-0E8C(String), 2016-09-08(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 魏秀琴(String), G-NB539(String), 26C9QC2(String)
+2020-06-29 07:34:29 -<==    Updates: 1
+2020-06-29 07:34:29 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:29 -==> Parameters: 300000007195474(String)
+2020-06-29 07:34:29 -<==      Total: 1
+2020-06-29 07:34:30 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:30 -==> Parameters: 300000003746075(String), G-NB829(String), 7SNBVN2(String), 300000006715159(String), GNB829(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 003573(String), 2(Integer), DELL 7520(String), E3-32G-256G-1T(String), null, null, null, CN-0IVORH-L0300-85H-0PH2(String), null, null, null, 2018-06-25(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 许主竹(String), G-NB829(String), 7SNBVN2(String)
+2020-06-29 07:34:30 -<==    Updates: 1
+2020-06-29 07:34:30 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:30 -==> Parameters: 300000007195487(String)
+2020-06-29 07:34:30 -<==      Total: 1
+2020-06-29 07:34:31 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:31 -==> Parameters: 300000003746075(String), G-NB447(String), 3NKXJ72(String), 300000006715159(String), GNB447(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 125927(String), 2(Integer), DELL 7510(String), I7-6820U@2.7GHZ/16G/1T/摄像头(String), null, null, null, 1551HS08NM49(String), null, null, CN-0DW5G3-73245-61F-00B7-A03(String), 2016-02-17(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 叶允祥(String), G-NB447(String), 3NKXJ72(String)
+2020-06-29 07:34:31 -<==    Updates: 1
+2020-06-29 07:34:31 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:31 -==> Parameters: 300000007197300(String)
+2020-06-29 07:34:31 -<==      Total: 1
+2020-06-29 07:34:32 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:32 -==> Parameters: 300000003746075(String), FY613-DEL057(String), 1J9QMX1(String), 300000006715159(String), GNB476(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 014850(String), 2(Integer), DELL M4700(String), I7-3540 3.0G/16G/500G/DVD(String), null, null, null, null, null, null, null, 2013-07-26(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 张辉(String), FY613-DEL057(String), 1J9QMX1(String)
+2020-06-29 07:34:32 -<==    Updates: 1
+2020-06-29 07:34:32 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:32 -==> Parameters: 300000007195518(String)
+2020-06-29 07:34:33 -<==      Total: 1
+2020-06-29 07:34:34 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:34 -==> Parameters: 300000003746075(String), G-NB937(String), 5CD908131V(String), 300000006715159(String), GNB937(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 053061(String), 2(Integer), HP ZBOOK 15G6(String), E3-64G-256G-1T(String), null, null, null, MPMMFB180145946(String), null, null, WGGAC0BARBS030(String), 2019-03-26(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 张金泉(String), G-NB937(String), 5CD908131V(String)
+2020-06-29 07:34:34 -<==    Updates: 1
+2020-06-29 07:34:34 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:34 -==> Parameters: 300000007197313(String)
+2020-06-29 07:34:34 -<==      Total: 1
+2020-06-29 07:34:35 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:35 -==> Parameters: 300000003746075(String), G-DEL582(String), 7FTZKV2(String), 300000006715159(String), gdel582(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 053061(String), 3(Integer), DELL T5820(String), W-2195-64G-256G-1T(String), CN-005RP9-QDC00-917-0WJB(String), null, null, CN-0PRDV9-LO300-88U-1X0J(String), null, null, null, 2019-03-26(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 张金泉(String), G-DEL582(String), 7FTZKV2(String)
+2020-06-29 07:34:35 -<==    Updates: 1
+2020-06-29 07:34:35 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:35 -==> Parameters: 300000007197318(String)
+2020-06-29 07:34:35 -<==      Total: 1
+2020-06-29 07:34:36 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:36 -==> Parameters: 300000003746075(String), G-NB723(String), 497PGH2(String), 300000006715159(String), GNB723(String), 300000007116627(String), 生产设备(String), 生产设备(String), 产品技术中心(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 000775(String), 2(Integer), DELL 7520(String), I7-32G-256G-1T(String), null, null, null, CN-049TWY-PRC00-77B-00S2(String), null, null, CN-0MHP9C-FPD00-76C-0344(String), 2017-09-18(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 张科(String), G-NB723(String), 497PGH2(String)
+2020-06-29 07:34:36 -<==    Updates: 1
+2020-06-29 07:34:36 -==>  Preparing: SELECT * FROM ASSET a where a.assetid = ? 
+2020-06-29 07:34:36 -==> Parameters: 300000007195282(String)
+2020-06-29 07:34:36 -<==      Total: 1
+2020-06-29 07:34:37 -==>  Preparing: update ASSET SET ItemId=?,AssetNumber=?,SerialNumber=?,LocationOrganizationId=?,Description=?,WorkCenterId=?,ItemNumber=?,ItemDescription=?,WorkCenterName=?,OrganizationCode=?,OrganizationName=?,Configuration=?,financialCode=?,jobnum=?,htcIncredible=?,assetmodel=?,allocation=?,displayer=?,macaddress=?,serviceid=?,mouse=?,wifimac=?,keyboard=?,poweradapt=?,usingstarttime=?,updateTime=?,remark=?,manufacturer=?,warrantyperiod=?,warrantStatus=?,amount=?,status=?,softType=?,changeRemark=?,changeTime=?,updateName=?,OABillINum=?,USERNAME=? where AssetNumber=? or SerialNumber=? 
+2020-06-29 07:34:37 -==> Parameters: 300000003746075(String), G-DEL527(String), BTV5VK2(String), 300000006715159(String), GDEL527(String), 300000007116626(String), 生产设备(String), 生产设备(String), 财务部(String), ZC_FY_GROUP(String), 集团管理局(String), null, null, 000915(String), 4(Integer), DELL 5050(String), I5-8G-500G(String), CN-09GKX9-F4C00-76F-CUYB(String), null, null, CN-0DVORH-71616-765-0JFG(String), null, null, null, 2017-08-03(Date), null, null, null, 0(Integer), 0(Integer), 0(BigDecimal), 0(Integer), null, null, null, null, null, 陈伟(String), G-DEL527(String), BTV5VK2(String)
+2020-06-29 07:34:37 -<==    Updates: 1
+2020-06-29 07:34:41 -2020-06-29T07:34:41.532:执行定时任务更新资产开始...
+2020-06-29 08:00:00 -2020-06-29T08:00:00.003:执行定时任务-com.fuyaogroup.eam.job.AssetCheckInfoJob,开始...
+2020-06-29 08:00:00 -2020-06-29T08:00:00.004:执行定时任务-com.fuyaogroup.eam.job.AssetCheckInfoJob,软件推送开始...
+2020-06-29 08:00:00 -==>  Preparing: SELECT /*+ INDEX(USER ID) */ * FROM ASSET a where a.assetType = ? 
+2020-06-29 08:00:00 -==> Parameters: 2(Integer)
+2020-06-29 08:00:00 -<==      Total: 22
+2020-06-29 08:00:00 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-06-29 08:00:00 -==> Parameters: 
+2020-06-29 08:00:00 -Job DEFAULT.assetsoftwareInfoJob threw an unhandled Exception: 
+org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'softWareInfo' on target class [class com.fuyaogroup.eam.job.AssetCheckInfoJob] failed; nested exception is java.lang.IllegalArgumentException: The date must not be null
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:276)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.IllegalArgumentException: The date must not be null
+	at org.apache.commons.lang.time.DateUtils.isSameDay(DateUtils.java:174)
+	at com.fuyaogroup.eam.job.AssetCheckInfoJob.softWareInfo(AssetCheckInfoJob.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:280)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:267)
+	... 3 common frames omitted
+2020-06-29 08:00:00 -Job (DEFAULT.assetsoftwareInfoJob threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'softWareInfo' on target class [class com.fuyaogroup.eam.job.AssetCheckInfoJob] failed; nested exception is java.lang.IllegalArgumentException: The date must not be null
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:276)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The date must not be null
+	at org.apache.commons.lang.time.DateUtils.isSameDay(DateUtils.java:174)
+	at com.fuyaogroup.eam.job.AssetCheckInfoJob.softWareInfo(AssetCheckInfoJob.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:280)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:267)
+	... 3 common frames omitted
+2020-06-29 08:00:00 -<==      Total: 8
+2020-06-29 08:30:06 -close connection error
+java.sql.SQLException: Io 异常: Software caused connection abort: socket write error
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:113)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:147)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:257)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:485)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:1254)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_close(FilterChainImpl.java:186)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_close(StatFilter.java:261)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_close(FilterChainImpl.java:181)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.close(ConnectionProxyImpl.java:115)
+	at com.alibaba.druid.util.JdbcUtils.close(JdbcUtils.java:73)
+	at com.alibaba.druid.pool.DruidDataSource.shrink(DruidDataSource.java:2797)
+	at com.alibaba.druid.pool.DruidDataSource$DestroyTask.run(DruidDataSource.java:2562)
+	at com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2549)

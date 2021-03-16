@@ -7,9 +7,11 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.dom4j.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,7 +22,11 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.mapper.util.StringUtil;
 
 import com.fuyaogroup.eam.common.enums.OAOrgEnum;
+import com.fuyaogroup.eam.common.service.qtfwWeixinMessageService;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
+import com.fuyaogroup.eam.modules.fusion.model.AssetPdBat;
+import com.fuyaogroup.eam.modules.fusion.service.AssetPdBatService;
+import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 import com.fuyaogroup.eam.util.EnumUtil;
 import com.fuyaogroup.eam.util.FusionEAMAPIUtil;
@@ -52,11 +58,21 @@ public class AddAssetController {
 	private static Integer requestNo = 0;
 	
 	@Autowired
+	AssetPdService assetPdService;
+	
+	@Autowired
+	AssetPdBatService assetPdBat;
+	
+	@Autowired
+	qtfwWeixinMessageService qtfwService;
+	
+	@Autowired
 	private FusionEAMAPIUtil fuEAMUtil;
 	
 	@Autowired
 	private AssetService assetService;
 	
+	static SimpleDateFormat myFormatter = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
 	//测试
 	private static  SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	
@@ -78,11 +94,24 @@ public class AddAssetController {
 //			asset.setUsername("陈小龙");
 //			asset.setAmount(new BigDecimal(6800));
 //			asset.setOABillINum("FI202005022OA");
-			if (fuEAMUtil != null) {
+			if (asset != null) {
 				log.info("asset的数据为---------------------"+asset.toString());
 				//asset = fuEAMUtil.createOneAsset(asset);
 				log.info("经过fuEAMUtil接口的方法后asset的数据为---------------------"+asset.toString());
 				assetService.createOne(asset);//数据库增加，一条资产
+				Date nowDate  = myFormatter.parse(myFormatter.format(new Date()));
+				List<AssetPdBat> nowTimeList = assetPdBat.getAllBDate(nowDate);
+				if(!CollectionUtils.isEmpty(nowTimeList)) {
+					for(AssetPdBat apd :nowTimeList) {
+						if(apd.getOrgList().contains(asset.getOrganizationName())) {
+							//盘点里的组织等于更改后的组织，只要更新盘点的资产信息就好
+							List<Asset> alist = new ArrayList<Asset>();
+							alist.add(asset);
+							assetPdService.createAllAssetPd(Long.parseLong(apd.getPdBatId()),alist );
+						}
+				}
+				}
+				
 				List<GroupRecord> grs = new ArrayList<GroupRecord>();
 				grs.add(GroupRecordTool.convertToGroupRecord(asset));
 				reqMo.setResGroupRecord(grs);
@@ -90,6 +119,7 @@ public class AddAssetController {
 				return reqMo;
 			}
 		} catch (Exception e) {
+			qtfwService.send("101798", "", "资产新增出现异常了，赶紧滚去处理.......");
 			log.error("增加固定资产,失败,{}",e.getMessage());
 			log.info(e.getMessage());
 			e.printStackTrace();
@@ -169,7 +199,7 @@ public class AddAssetController {
 		asset.setPoweradapt(reqRecord.getFieldValue("powerAdapt"));
 		asset.setUsername(reqRecord.getFieldValue("userName"));
 		//TODO 设置传入的日期格式YYYY-MM-DD
-		asset.setUsingstarttime(simpleDateFormat.parse(reqRecord.getFieldValue("usingStartTime")));
+		asset.setUsingstarttime(myFormatter.parse(reqRecord.getFieldValue("usingStartTime")));
 		asset.setRemark(reqRecord.getFieldValue("remark"));
 		asset.setManufacturer(reqRecord.getFieldValue("manufacturer"));
 		//保修期 按月
@@ -211,7 +241,7 @@ public class AddAssetController {
 		asset.setPoweradapt(reqRecord.getFieldValue("powerAdapt"));
 		asset.setUsername(reqRecord.getFieldValue("userName"));
 		//TODO 设置传入的日期格式YYYY-MM-DD
-		asset.setUsingstarttime(simpleDateFormat.parse(reqRecord.getFieldValue("usingStartTime")));
+		asset.setUsingstarttime(simpleDateFormat.parse(reqRecord.getFieldValue("usingStartTime")+" 00:00:00"));
 		asset.setRemark(reqRecord.getFieldValue("remark"));
 		asset.setManufacturer(reqRecord.getFieldValue("manufacturer"));
 		//保修期 按月

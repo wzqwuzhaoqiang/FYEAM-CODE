@@ -1,5 +1,7 @@
 eam\fusion\HCMuserTest.class
 eam\fusion\ImageTest.class
-eam\fusion\WeixinTest.class
+eam\fusion\ChineseToEnglishTest.class
+eam\fusion\EmailTest.class
 eam\fusion\MntWorkOrderTest.class
 eam\fusion\YanshouTest.class
+eam\fusion\WeixinTest.class

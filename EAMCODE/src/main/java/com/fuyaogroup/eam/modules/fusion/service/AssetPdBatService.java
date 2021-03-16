@@ -21,7 +21,7 @@ public interface AssetPdBatService extends IBaseService<AssetPdBat>{
 	 * 获取默认的BatId
 	 * @return
 	 */
-	public String getDefaultBatId();
+	public String getDefaultBatId(String orgName);
 	
 	public List<AssetPdBat> getAll();
 	
@@ -30,5 +30,9 @@ public interface AssetPdBatService extends IBaseService<AssetPdBat>{
 	public AssetPdBat getByBatId(Long id);
 	
 	public AssetPdBat insertOne(AssetPdBat bat);
+
+	public List<AssetPdBat> queryByDateOfAssetPdBat(Date nowDate, String organizationName);
+
+//	public List<AssetPdBat> getAllBDate(Date nowDate, String organizationName, String serialNumber);
 }
 

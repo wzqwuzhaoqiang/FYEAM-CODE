@@ -3,11 +3,14 @@ package com.fuyaogroup.eam.modules.fusion.model;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fuyaogroup.eam.common.model.BaseEntity;
 
 @Data
@@ -69,6 +72,8 @@ public class Asset extends BaseEntity{
 	//电源适配器
 	private String poweradapt;
 	//启用时间
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date usingstarttime;
 	//备注
 	private String remark;
@@ -89,6 +94,8 @@ public class Asset extends BaseEntity{
 	//移交人
 	private String handoverPerson;
 	//移交时间	
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date handoverTime;
 	//资产类型
 	private Integer assetType;
@@ -97,8 +104,12 @@ public class Asset extends BaseEntity{
 	//来源
 	private Integer source;
 	//过保日期
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date warrantdate;
 	//过保提醒日期 
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date warrantyreminderdate;
 	//套数
 	private Integer suite;
@@ -107,6 +118,8 @@ public class Asset extends BaseEntity{
 	//合同号
 	private String contractId;
 	
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date  updateTime;
 	
 	
@@ -115,6 +128,8 @@ public class Asset extends BaseEntity{
 	//修改操作的备注
 	private String changeRemark;
 	//修改时间
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date  changeTime;
 	//资产状态
 	private int assetStatus;

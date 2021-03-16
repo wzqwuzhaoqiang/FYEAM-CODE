@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -37,8 +38,10 @@ import com.fuyaogroup.eam.common.model.Page;
 import com.fuyaogroup.eam.modules.fusion.model.Asset;
 import com.fuyaogroup.eam.modules.fusion.model.AssetErrorCord;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
+import com.fuyaogroup.eam.modules.fusion.model.AssetPdBat;
 import com.fuyaogroup.eam.modules.fusion.model.AssetTransfer;
 import com.fuyaogroup.eam.modules.fusion.service.AssetErrorCordService;
+import com.fuyaogroup.eam.modules.fusion.service.AssetPdBatService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetTransferService;
@@ -54,6 +57,11 @@ public class AssetTransferManageController {
 	static SimpleDateFormat infoFormatter = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US);
 	@Autowired
 	FusionEAMAPIUtil frutil = new FusionEAMAPIUtil();
+	
+	@Autowired
+	AssetPdBatService assetPdBat;
+	
+	
 	String startDate;
 	String endDate;
 	String assetNum;
@@ -107,18 +115,22 @@ public class AssetTransferManageController {
 		log.info("增加资产转移表开始！");
 		Asset asset = null; 
 		AssetTransfer at = new AssetTransfer();
+		List<Asset> assets = assetService.getByAssetNumber(at.getAssetNumber());
 		List<AssetTransfer> atList = (new FusionEAMAPIUtil()).getFusionListFromOjbect(request,AssetTransfer.class);
 		at = atList.get(0);
 		if(CollectionUtil.isEmpty(atList)){
 			return "异常错误";
 		}
 		try{
-		List<Asset> assets = assetService.getByAssetNumber(at.getAssetNumber());
+		
 		if(CollectionUtil.isEmpty(assets)){
-			 asset = fuEAMUtil.getOneAssetByAssetNum(at.getAssetNumber());
-			if(asset==null){
-				return "资产："+at.getAssetNumber()+",不存在！";
-			}
+			
+			
+			return "资产："+at.getAssetNumber()+",不存在！";
+//			 asset = fuEAMUtil.getOneAssetByAssetNum(at.getAssetNumber());
+//			if(asset==null){
+//				return "资产："+at.getAssetNumber()+",不存在！";
+//			}
 		}
 		asset = assets.get(0);
 		}catch(Exception e){
@@ -129,18 +141,43 @@ public class AssetTransferManageController {
 		}else{
 			asset.setOABillINum(at.getOABillNum());
 		}
-		
+		if(at.getDepartment()!=null&&!at.getDepartment().equals("")) {
+			asset.setWorkCenterName(at.getDepartment());
+		}
 		asset.setJobnum(at.getJobNum());
 		asset.setUsername(at.getUserName());
 		asset.setHandoverPerson(at.getHandoverPerson());
 		asset.setHandoverTime(at.getHandoverTime());
+		//asset.setOrganizationName(at.getHandoverCpt());
 //		asset.setOABillINum("123");
 		if(at.getHandoverCpt()!=null) {
 			asset.setHandoverCpt(at.getHandoverCpt());
-		}
+			Date nowDate  = myFormatter.parse(myFormatter.format(new Date()));
+			List<AssetPdBat> nowTimeList = assetPdBat.getAllBDate(nowDate);
+			if(!CollectionUtils.isEmpty(nowTimeList)) {
+				for(AssetPdBat apd :nowTimeList) {
+					AssetPd pd = assetPdService.getBySerialNumAndBatid(asset.getSerialNumber(),apd.getPdBatId());
+					if(pd!=null) {
+						if(pd.getOrganizationName().equals(asset.getOrganizationName())) {
+							//盘点里的组织等于更改后的组织，只要更新盘点的资产信息就好
+							pd = this.createPd(asset,pd);
+							assetPdService.updateAssetPd(pd);
+						}else {
+							assetPdService.deleteAssetPd(pd.getPdCode().toString());
+							//盘点里的组织不等于更改后的组织，所以要删除此条盘点信息
+						}
+					}
+				}	
+				for(AssetPdBat apd :nowTimeList) {
+					if(apd.getOrgList().contains(asset.getOrganizationName())) {
+						//盘点里的组织等于更改后的组织，只要更新盘点的资产信息就好
+						assetPdService.createAllAssetPd(Long.parseLong(apd.getPdBatId()), assets);
+					}
+			}
+		}}
         try{
-        fuEAMUtil.updateOneAsset(asset);
-		fuEAMUtil.updateAssetDescriptiveFields(asset, true);
+//        fuEAMUtil.updateOneAsset(asset);
+//		fuEAMUtil.updateAssetDescriptiveFields(asset, true);
 		at.setOABillNum(asset.getOABillINum());
 		assetTransferSevice.createOne(at);
 		assetService.updateOne(asset);
@@ -156,7 +193,18 @@ public class AssetTransferManageController {
 		return "增加成功！";
 
 	}
-	
+		private AssetPd createPd(Asset asset, AssetPd pd) {
+			pd.setAssetNumber(asset.getAssetNumber());
+			pd.setSerialNumber(asset.getSerialNumber());
+			pd.setUserName(asset.getUsername());
+			pd.setDepartment(asset.getWorkCenterName());
+			pd.setOrganizationName(asset.getOrganizationName());
+			pd.setJobNum(asset.getJobnum());
+			pd.setDescription(asset.getDescription());
+			pd.setAssetModel(asset.getAssetmodel());
+			pd.setAllocation(asset.getAllocation());
+			return pd;
+		}
 	@RequestMapping(value = "/uploadFile",method = RequestMethod.POST, produces = "application/json; charset=utf-8")//, produces = "application/json; charset=utf-8")
 	public @ResponseBody String importAssets(HttpServletRequest request) throws IOException{
 		MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;

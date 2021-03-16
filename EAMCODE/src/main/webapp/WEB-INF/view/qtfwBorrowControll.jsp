@@ -97,10 +97,8 @@ function fsubmit(command) {
 
 	 
 function firm(message){
-	if(confirm(message+",是否退出？")){ 
+	confirm(message);
 		WeixinJSBridge.call('closeWindow');
-}
-
 	    }
 </script>
   <style type="text/css">

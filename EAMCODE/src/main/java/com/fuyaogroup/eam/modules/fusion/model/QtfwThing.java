@@ -26,5 +26,6 @@ public class QtfwThing extends BaseEntity{
 	private String name;
 	//管理部门
 	private String departName;
-
+	//状态
+	private String status;
 }

@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.fuyaogroup.eam.modules.fusion.model.Config;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
@@ -33,7 +34,7 @@ public class EamSystemManagerController {
 	@RequestMapping(value = "/login",method = RequestMethod.POST)
 	@ResponseBody
 	@CrossOrigin(origins = "*")
-	public String toLoginPage(@RequestBody String request) throws Exception {
+	public String toLoginPage(@RequestBody String request,HttpServletRequest req) throws Exception {
 //		log.info("登录开始！");
 		Gson gson=new Gson();
 		JSONObject json = JSONObject.fromObject(request);
@@ -72,6 +73,9 @@ public class EamSystemManagerController {
 		map.put("username", list.get(0).getConfigName());
 		map.put("setAccess", list.get(0).getConfigCode());
 		String str = gson.toJson(map);
+		HttpSession session = req.getSession();
+		session.setAttribute("username", list.get(0).getConfigName());
+		System.out.println(session.getAttribute("username")+"session:"+session);
 		return str;
 	}
 

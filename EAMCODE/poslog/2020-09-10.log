@@ -1,0 +1,496 @@
+2020-09-10 07:53:56 -Starting EamApplication on gnb781 with PID 19032 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-10 07:53:56 -The following profiles are active: prod
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 07:53:57 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-10 07:53:57 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 07:53:57 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 07:53:57 -Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
+2020-09-10 07:53:58 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4ecfa032] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 07:53:58 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-10 07:54:00 -Tomcat initialized with port(s): 9001 (http)
+2020-09-10 07:54:00 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-10 07:54:00 -Starting service [Tomcat]
+2020-09-10 07:54:00 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-10 07:54:00 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-10 07:54:01 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-10 07:54:01 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-10 07:54:01 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-10 07:54:01 -Initializing Spring embedded WebApplicationContext
+2020-09-10 07:54:01 -Root WebApplicationContext: initialization completed in 4917 ms
+2020-09-10 07:54:01 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-10 07:54:01 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-10 07:54:01 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-10 07:54:01 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-10 07:54:02 -Using default implementation for ThreadExecutor
+2020-09-10 07:54:02 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-10 07:54:02 -Quartz Scheduler v.2.3.0 created.
+2020-09-10 07:54:02 -RAMJobStore initialized.
+2020-09-10 07:54:02 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-10 07:54:02 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-10 07:54:02 -Quartz scheduler version: 2.3.0
+2020-09-10 07:54:02 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7b795db7
+2020-09-10 07:54:02 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 07:54:03 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-10 07:54:03 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-10 07:54:03 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-10 07:54:03 -Clear EntityHelper entityTableMap cache.
+2020-09-10 07:54:04 -Initializing ExecutorService 'taskScheduler'
+2020-09-10 07:54:04 -Starting Quartz Scheduler now
+2020-09-10 07:54:04 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-10 07:54:04 -Loaded the Bouncy Castle security provider.
+2020-09-10 07:54:04 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-10 07:54:04 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-10 07:54:04 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-54145-1599695644756-0:1) is starting
+2020-09-10 07:54:04 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-54145-1599695644756-0:1) started
+2020-09-10 07:54:04 -For help or more information please see: http://activemq.apache.org
+2020-09-10 07:54:04 -Connector vm://localhost started
+2020-09-10 07:54:05 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-10 07:54:05 -Using a shared selector for servlet write/read
+2020-09-10 07:54:05 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-10 07:54:05 -Started EamApplication in 9.572 seconds (JVM running for 11.24)
+2020-09-10 07:54:22 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 07:54:22 -Initializing Servlet 'dispatcherServlet'
+2020-09-10 07:54:22 -Completed initialization in 13 ms
+2020-09-10 07:54:22 -{dataSource-1} inited
+2020-09-10 07:54:22 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 07:54:22 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 07:54:22 -<==      Total: 1
+2020-09-10 07:54:22 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 07:54:22 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 07:54:22 -<==      Total: 1
+2020-09-10 07:54:27 -2020-09-10T07:54:27.025:查询盘点批次列表,开始...
+2020-09-10 07:54:27 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 07:54:27 -==> Parameters: 
+2020-09-10 07:54:27 -<==      Total: 13
+2020-09-10 07:54:32 -2020-09-10T07:54:32.104:查询盘点列表,开始...
+2020-09-10 07:54:32 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-10 07:54:32 -==> Parameters: 200604449(Long)
+2020-09-10 07:54:32 -<==      Total: 617
+2020-09-10 07:54:32 -2020-09-10T07:54:32.559:查询盘点列表,结束...
+2020-09-10 07:55:00 -==>  Preparing: update ASSETPD SET jobNum=?,SerialNumber=?,AssetNumber=?,userName=?,OrganizationName=?,department=?,pdBatId=?,Description=?,assetModel=?,allocation=?,REMARK=?,UPDATEMAN=? where pdCode=? 
+2020-09-10 07:55:00 -==> Parameters: 053047(String), CNGV154967(String), G-PRTHP011(String), 叶修龙(String), 集团管理局(String), 信息部(储物间）(String), 200604449(Long), null, HP5100 A3(String), null, 储物间电脑(String), super_admin(String), 20060445487(Long)
+2020-09-10 07:55:00 -<==    Updates: 1
+2020-09-10 07:55:00 -2020-09-10T07:55:00.544:查询盘点列表,开始...
+2020-09-10 07:55:00 -==>  Preparing: SELECT * FROM ASSETPD where 1=1 
+2020-09-10 07:55:00 -==> Parameters: 
+2020-09-10 07:55:02 -<==      Total: 2989
+2020-09-10 07:55:02 -2020-09-10T07:55:02.854:查询盘点列表,结束...
+2020-09-10 07:55:41 -2020-09-10T07:55:41.644:查询盘点列表,开始...
+2020-09-10 07:55:41 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-10 07:55:41 -==> Parameters: 200604449(Long)
+2020-09-10 07:55:41 -<==      Total: 617
+2020-09-10 07:55:41 -2020-09-10T07:55:41.978:查询盘点列表,结束...
+2020-09-10 07:56:12 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 07:56:12 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 07:56:12 -<==      Total: 1
+2020-09-10 07:56:15 -2020-09-10T07:56:15.057:查询盘点批次列表,开始...
+2020-09-10 07:56:15 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 07:56:15 -==> Parameters: 
+2020-09-10 07:56:15 -<==      Total: 13
+2020-09-10 07:56:20 -2020-09-10T07:56:20.536:查询盘点列表,开始...
+2020-09-10 07:56:20 -==>  Preparing: SELECT * FROM ASSETPD a where a.pdBatId = ? 
+2020-09-10 07:56:20 -==> Parameters: 200604449(Long)
+2020-09-10 07:56:20 -<==      Total: 617
+2020-09-10 07:56:20 -2020-09-10T07:56:20.849:查询盘点列表,结束...
+2020-09-10 08:00:00 -2020-09-10T08:00:00.015:执行定时任务-com.fuyaogroup.eam.job.AssetCheckInfoJob,开始...
+2020-09-10 08:00:00 -2020-09-10T08:00:00.015:执行定时任务-com.fuyaogroup.eam.job.AssetCheckInfoJob,软件推送开始...
+2020-09-10 08:00:00 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 08:00:00 -==> Parameters: 
+2020-09-10 08:00:00 -<==      Total: 13
+2020-09-10 08:00:00 -==>  Preparing: SELECT /*+ INDEX(USER ID) */ * FROM ASSET a where a.assetType = ? 
+2020-09-10 08:00:00 -==> Parameters: 2(Integer)
+2020-09-10 08:00:00 -<==      Total: 24
+2020-09-10 08:00:00 -Job DEFAULT.assetsoftwareInfoJob threw an unhandled Exception: 
+org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'softWareInfo' on target class [class com.fuyaogroup.eam.job.AssetCheckInfoJob] failed; nested exception is java.lang.IllegalArgumentException: The date must not be null
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:276)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: java.lang.IllegalArgumentException: The date must not be null
+	at org.apache.commons.lang.time.DateUtils.isSameDay(DateUtils.java:174)
+	at com.fuyaogroup.eam.job.AssetCheckInfoJob.softWareInfo(AssetCheckInfoJob.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:280)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:267)
+	... 3 common frames omitted
+2020-09-10 08:00:00 -Job (DEFAULT.assetsoftwareInfoJob threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception.
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: org.springframework.scheduling.quartz.JobMethodInvocationFailedException: Invocation of method 'softWareInfo' on target class [class com.fuyaogroup.eam.job.AssetCheckInfoJob] failed; nested exception is java.lang.IllegalArgumentException: The date must not be null
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:276)
+	at org.springframework.scheduling.quartz.QuartzJobBean.execute(QuartzJobBean.java:75)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 common frames omitted
+Caused by: java.lang.IllegalArgumentException: The date must not be null
+	at org.apache.commons.lang.time.DateUtils.isSameDay(DateUtils.java:174)
+	at com.fuyaogroup.eam.job.AssetCheckInfoJob.softWareInfo(AssetCheckInfoJob.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:280)
+	at org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean$MethodInvokingJob.executeInternal(MethodInvokingJobDetailFactoryBean.java:267)
+	... 3 common frames omitted
+2020-09-10 09:04:48 -Starting EamApplication on gnb781 with PID 324 (D:\FYEAM-CODE\EAMCODE\target\classes started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-09-10 09:04:48 -The following profiles are active: prod
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-09-10 09:04:49 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-09-10 09:04:49 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-10 09:04:49 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-10 09:04:49 -Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
+2020-09-10 09:04:50 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1dab368e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-10 09:04:50 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-09-10 09:04:52 -Tomcat initialized with port(s): 9001 (http)
+2020-09-10 09:04:52 -Initializing ProtocolHandler ["http-nio-9001"]
+2020-09-10 09:04:52 -Starting service [Tomcat]
+2020-09-10 09:04:52 -Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-10 09:04:52 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Python27;C:\Program Files (x86)\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\Java\jdk1.8.0_181\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\sshing\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\Program Files\;C:\Users\gnb781\AppData\Roaming\npm;D:\Program Files\nodejs\node_global;C:\Users\gnb781\AppData\Local\Microsoft\WindowsApps;;E:\Microsoft VS Code\bin;C:\Users\gnb781\AppData\Roaming\npm;C:\Users\gnb781\Desktop;;.]
+2020-09-10 09:04:53 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xercesImpl.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xercesImpl.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-10 09:04:53 -Failed to scan [file:/C:/Users/gnb781/.m2/repository/xalan/xalan/2.6.0/xml-apis.jar] from classloader hierarchy
+java.io.FileNotFoundException: C:\Users\gnb781\.m2\repository\xalan\xalan\2.6.0\xml-apis.jar (系统找不到指定的文件。)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:164)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:374)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:309)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:266)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:229)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:83)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5098)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1432)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1422)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:944)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:261)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:801)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:372)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:414)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.fuyaogroup.eam.EamApplication.main(EamApplication.java:27)
+2020-09-10 09:04:53 -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-09-10 09:04:53 -Initializing Spring embedded WebApplicationContext
+2020-09-10 09:04:53 -Root WebApplicationContext: initialization completed in 5059 ms
+2020-09-10 09:04:53 -Servlet statViewServlet was not registered (possibly already registered?)
+2020-09-10 09:04:53 -Filter webStatFilter was not registered (possibly already registered?)
+2020-09-10 09:04:54 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-10 09:04:54 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-09-10 09:04:54 -Using default implementation for ThreadExecutor
+2020-09-10 09:04:54 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-09-10 09:04:54 -Quartz Scheduler v.2.3.0 created.
+2020-09-10 09:04:54 -RAMJobStore initialized.
+2020-09-10 09:04:54 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-09-10 09:04:54 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-09-10 09:04:54 -Quartz scheduler version: 2.3.0
+2020-09-10 09:04:54 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5ec6a1b6
+2020-09-10 09:04:55 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-10 09:04:55 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-09-10 09:04:55 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-09-10 09:04:55 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-09-10 09:04:55 -Clear EntityHelper entityTableMap cache.
+2020-09-10 09:04:56 -Initializing ExecutorService 'taskScheduler'
+2020-09-10 09:04:56 -Starting Quartz Scheduler now
+2020-09-10 09:04:56 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-09-10 09:04:56 -Loaded the Bouncy Castle security provider.
+2020-09-10 09:04:56 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-09-10 09:04:57 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-09-10 09:04:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-56069-1599699897020-0:1) is starting
+2020-09-10 09:04:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-56069-1599699897020-0:1) started
+2020-09-10 09:04:57 -For help or more information please see: http://activemq.apache.org
+2020-09-10 09:04:57 -Connector vm://localhost started
+2020-09-10 09:04:57 -Starting ProtocolHandler ["http-nio-9001"]
+2020-09-10 09:04:57 -Using a shared selector for servlet write/read
+2020-09-10 09:04:57 -Tomcat started on port(s): 9001 (http) with context path '/eam'
+2020-09-10 09:04:57 -Started EamApplication in 9.633 seconds (JVM running for 11.044)
+2020-09-10 09:05:44 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-10 09:05:44 -Initializing Servlet 'dispatcherServlet'
+2020-09-10 09:05:44 -Completed initialization in 12 ms
+2020-09-10 09:05:44 -{dataSource-1} inited
+2020-09-10 09:05:45 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:05:45 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:05:45 -<==      Total: 1
+2020-09-10 09:05:45 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:05:45 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:05:45 -<==      Total: 1
+2020-09-10 09:06:31 -2020-09-10T09:06:31.235:查询盘点批次列表,开始...
+2020-09-10 09:06:31 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 09:06:31 -==> Parameters: 
+2020-09-10 09:06:31 -<==      Total: 13
+2020-09-10 09:10:00 -2020-09-10T09:10:00.013:执行定时任务-com.fuyaogroup.eam.job.SoftOverDateMessage,开始...
+2020-09-10 09:10:00 -==>  Preparing: select * from asset where ASSETTYPE = 2 and WARRANTYREMINDERDATE is not null 
+2020-09-10 09:10:00 -==> Parameters: 
+2020-09-10 09:10:00 -<==      Total: 16
+2020-09-10 09:10:48 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:10:48 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:10:48 -<==      Total: 1
+2020-09-10 09:10:49 -2020-09-10T09:10:49.254:查询盘点批次列表,开始...
+2020-09-10 09:10:49 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 09:10:49 -==> Parameters: 
+2020-09-10 09:10:49 -<==      Total: 13
+2020-09-10 09:13:15 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:13:15 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:13:15 -<==      Total: 1
+2020-09-10 09:13:15 -2020-09-10T09:13:15.652:查询盘点批次列表,开始...
+2020-09-10 09:13:15 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 09:13:15 -==> Parameters: 
+2020-09-10 09:13:15 -<==      Total: 13
+2020-09-10 09:18:09 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:18:09 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:18:09 -<==      Total: 1
+2020-09-10 09:21:35 -2020-09-10T09:21:35.868:查询盘点批次列表,开始...
+2020-09-10 09:21:35 -==>  Preparing: SELECT * FROM ASSETPDBAT 
+2020-09-10 09:21:35 -==> Parameters: 
+2020-09-10 09:21:35 -<==      Total: 13
+2020-09-10 09:27:56 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:27:56 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:27:56 -<==      Total: 1
+2020-09-10 09:29:16 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:29:16 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:29:16 -<==      Total: 1
+2020-09-10 09:33:16 -==>  Preparing: SELECT * FROM config a where a.config_Type = ? and a.configname=? 
+2020-09-10 09:33:16 -==> Parameters: 4(Integer), super_admin(String)
+2020-09-10 09:33:16 -<==      Total: 1
+2020-09-10 11:10:00 -2020-09-10T11:10:00.001:执行定时任务-com.fuyaogroup.eam.job.QtfwMessageJob,开始...
+2020-09-10 11:10:00 -==>  Preparing: SELECT * FROM WINDOW_SERVER where STATUS='在借' ORDER BY BORROWTIME DESC 
+2020-09-10 11:10:00 -==> Parameters: 
+2020-09-10 11:10:00 -<==      Total: 2
+2020-09-10 11:10:00 -进入定时任务的循环...............................
+2020-09-10 11:10:00 -进入定时任务的循环...............................
+2020-09-10 11:10:02 -invalid access_token

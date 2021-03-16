@@ -22,12 +22,17 @@ public class AssetPdBatServiceImpl extends BaseServiceImpl<AssetrPdBatMapper, As
 		private AssetrPdBatMapper assetrPdBat;
 	  
 	@Override
-	public String getDefaultBatId() {
+	public String getDefaultBatId(String orgName) {
 		if(BatId==null){
 			List<AssetPdBat> list = assetrPdBat.queryByDate(new Date());
 			if(CollectionUtil.isNotEmpty(list)){
-				BatId = list.get(0).getPdBatId();
-				return BatId;
+				for(AssetPdBat apb:list) {
+					if(apb.getOrgList().contains(orgName)) {
+						BatId = apb.getPdBatId();
+						return BatId;
+					}
+				}
+				return null;
 			}else{
 				return null;
 			}
@@ -58,6 +63,12 @@ public class AssetPdBatServiceImpl extends BaseServiceImpl<AssetrPdBatMapper, As
 	public List<AssetPdBat> getAllBDate(Date nowDate) {
 		
 		return assetrPdBat.queryByDate(nowDate);
+	}
+
+	@Override
+	public List<AssetPdBat> queryByDateOfAssetPdBat(Date nowDate, String organizationName) {
+		// TODO Auto-generated method stub
+		return assetrPdBat.queryByDateOfAssetPdBat(nowDate,organizationName);
 	}
 
 }

@@ -260,6 +260,63 @@ public class qtfwWeixinMessageService {
 
     }
 	
+	/*
+	 * 给宣传服务部的发送消息
+	 * */
+	public boolean sendBook(String toUser,String toTag , String content) {
+
+        String accessToken = BookWeixinService.accessToken;
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        HttpPost hp = new HttpPost("https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=" + accessToken);
+        HashMap<String, Object> wxMessage = new HashMap<>();
+        HashMap<String, Object> wxTextMessage = new HashMap<>();
+        wxMessage.put("touser", toUser);
+        wxMessage.put("toparty", "");
+        wxMessage.put("totag", toTag);
+        wxMessage.put("agentid", "1000056");
+        wxMessage.put("msgtype", "text");//TODO 
+        wxTextMessage.put("content", content);
+        wxMessage.put("text", wxTextMessage);
+
+        ObjectMapper om = new ObjectMapper();
+        try {
+            String json = om.writeValueAsString(wxMessage);
+            json = json.replace("\"[", "[");
+            json = json.replace("]\"", "]");
+            //logger.info(json);
+            StringEntity se = new StringEntity(json, HTTP.UTF_8);
+            se.setContentEncoding("utf-8");
+            se.setContentType("application/json");
+            hp.setEntity(se);
+            ResponseHandler<String> rh = new BasicResponseHandler();
+            String responseBody = httpClient.execute(hp, rh);
+            om = new ObjectMapper();
+            HashMap<String, String> returnMessage = new HashMap<>();
+            returnMessage = om.readValue(responseBody, new TypeReference<HashMap<String, String>>() {
+            });
+//            logger.info(returnMessage.get("errcode"));
+            if (returnMessage.get("errmsg").equals("ok")) {
+                logger.info("发送消息给用户"+ toUser+"成功！" );
+                return true;
+            } else {
+                logger.error(returnMessage.get("errmsg"));
+                return false;
+            }
+
+        } catch (JsonProcessingException e) {
+            logger.error(e.getOriginalMessage());
+        } catch (ClientProtocolException e) {
+            logger.error(e.getMessage());
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+        }
+        return false;
+
+    }
+	
+	
+	
+	
 	public static void main(String[] args) {
 		  try {
 		   qtfwWeixinMessageService asd=new qtfwWeixinMessageService();

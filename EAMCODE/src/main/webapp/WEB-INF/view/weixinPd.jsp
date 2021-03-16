@@ -55,7 +55,8 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                 		<div class="image-up"></div>
                 	</div>
 <div><label class="label-style2">请仔细核对以上资产信息，是否和所使用的资产一致。</label></div>
-<div class="field-wrapper" ><input type="button" class = "verify-button" value="确认" onclick="fsubmit()"/></div></div>
+<div class="field-wrapper" ><input type="button" class = "verify-button" value="确认" onclick="fsubmit()"/></div>
+<div><label class="label-style2">信息不一致无法盘点的，请联系信息部叶修龙(18811579184，xiulong.ye@fuyaogroup.com)</label></div></div>
 </div></div>
 </form>
 

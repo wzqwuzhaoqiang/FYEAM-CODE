@@ -27,7 +27,7 @@ public interface AssetrPdBatMapper extends BaseMapper<AssetPdBat>{
 	    })
 	 List<AssetPdBat> queryById(@Param("pdBatId")Long pdBatId);
 	 
-	 @Select("SELECT * FROM ASSETPDBAT  ")
+	 @Select("SELECT * FROM ASSETPDBAT order by pdStartDate desc ")
 	 @Results({
 		 @Result(property ="pdBatId",column = "PDBATID"),
 		 @Result(property ="pdBatCode",column = "PDBATCODE"),
@@ -49,4 +49,8 @@ public interface AssetrPdBatMapper extends BaseMapper<AssetPdBat>{
 				+ " #{pdStartDate}, #{pdEndDate},"
 				+ " #{iSAll},#{orgList},#{headId})")
 	    void insertPdBat(AssetPdBat bat);
+
+	 @Select("SELECT * FROM ASSETPDBAT " +
+	            "a where a.organizationName=#{organizationName} a.pdEndDate >= #{nowDate} and a.pdStartDate<=#{nowDate} ")
+	List<AssetPdBat> queryByDateOfAssetPdBat(@Param("nowDate")Date nowDate, @Param("organizationName")String organizationName);
 }

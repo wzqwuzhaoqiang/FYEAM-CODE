@@ -34,6 +34,7 @@ public class AssetScrap extends BaseEntity {
 	private String handingSuggestions;//  处理建议
 	private String sumMoney;//  合计金额
 	private String measures;//  非正常报废的纠正措施
+	private String status; //1.未处理，2.已处理
 	
 
 }

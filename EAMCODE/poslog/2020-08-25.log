@@ -1,0 +1,583 @@
+2020-08-25 14:40:48 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.YanshouTest], using SpringBootContextLoader
+2020-08-25 14:40:48 -Could not detect default resource locations for test class [eam.fusion.YanshouTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-25 14:40:48 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-25 14:40:48 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ce5a68e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9d157ff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f162cc0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5df417a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c041b41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f69d591, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61078690, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1cb3ec38, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@403132fc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71c5b236, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cab9998, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f7a7219]
+2020-08-25 14:40:48 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-08-25 14:40:48 -Starting YanshouTest on gnb781 with PID 64540 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-08-25 14:40:48 -The following profiles are active: prod
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:40:51 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-08-25 14:40:51 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-25 14:40:51 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-25 14:40:51 -Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2020-08-25 14:40:52 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bf2bd233] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-25 14:40:52 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-08-25 14:40:53 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-08-25 14:40:53 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-08-25 14:40:54 -Using default implementation for ThreadExecutor
+2020-08-25 14:40:54 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-25 14:40:54 -Quartz Scheduler v.2.3.0 created.
+2020-08-25 14:40:54 -RAMJobStore initialized.
+2020-08-25 14:40:54 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-25 14:40:54 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-08-25 14:40:54 -Quartz scheduler version: 2.3.0
+2020-08-25 14:40:54 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3e98b933
+2020-08-25 14:40:55 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 14:40:55 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-25 14:40:55 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-25 14:40:55 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-25 14:40:55 -Clear EntityHelper entityTableMap cache.
+2020-08-25 14:40:59 -Initializing ExecutorService 'taskScheduler'
+2020-08-25 14:40:59 -Starting Quartz Scheduler now
+2020-08-25 14:40:59 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-08-25 14:40:59 -Loaded the Bouncy Castle security provider.
+2020-08-25 14:40:59 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-08-25 14:40:59 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-08-25 14:40:59 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49284-1598337659678-0:1) is starting
+2020-08-25 14:40:59 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49284-1598337659678-0:1) started
+2020-08-25 14:40:59 -For help or more information please see: http://activemq.apache.org
+2020-08-25 14:40:59 -Connector vm://localhost started
+2020-08-25 14:40:59 -Started YanshouTest in 11.362 seconds (JVM running for 13.365)
+2020-08-25 14:40:59 -try to connect mq :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]
+2020-08-25 14:41:00 -MQConnections are closing ...
+2020-08-25 14:41:00 -Providers are shutting down ...
+2020-08-25 14:41:00 -Close MQConnection : com.soa.eis.adapter.framework.connection.mqc.MQConnection@42f6a323
+2020-08-25 14:41:00 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49284-1598337659678-0:1) is shutting down
+2020-08-25 14:41:00 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2020-08-25 14:41:00 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2020-08-25 14:41:00 -Connector vm://localhost stopped
+2020-08-25 14:41:00 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49284-1598337659678-0:1) uptime 0.701 seconds
+2020-08-25 14:41:00 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49284-1598337659678-0:1) is shutdown
+2020-08-25 14:41:02 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:05 -Setup of JMS message listener invoker failed for destination 'queueAdd' - trying to recover. Cause: The Session is closed
+2020-08-25 14:41:05 -Shutting down ExecutorService 'taskScheduler'
+2020-08-25 14:41:05 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-25 14:41:05 -Shutting down Quartz Scheduler
+2020-08-25 14:41:05 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2020-08-25 14:41:05 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2020-08-25 14:41:05 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2020-08-25 14:41:07 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:12 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:12 -不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]，已经做了[3]次尝试！
+2020-08-25 14:41:12 -MQ Client 初始化 Exception:
+com.soa.eis.adapter.framework.exception.EisException: 不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:757)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:12 -Fail to get connection.
+java.lang.Exception: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:26)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:12 -try to connect mq :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]
+2020-08-25 14:41:12 -Error in Basescribe Service Requester:
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:12 -Error in Service Provider:
+
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:14 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:19 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:24 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:24 -不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]，已经做了[3]次尝试！
+2020-08-25 14:41:24 -MQ Client 初始化 Exception:
+com.soa.eis.adapter.framework.exception.EisException: 不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:757)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:24 -Fail to get connection.
+java.lang.Exception: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:26)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:24 -try to connect mq :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]
+2020-08-25 14:41:24 -Error in Basescribe Service Requester:
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:24 -Error in Service Provider:
+
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:26 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:31 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:36 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:36 -不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]，已经做了[3]次尝试！
+2020-08-25 14:41:36 -MQ Client 初始化 Exception:
+com.soa.eis.adapter.framework.exception.EisException: 不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:757)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:36 -Fail to get connection.
+java.lang.Exception: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:26)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:36 -try to connect mq :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]
+2020-08-25 14:41:36 -Error in Basescribe Service Requester:
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:36 -Error in Service Provider:
+
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:38 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:43 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:48 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:48 -不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]，已经做了[3]次尝试！
+2020-08-25 14:41:48 -MQ Client 初始化 Exception:
+com.soa.eis.adapter.framework.exception.EisException: 不能连接到MQ Server :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]]
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:757)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:48 -Fail to get connection.
+java.lang.Exception: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:26)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:48 -try to connect mq :MQParameter[hostname=mq_esb.fuyaogroup.com,port=30099,ccsid=1208,channel=ESB.OUT.SVRCONN,qmanager=ESB_OUT,queue=QUEUE.RESPONSE.IN.MQ23]
+2020-08-25 14:41:48 -Error in Basescribe Service Requester:
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:48 -Error in Service Provider:
+
+com.soa.eis.adapter.framework.exception.EisException: Failed to init connection.
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:60)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:41:50 -com.ibm.mq.MQException: Completion Code 2, Reason 2059
+com.ibm.mq.MQException: Completion Code 2, Reason 2059
+	at com.ibm.mq.MQManagedConnectionJ11.<init>(MQManagedConnectionJ11.java:166)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11._createManagedConnection(MQClientManagedConnectionFactoryJ11.java:196)
+	at com.ibm.mq.MQClientManagedConnectionFactoryJ11.createManagedConnection(MQClientManagedConnectionFactoryJ11.java:213)
+	at com.ibm.mq.StoredManagedConnection.<init>(StoredManagedConnection.java:80)
+	at com.ibm.mq.MQSimpleConnectionManager.allocateConnection(MQSimpleConnectionManager.java:150)
+	at com.ibm.mq.MQQueueManager.obtainBaseMQQueueManager(MQQueueManager.java:649)
+	at com.ibm.mq.MQQueueManager.construct(MQQueueManager.java:598)
+	at com.ibm.mq.MQQueueManager.<init>(MQQueueManager.java:419)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:804)
+	at com.soa.eis.adapter.framework.connection.mqc.MQQueueAccesser.connectMQ(MQQueueAccesser.java:755)
+	at com.soa.eis.adapter.framework.connection.mqc.MQConnection.initMQConnection(MQConnection.java:118)
+	at com.soa.eis.adapter.framework.connection.mqcm.MQConnectionPoolFactory.makeObject(MQConnectionPoolFactory.java:24)
+	at org.apache.commons.pool.impl.GenericObjectPool.borrowObject(Unknown Source)
+	at com.soa.eis.adapter.framework.connection.mqcm.PoolableMQConnectionManager.getConnection(PoolableMQConnectionManager.java:56)
+	at com.soa.eis.adapter.framework.provider.impl.BaseServiceProvider.process(BaseServiceProvider.java:62)
+	at com.soa.eis.adapter.framework.provider.impl.AbstractServiceProvider.run(AbstractServiceProvider.java:209)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-25 14:42:13 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.YanshouTest], using SpringBootContextLoader
+2020-08-25 14:42:13 -Could not detect default resource locations for test class [eam.fusion.YanshouTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-25 14:42:13 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-08-25 14:42:13 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ce5a68e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9d157ff, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f162cc0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5df417a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c041b41, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f69d591, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61078690, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1cb3ec38, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@403132fc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71c5b236, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cab9998, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f7a7219]
+2020-08-25 14:42:13 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-08-25 14:42:13 -Starting YanshouTest on gnb781 with PID 52200 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2020-08-25 14:42:13 -The following profiles are active: prod
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2020-08-25 14:42:15 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2020-08-25 14:42:15 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-25 14:42:15 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-08-25 14:42:15 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2020-08-25 14:42:16 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fb49ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-25 14:42:16 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-08-25 14:42:17 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-08-25 14:42:17 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2020-08-25 14:42:18 -Using default implementation for ThreadExecutor
+2020-08-25 14:42:18 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-08-25 14:42:18 -Quartz Scheduler v.2.3.0 created.
+2020-08-25 14:42:18 -RAMJobStore initialized.
+2020-08-25 14:42:18 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-08-25 14:42:18 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-08-25 14:42:18 -Quartz scheduler version: 2.3.0
+2020-08-25 14:42:18 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@58182b96
+2020-08-25 14:42:19 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-25 14:42:19 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-25 14:42:19 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-25 14:42:19 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-25 14:42:19 -Clear EntityHelper entityTableMap cache.
+2020-08-25 14:42:23 -Initializing ExecutorService 'taskScheduler'
+2020-08-25 14:42:23 -Starting Quartz Scheduler now
+2020-08-25 14:42:23 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-08-25 14:42:23 -Loaded the Bouncy Castle security provider.
+2020-08-25 14:42:23 -Using Persistence Adapter: MemoryPersistenceAdapter
+2020-08-25 14:42:23 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-08-25 14:42:23 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49310-1598337743667-0:1) is starting
+2020-08-25 14:42:23 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49310-1598337743667-0:1) started
+2020-08-25 14:42:23 -For help or more information please see: http://activemq.apache.org
+2020-08-25 14:42:23 -Connector vm://localhost started
+2020-08-25 14:42:23 -Started YanshouTest in 10.523 seconds (JVM running for 12.401)
+2020-08-25 14:42:24 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49310-1598337743667-0:1) is shutting down
+2020-08-25 14:42:24 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2020-08-25 14:42:24 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2020-08-25 14:42:24 -Connector vm://localhost stopped
+2020-08-25 14:42:24 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49310-1598337743667-0:1) uptime 0.690 seconds
+2020-08-25 14:42:24 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-49310-1598337743667-0:1) is shutdown
+2020-08-25 14:42:29 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2020-08-25 14:42:29 -Shutting down ExecutorService 'taskScheduler'
+2020-08-25 14:42:29 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-25 14:42:29 -Shutting down Quartz Scheduler
+2020-08-25 14:42:29 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2020-08-25 14:42:29 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2020-08-25 14:42:29 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.

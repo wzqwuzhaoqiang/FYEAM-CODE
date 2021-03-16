@@ -4,6 +4,7 @@ package com.fuyaogroup.eam.controller;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,10 +25,14 @@ import javax.servlet.http.HttpSession;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -37,6 +42,11 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import cn.hutool.core.collection.CollectionUtil;
 
+import com.alibaba.excel.EasyExcel;
+import com.alibaba.excel.ExcelWriter;
+import com.alibaba.excel.metadata.Sheet;
+import com.alibaba.excel.support.ExcelTypeEnum;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fuyaogroup.eam.common.Exception.GlobalException;
 import com.fuyaogroup.eam.common.enums.ComputerTypeEnum;
 import com.fuyaogroup.eam.common.enums.PdStatusEnum;
@@ -50,6 +60,7 @@ import com.fuyaogroup.eam.modules.fusion.model.AssetPd;
 import com.fuyaogroup.eam.modules.fusion.model.AssetPdBat;
 import com.fuyaogroup.eam.modules.fusion.model.QtfwThing;
 import com.fuyaogroup.eam.modules.fusion.model.WindowServer;
+import com.fuyaogroup.eam.modules.fusion.model.vo.QtfwObject;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdBatService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetPdService;
 import com.fuyaogroup.eam.modules.fusion.service.AssetService;
@@ -125,8 +136,12 @@ public class WeixinManagerController {
 		String userId = session.getAttribute("userid")==null?"":session.getAttribute("userid").toString();
 		boolean flag = false;//使用人是否和扫码的人一致
 		try {
-			asset = frutil.getOneAssetBySerNum(assetSerNum);
-			if(asset==null){
+			//通过接口从云获取资产信息，换成从库表中直接获取
+			//asset = frutil.getOneAssetBySerNum(assetSerNum);
+			List<Asset> alist = assetSevice.getBySerialNumber(assetSerNum);
+			if(!CollectionUtil.isEmpty(alist)) {
+				asset = alist.get(0);
+			}else{
 				GlobalException ex = new GlobalException("序列号:"+assetSerNum+",资产不存在，请核实后，再进行盘点！",500);
 				request.setAttribute("errException", ex);
 				 return "WEB-INF/view/weixinError.jsp";
@@ -153,7 +168,14 @@ public class WeixinManagerController {
 			session.setAttribute("assetSerNum", assetSerNum);
 			session.setAttribute("isFail", "1");
 		}
-		 return "WEB-INF/view/weixinPd.jsp";
+		
+		List<AssetPd> result = assetPdService.getBySerialNum(assetSerNum,0);
+		if(result.size()>0) {
+			return "WEB-INF/view/weixinPd.jsp";
+		}else {
+			return "WEB-INF/view/weixinError.jsp";
+		}
+		 
 	
     }
 	
@@ -176,7 +198,7 @@ public class WeixinManagerController {
 		pd.setJobNum(asset.getJobnum());
 		pd.setUserName(asset.getUsername());
 		pd.setStatus(PdStatusEnum.ASSET_PD_FINISH.getCode());
-		pd.setPdBatId(Long.parseLong(assetPdBat.getDefaultBatId()));
+		pd.setPdBatId(Long.parseLong(assetPdBat.getDefaultBatId(asset.getOrganizationName())));
 		return pd;
 	}
 
@@ -440,15 +462,22 @@ public class WeixinManagerController {
 				request.setAttribute("errException", ex);
 				 return "WEB-INF/view/weixinError.jsp";	
 		 }
-		 StringBuffer sb = new StringBuffer("您名下有以下公司固定资产：</br>");
+		 StringBuffer sb = new StringBuffer("您名下共有"+list.size()+"个固定资产：</br>");
 		 for(int i=0;i<list.size();i++ ){
 			 Asset asset = list.get(i);
+			 String htcstr = "";
+			 if(asset.getHtcIncredible()==null||asset.getHtcIncredible()>5) {
+				 htcstr="机型：未定义，请进系统修改</br>";
+			 }else {
+				 htcstr="机型："+EnumUtil.getByCode(asset.getHtcIncredible(), ComputerTypeEnum.class).getMessage()+",</br>" ;
+			 }
 			 sb.append("第"+(i+1)+"个资产：</br>");
 			 sb.append("资产编号："+asset.getAssetNumber()+",</br>"
 					 +"资产序列号:"+asset.getSerialNumber()+",</br>"
 					 +"配置："+asset.getAllocation()+",</br>"
-					 +"机型："+EnumUtil.getByCode(asset.getHtcIncredible(), ComputerTypeEnum.class).getMessage()+",</br>" 
-					 +"型号："+asset.getAssetmodel()+";</br>" );
+				     +htcstr
+					 +"型号："+asset.getAssetmodel()+";</br>"
+					 +"-------------------</br>");
 		 }
 		 GlobalException ex = new GlobalException(sb.toString(),500);
 		 request.setAttribute("errException", ex);
@@ -615,19 +644,23 @@ public class WeixinManagerController {
 		HttpSession session = request.getSession();
 		//设置序列号
 		String command = request.getParameter("command");
-		log.info("二维码扫描的值+++    "+command);
+		log.info("createReturnBackMessage二维码扫描的值+++    "+command);
 		String userId = session.getAttribute("userid")==null?"":session.getAttribute("userid").toString();
 		String userName = qtfwwx.getUsername(userId);
 		String mobile = qtfwwx.getUserMobile(userId);
 		session.setAttribute("mobile", mobile);
 		session.setAttribute("userName", userName);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String currentTime = sdf.format(new Date());
 		session.setAttribute("currentTime", currentTime);
 		if(command!=null){
 			WindowServer ws = wss.queryInBorrowThingOne(command);
 			log.info("ws的值为："+ws);
 			if(ws!=null) {
+				WindowServer wsObj = wss.getReturnSQrecord(command);
+				if(wsObj!=null) {
+					return "WEB-INF/view/weixinError3.jsp";
+				}
 				session.setAttribute("windowServer", ws);
 				log.info("进行页面跳转");
 				return "WEB-INF/view/weixinReturnBack.jsp";
@@ -661,12 +694,16 @@ public class WeixinManagerController {
 		String mobile = qtfwwx.getUserMobile(userId);
 		session.setAttribute("mobile", mobile);
 		session.setAttribute("userName", userName);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String currentTime = sdf.format(new Date());
 		session.setAttribute("currentTime", currentTime);
 		if(command!=null) {
 			QtfwThing qt = wss.getQtfwThingById(command);
 			if(qt!=null) {
+				WindowServer wsObj = wss.getSQrecord(command);
+				if(wsObj!=null) {
+					return "WEB-INF/view/weixinError3.jsp";
+				}
 				WindowServer windowServer = wss.queryInBorrowThingOne(command);
 				if(windowServer==null) {
 					session.setAttribute("thingName", qt.getName());
@@ -703,7 +740,12 @@ public class WeixinManagerController {
 		log.info("通过请求方式获取数据："+request.getParameter("currentTime"));
 		log.info("通过请求方式获取数据："+request.getParameter("mobile"));
 		log.info("通过请求方式获取数据："+request.getParameter("serial"));
+		Map<String, Object> resultMap = new HashMap<String, Object>();
 		ws.setTableID((UUID.randomUUID().toString()).substring(0,8));
+		if(request.getParameter("userid")==null||"".equals(request.getParameter("userid"))) {
+			resultMap.put("message", "借用失败，身份不合法");
+			return resultMap;
+		}
 		ws.setBorrowerId(request.getParameter("userid"));
 		ws.setBorrowerName(request.getParameter("userName"));
 		ws.setTools(request.getParameter("thingName"));
@@ -714,16 +756,15 @@ public class WeixinManagerController {
 		ws.setStatus("借用申请");
 		ws.setBorrowConfirm("待确认");
 		wss.saveWindowServer(ws);
-		Map<String, Object> resultMap = new HashMap<String, Object>();
 		//response.setContentType("text/html");
-		resultMap.put("message", "借用申请成功，等待通过");
+		resultMap.put("message", "借用成功，借用期限1天，逾期7天未归还、报废，损坏或丢失，则按照物品原价在工资中扣除");
 		qtfwwx.getAccessToken();
 		qtfwService.send(INFORM_USER_LIST, "", "收到新的借用请求如下:\n"
 				 +"借用人工号:"+ws.getBorrowerId()+"\n"
 				 +"借用人姓名:"+ws.getBorrowerName()+"\n"
 				 +"物品:"+ws.getTools()+"\n"
-				 +"数量:"+ws.getCount()+"\n"
-				 		+ "(请点击<a href=\"http://wxtest.fuyaogroup.com:8888/eam/bgcontroll?idvalue="+ws.getTableID()+"\">这里直接进入处理</a>)");
+				 +"数量:"+ws.getCount()+"\n");
+				 		//+ "(请点击<a href=\"http://wxtest.fuyaogroup.com:8888/eam/bgcontroll?idvalue="+ws.getTableID()+"\">这里直接进入处理</a>)");
 		return resultMap;
     }
 	
@@ -797,8 +838,8 @@ public class WeixinManagerController {
 				 +"归还人姓名:"+ws.getBorrowerName()+"\n"
 				 +"物品:"+ws.getTools()+"\n"
 				 +"数量:"+ws.getCount()+"\n"
-				 +"联系方式:"+ws.getMobile()+"\n"
-				 		+ "(请点击<a href=\"http://wxtest.fuyaogroup.com:8888/eam/rbcontroll?idvalue="+ws.getTableID()+"\">这里直接进入处理</a>)");
+				 +"联系方式:"+ws.getMobile()+"\n");
+				 		//+ "(请点击<a href=\"http://wxtest.fuyaogroup.com:8888/eam/rbcontroll?idvalue="+ws.getTableID()+"\">这里直接进入处理</a>)");
 		
 			message="归还申请发送成功！";
 //			String path =downloadImgFile(file,pd.getPdCode().toString());
@@ -823,6 +864,60 @@ public class WeixinManagerController {
 			session.setAttribute("waitConfirmObj", wsobj);
 			log.info("后台获取到的ID:------"+idvalue);
 			return "WEB-INF/view/qtfwBorrowControll.jsp";
+		}else {
+			return "WEB-INF/view/weixinjumpError.jsp";
+		}
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//		String currentTime = sdf.format(new Date());
+		
+    }
+    
+    /*-
+     * 催还点击事件
+     */
+    @RequestMapping(value = "/hurrybgcontroll",method = RequestMethod.GET)
+    public String hurrybgcontroll(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		qtfwwx.getAccessToken();
+		String idvalue = request.getParameter("idvalue");
+		WindowServer wsobj = wss.queryByTableId(idvalue);
+		log.info("查询ID："+idvalue+"查询结果"+wsobj);
+		if(wsobj!=null) {
+			qtfwService.send(wsobj.getBorrowerId(), "", "您借用的物品"+wsobj.getTools()
+			 +"  还未归还，请及时归还。");
+			return "WEB-INF/view/weixinInBorrowListLookByAdmin.jsp";
+		}else {
+			return "WEB-INF/view/weixinjumpError.jsp";
+		}
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//		String currentTime = sdf.format(new Date());
+		
+    }
+    
+    @Transactional
+    @RequestMapping(value = "/dsbgcontroll",method = RequestMethod.GET)
+    public String dsbgcontroll(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		qtfwwx.getAccessToken();
+		String idvalue = request.getParameter("idvalue");
+		WindowServer wsobj = wss.queryByTableId(idvalue);
+		log.info("查询ID："+idvalue+"查询结果"+wsobj);
+		if(wsobj!=null) {
+			
+			wsobj.setStatus("已丢失");
+			wsobj.setBackConfirm("已确认通过申请");
+			wss.comfirmBorrow(wsobj);
+			
+			QtfwThing qThing = new QtfwThing();
+			qThing.setSerial(wsobj.getSerial());
+			qThing.setStatus("2");
+			wss.updateWindowServerThing(qThing);
+			
+			qtfwService.send(wsobj.getBorrowerId(), "", "您借用的物品"+wsobj.getTools()
+			 +"因不慎丢失、损坏，将按照物品原价在您次月工资中扣除，请知悉。");
+			return "WEB-INF/view/weixinInBorrowListLookByAdmin.jsp";
 		}else {
 			return "WEB-INF/view/weixinjumpError.jsp";
 		}
@@ -906,6 +1001,7 @@ public class WeixinManagerController {
      * @return
      * @throws ParseException
      */
+    @Transactional
     @RequestMapping(value = "/rbcomfirmAction",method = RequestMethod.GET)
     @ResponseBody
     public Map<String, Object> rbcomfirmAction(HttpServletRequest request,HttpServletResponse response) throws ParseException{
@@ -913,8 +1009,9 @@ public class WeixinManagerController {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		//设置序列号
 		String idvalue = request.getParameter("acname");
+		String tid = request.getParameter("idvalue");
+		WindowServer wsobj = wss.queryByTableId(tid);
 		log.info("操作命令为:------"+idvalue);
-		WindowServer wsobj = (WindowServer) session.getAttribute("waitrbConfirmObj");
 		log.info("session对象为:------"+wsobj);
 		if("pass".equals(idvalue)) {
 			log.info("进入归还确认操作");
@@ -942,6 +1039,66 @@ public class WeixinManagerController {
 				return resultMap;
 			}
 			
+		}else if("sh".equals(idvalue)){
+			
+			log.info("进入损坏确认操作");
+			if(wsobj!=null&&"待确认".equals(wsobj.getBackConfirm())) {
+				wsobj.setStatus("损坏");
+				wsobj.setBackConfirm("已确认通过申请");
+				wss.comfirmBorrow(wsobj);
+				session.setAttribute("waitrbConfirmObj",wsobj);
+				resultMap.put("message", "损坏操作成功");
+				QtfwThing qThing = new QtfwThing();
+				qThing.setSerial(wsobj.getSerial());
+				qThing.setStatus("1");
+				wss.updateWindowServerThing(qThing);
+				qtfwService.send(wsobj.getBorrowerId(), "", "损坏通知"
+						 +"借用此物品因不慎损坏，将按照物品原价在您次月工资中扣除，请知悉。");
+				return resultMap;
+			}else {
+				resultMap.put("message", "操作失败，此记录已被处理");
+				return resultMap;
+			}
+		}else if("ds".equals(idvalue)){
+			
+			log.info("进入丢失确认操作");
+			if(wsobj!=null&&"待确认".equals(wsobj.getBackConfirm())) {
+				wsobj.setStatus("丢失");
+				wsobj.setBackConfirm("已确认通过申请");
+				wss.comfirmBorrow(wsobj);
+				session.setAttribute("waitrbConfirmObj",wsobj);
+				resultMap.put("message", "丢失操作成功");
+				QtfwThing qThing = new QtfwThing();
+				qThing.setSerial(wsobj.getSerial());
+				qThing.setStatus("2");
+				wss.updateWindowServerThing(qThing);
+				qtfwService.send(wsobj.getBorrowerId(), "", "丢失通知"
+						 +"借用此物品因不慎丢失、将按照物品原价在您次月工资中扣除，请知悉。");
+				return resultMap;
+			}else {
+				resultMap.put("message", "操作失败，此记录已被处理");
+				return resultMap;
+			}
+		}else if("bf".equals(idvalue)){
+			
+			log.info("进入损坏确认操作");
+			if(wsobj!=null&&"待确认".equals(wsobj.getBackConfirm())) {
+				wsobj.setStatus("报废");
+				wsobj.setBackConfirm("已确认通过申请");
+				wss.comfirmBorrow(wsobj);
+				session.setAttribute("waitrbConfirmObj",wsobj);
+				resultMap.put("message", "报废操作成功");
+				QtfwThing qThing = new QtfwThing();
+				qThing.setSerial(wsobj.getSerial());
+				qThing.setStatus("3");
+				wss.updateWindowServerThing(qThing);
+				qtfwService.send(wsobj.getBorrowerId(), "", "报废通知"
+						 +"借用此物品因不慎报废，将按照物品原价在您次月工资中扣除，请知悉。");
+				return resultMap;
+			}else {
+				resultMap.put("message", "操作失败，此记录已被处理");
+				return resultMap;
+			}
 		}else {
 			resultMap.put("message", "操作失败，未知操作命令");
 			return resultMap;
@@ -991,6 +1148,53 @@ public class WeixinManagerController {
     }
     
     
+    @RequestMapping(value = "/toAddShowHistory",method = RequestMethod.GET)
+    public String toAddShowHistory(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("hmaxSize");
+		int step = (int) session.getAttribute("hstep");
+		int start = (int) session.getAttribute("hstart");
+		int end = (int) session.getAttribute("hend");
+		
+		if(start>0) {
+			session.setAttribute("hstart",start-10);
+			session.setAttribute("hend",start);
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinHistoryListLookByAdmin2.jsp";
+    }
+    
+    @GetMapping("/toAddShowHistory/{page}/{limit}")
+    public String getFrontCourseList(@PathVariable long page,
+                                @PathVariable long limit,
+                                Map<String ,Object> map){
+        Page<WindowServer> pageCourse = new Page<>(page,limit);
+        Map<String,Object> res = wss.getHistoryList(pageCourse);
+        map = res;
+        return "WEB-INF/view/weixinHistoryListLookByAdmin2.jsp";
+    }
+    
+    
+    @RequestMapping(value = "/toDetShowHistory",method = RequestMethod.GET)
+    public String toDetShowHistory(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("hmaxSize");
+		int step = (int) session.getAttribute("hstep");
+		int start = (int) session.getAttribute("hstart");
+		int end = (int) session.getAttribute("hend");
+		
+		if(ms-start>=10) {
+			int temp = start+10;
+			session.setAttribute("hstart",temp);
+			if(ms-temp>=10) {
+				session.setAttribute("hend",temp+10);
+			}else {
+				session.setAttribute("hend",ms);
+			}
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinHistoryListLookByAdmin2.jsp";
+    }
     
     
     @RequestMapping(value = "/toAddShow",method = RequestMethod.GET)
@@ -1029,5 +1233,351 @@ public class WeixinManagerController {
 		//设置序列号
 		return "WEB-INF/view/weixinInBorrowListLookByAdmin.jsp";
     }
+    
+    @RequestMapping(value = "/toControllBorrow",method = RequestMethod.GET)
+    public String toControllBorrow(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		qtfwwx.getAccessToken();
+		String code=request.getParameter("code");
+		log.info("进入toShowBorrowPage");
+		String userId = qtfwwx.getUserid(code);
+		log.info("记录userId："+userId);
+		if("999911".equals(userId) || "101798".equals(userId)||"083380".equals(userId)) {
+			
+			List<WindowServer> wsList = wss.queryAllBorrowByCondition();
+			log.info("查询记录："+wsList);
+//			if(wsList.size()<1){
+//				return "WEB-INF/view/weixinQueryError.jsp";
+//			}
+			log.info("记录数："+wsList.size());
+			session.setAttribute("wsList", wsList);
+			session.setAttribute("wsListmaxSize", wsList.size());
+			session.setAttribute("wsListstep",10);
+			session.setAttribute("wsListstart",0);
+			session.setAttribute("wsListend",wsList.size()>10?10:wsList.size());
+			return "WEB-INF/view/weixinInBorrowControllList.jsp";
+		}else {
+				return "WEB-INF/view/weixinQueryError2.jsp";
+		}
+		
+    }
+    
+    
+    
+    @RequestMapping(value = "/toAddShowBorrow",method = RequestMethod.GET)
+    public String toAddShowBorrow(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("wsListmaxSize");
+		int step = (int) session.getAttribute("wsListstep");
+		int start = (int) session.getAttribute("wsListstart");
+		int end = (int) session.getAttribute("wsListend");
+		
+		if(start>0) {
+			session.setAttribute("wsListstart",start-10);
+			session.setAttribute("wsListend",start);
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinInBorrowControllList.jsp";
+    }
+    
+    @RequestMapping(value = "/toDetShowBorrow",method = RequestMethod.GET)
+    public String toDetShowBorrow(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("wsListmaxSize");
+		int step = (int) session.getAttribute("wsListstep");
+		int start = (int) session.getAttribute("wsListstart");
+		int end = (int) session.getAttribute("wsListend");
+		
+		if(ms-start>=10) {
+			int temp = start+10;
+			session.setAttribute("wsListstart",temp);
+			if(ms-temp>=10) {
+				session.setAttribute("wsListend",temp+10);
+			}else {
+				session.setAttribute("wsListend",ms);
+			}
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinInBorrowControllList.jsp";
+    }
+    
+   
+    
+    @RequestMapping(value = "/toControllReturn",method = RequestMethod.GET)
+    public String toControllReturn(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		qtfwwx.getAccessToken();
+		String code=request.getParameter("code");
+		log.info("进入toShowBorrowPage");
+		String userId = qtfwwx.getUserid(code);
+		log.info("记录userId："+userId);
+		if("999911".equals(userId) || "101798".equals(userId)||"083380".equals(userId)) {
+			
+			List<WindowServer> wsList = wss.queryAllReturnByCondition();
+			log.info("查询记录："+wsList);
+//			if(wsList.size()<1){
+//				return "WEB-INF/view/weixinQueryError.jsp";
+//			}
+			log.info("记录数："+wsList.size());
+			session.setAttribute("wsList", wsList);
+			session.setAttribute("wsListmaxSize", wsList.size());
+			session.setAttribute("wsListstep",10);
+			session.setAttribute("wsListstart",0);
+			session.setAttribute("wsListend",wsList.size()>10?10:wsList.size());
+			return "WEB-INF/view/weixinInReturnControllList.jsp";
+		}else {
+				return "WEB-INF/view/weixinQueryError2.jsp";
+		}
+		
+    }
+    
+    
+    
+    @RequestMapping(value = "/toAddShowReturn",method = RequestMethod.GET)
+    public String toAddShowReturn(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("wsListmaxSize");
+		int step = (int) session.getAttribute("wsListstep");
+		int start = (int) session.getAttribute("wsListstart");
+		int end = (int) session.getAttribute("wsListend");
+		
+		if(start>0) {
+			session.setAttribute("wsListstart",start-10);
+			session.setAttribute("wsListend",start);
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinInReturnControllList.jsp";
+    }
+    
+    @RequestMapping(value = "/toDetShowReturn",method = RequestMethod.GET)
+    public String toDetShowReturn(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		int ms = (int) session.getAttribute("wsListmaxSize");
+		int step = (int) session.getAttribute("wsListstep");
+		int start = (int) session.getAttribute("wsListstart");
+		int end = (int) session.getAttribute("wsListend");
+		
+		if(ms-start>=10) {
+			int temp = start+10;
+			session.setAttribute("wsListstart",temp);
+			if(ms-temp>=10) {
+				session.setAttribute("wsListend",temp+10);
+			}else {
+				session.setAttribute("wsListend",ms);
+			}
+		}
+		//设置序列号
+		return "WEB-INF/view/weixinInReturnControllList.jsp";
+    }
+    
+    @RequestMapping(value = "/toAskReturn",method = RequestMethod.GET)
+    public String toAskReturn(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		String code=request.getParameter("code");
+		log.info("进入toShowBorrowPage");
+		String userId = qtfwwx.getUserid(code);
+		log.info("记录userId："+userId);
+		if("999911".equals(userId)||"083380".equals(userId)||"101798".equals(userId)) {
+			
+			List<WindowServer> wsList = wss.queryListByCondition();
+			log.info("查询记录："+wsList);
+			if(wsList.size()<1){
+				return "WEB-INF/view/weixinQueryError.jsp";
+			}
+			log.info("记录数："+wsList.size());
+			session.setAttribute("listSize", wsList);
+			session.setAttribute("maxSize", wsList.size());
+			session.setAttribute("step",10);
+			session.setAttribute("start",0);
+			session.setAttribute("end",wsList.size()>10?10:wsList.size());
+			return "WEB-INF/view/weixinInBorrowListLookByAdmin.jsp";
+		}else {
+			return "WEB-INF/view/weixinQueryError2.jsp";
+		}
+		
+    }
+    
+    @RequestMapping(value = "/toShowHistory",method = RequestMethod.GET)
+    public String toShowHistory(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		String code=request.getParameter("code");
+		log.info("进入toShowHistory");
+		String userId = qtfwwx.getUserid(code);
+		log.info("记录userId："+userId);
+		if("999911".equals(userId)||"101798".equals(userId)||"083380".equals(userId)) {
+			List<WindowServer> wsList = wss.queryAllByDescBorrowTime();
+			log.info("查询记录："+wsList);
+			if(wsList.size()<1){
+				return "WEB-INF/view/weixinQueryError.jsp";
+			}
+			log.info("记录数："+wsList.size());
+			session.setAttribute("hlistSize", wsList);
+			session.setAttribute("hmaxSize", wsList.size());
+			session.setAttribute("hstep",10);
+			session.setAttribute("hstart",0);
+			session.setAttribute("hend",wsList.size()>10?10:wsList.size());
+			return "WEB-INF/view/weixinHistoryListLookByAdmin2.jsp";
+		}else {
+			return "WEB-INF/view/weixinQueryError2.jsp";
+		}
+		
+    }
+    
+    @RequestMapping(value = "/toTransferPage",method = RequestMethod.GET)
+    public String toTransferPage(HttpServletRequest request,HttpServletResponse response) throws ParseException {
+		log.info("{}:toTransferPage,开始...",LocalDateTime.now());
+		HttpSession session = request.getSession();
+		String code=request.getParameter("code");
+		String userId = wx.getUserid(code);
+		session.setAttribute("userid", userId);
+		url = request.getRequestURL()+"?"+request.getQueryString();
+		log.info(userId+"扫码配置开始！");
+		 this.getTreeMapSHA1();
+		
+		request.setAttribute("timestamp", timestamp);
+		request.setAttribute("nonceStr", nonceStr);
+		request.setAttribute("appId", appId);
+		request.setAttribute("signature", signature);
+		log.info(userId+",扫码配置结束！");
+		 return "WEB-INF/view/transferQRCode.jsp";
+    }
+    
+    @RequestMapping(value = "/transferReq",method = RequestMethod.GET)
+    public String transferReq(HttpServletRequest request,HttpServletResponse response) throws ParseException{
+		HttpSession session = request.getSession();
+		//设置序列号
+		String assetSerNum = request.getParameter("assetNum");
+		String userId = session.getAttribute("userid")==null?"":session.getAttribute("userid").toString();
+		boolean flag = false;//使用人是否和扫码的人一致
+		try {
+			List<Asset> alist = assetSevice.getBySerialNumber(assetSerNum);
+			if(!CollectionUtil.isEmpty(alist)) {
+				asset = alist.get(0);
+			}else{
+				GlobalException ex = new GlobalException("序列号:"+assetSerNum+",资产不存在，请核实",500);
+				request.setAttribute("errException", ex);
+				 return "WEB-INF/view/weixinError.jsp";
+			}
+			if(asset.getJobnum()==null||asset.getJobnum()==""){
+				GlobalException ex = new GlobalException("序列号:"+assetSerNum+",使用人工号异常，请联系管理员！",500);
+				request.setAttribute("errException", ex);
+				 return "WEB-INF/view/weixinError.jsp";
+			}else{
+				if(userId.equalsIgnoreCase(asset.getJobnum().toString())){
+					request.setAttribute("asset", asset);
+					
+				}else {
+					GlobalException ex = new GlobalException("序列号:"+assetSerNum+",您非使用人,请移交自己的资产",500);
+					request.setAttribute("errException", ex);
+					 return "WEB-INF/view/weixinError.jsp";
+				}
+			}
+			
+		} catch (Exception e) {
+			log.error("盘点失败："+e.toString());
+		}
+		
+		 return "WEB-INF/view/weixinPd.jsp";
+	
+    }
+    
+    
+    @RequestMapping(value = "/transferApprove",method = RequestMethod.POST)
+	@ResponseBody
+    public Map<String, Object> transferApprove( HttpServletRequest request,HttpServletResponse response) throws Exception {
+		HttpSession session = request.getSession();
+		String message="";
+		WindowServer ws = new WindowServer();
+		log.info("通过请求方式获取数据："+request.getParameter("userid"));
+		log.info("通过请求方式获取数据："+request.getParameter("userName"));
+		log.info("通过请求方式获取数据："+request.getParameter("thingName"));
+		log.info("通过请求方式获取数据："+request.getParameter("count"));
+		log.info("通过请求方式获取数据："+request.getParameter("currentTime"));
+		log.info("通过请求方式获取数据："+request.getParameter("mobile"));
+		log.info("通过请求方式获取数据："+request.getParameter("serial"));
+//		ws.setTableID((UUID.randomUUID().toString()).substring(0,8));
+//		ws.setBorrowerId(request.getParameter("userid"));
+//		ws.setBorrowerName(request.getParameter("userName"));
+//		ws.setTools(request.getParameter("thingName"));
+//		ws.setBorrowTime(request.getParameter("currentTime"));
+//		ws.setCount(Integer.parseInt(request.getParameter("count")));
+//		ws.setSerial(String.valueOf(session.getAttribute("serial")));
+//		ws.setMobile(request.getParameter("mobile"));
+//		ws.setStatus("借用申请");
+//		ws.setBorrowConfirm("待确认");
+//		wss.saveWindowServer(ws);
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		//response.setContentType("text/html");
+		resultMap.put("message", "借用申请成功，等待通过");
+//		qtfwwx.getAccessToken();
+//		qtfwService.send(INFORM_USER_LIST, "", "收到新的借用请求如下:\n"
+//				 +"借用人工号:"+ws.getBorrowerId()+"\n"
+//				 +"借用人姓名:"+ws.getBorrowerName()+"\n"
+//				 +"物品:"+ws.getTools()+"\n"
+//				 +"数量:"+ws.getCount()+"\n");
+//				 		//+ "(请点击<a href=\"http://wxtest.fuyaogroup.com:8888/eam/bgcontroll?idvalue="+ws.getTableID()+"\">这里直接进入处理</a>)");
+		return resultMap;
+    }
+    
+    
+    
+    @RequestMapping(value = "/toExport", method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> toExport(HttpServletResponse response) throws IOException{
+    	
+    	try {
+    		ExcelWriter writer = null;
+            OutputStream outputStream = response.getOutputStream();
+          //添加响应头信息
+            response.setHeader("Content-disposition", "attachment; filename=" + "前台借用记录.xls");
+            response.setContentType("application/msexcel;charset=UTF-8");//设置类型
+            response.setHeader("Pragma", "No-cache");//设置头
+            response.setHeader("Cache-Control", "no-cache");//设置头
+            response.setDateHeader("Expires", 0);//设置日期头
+          //实例化 ExcelWriter
+            writer = new ExcelWriter(outputStream, ExcelTypeEnum.XLS, true);
+          //实例化表单
+            Sheet sheet = new Sheet(1, 0, QtfwObject.class);
+            sheet.setSheetName("借用记录");
+            
+            
+        	List<WindowServer> wsList = new ArrayList<WindowServer>();
+        	List<QtfwObject> QOList = new ArrayList<QtfwObject>();
+        	wsList = wss.queryAll();
+        	if(wsList == null || wsList.size()<1) {
+        		return null;
+        	}
+        	wsList.forEach(ws->{
+        		QtfwObject qObject = new QtfwObject();
+        		BeanUtils.copyProperties(ws, qObject);
+        		QOList.add(qObject);
+        	});
+        	
+        	//输出
+            writer.write(QOList, sheet);
+            writer.finish();
+            outputStream.flush();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			try {
+	            response.getOutputStream().close();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		}
+    	
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("res", "成功导出");
+    	return map;
+    }
+    
+    
+    
     
 }

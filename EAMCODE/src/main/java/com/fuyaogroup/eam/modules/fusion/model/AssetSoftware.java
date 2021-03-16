@@ -3,11 +3,14 @@ package com.fuyaogroup.eam.modules.fusion.model;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fuyaogroup.eam.common.model.BaseEntity;
 
 @Data
@@ -29,7 +32,11 @@ public class AssetSoftware extends BaseEntity{
 	private Integer	source;//来源
 	private Integer	suite;//套数
 	private BigDecimal	amount;//金额
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date	usingStartTime;//启用时间
+	@JsonFormat(pattern ="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+	@DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	private Date	warrantyprivate ;//授权期限
 	private String	ramark;//备注
 	private Date	warrantyReminderprivate ;//过保提醒时间

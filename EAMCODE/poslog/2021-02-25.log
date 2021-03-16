@@ -1,0 +1,642 @@
+2021-02-25 14:48:06 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:48:06 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:48:07 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:48:07 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f204a1a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2de56eb2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f8e8a9d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5745ca0e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ad83a66, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cce5371, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17bffc17, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6e535154, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15a34df2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b38c1ec, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@338fc1d8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4722ef0c]
+2021-02-25 14:48:07 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:48:07 -Starting WeixinTest on gnb781 with PID 51364 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:48:07 -The following profiles are active: prod
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:48:08 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:48:08 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:48:08 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:48:08 -Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+2021-02-25 14:48:09 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8f68dcc8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:48:09 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:48:10 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:48:10 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:48:11 -Using default implementation for ThreadExecutor
+2021-02-25 14:48:11 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:48:11 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:48:11 -RAMJobStore initialized.
+2021-02-25 14:48:11 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:48:11 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:48:11 -Quartz scheduler version: 2.3.0
+2021-02-25 14:48:11 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3aed69dd
+2021-02-25 14:48:12 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:48:12 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:48:12 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:48:12 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:48:12 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:48:14 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:48:14 -Starting Quartz Scheduler now
+2021-02-25 14:48:14 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:48:15 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:48:15 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:48:15 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:48:15 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60532-1614235695128-0:1) is starting
+2021-02-25 14:48:15 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60532-1614235695128-0:1) started
+2021-02-25 14:48:15 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:48:15 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:48:15 -Connector vm://localhost started
+2021-02-25 14:48:15 -Started WeixinTest in 8.234 seconds (JVM running for 9.526)
+2021-02-25 14:48:15 -{dataSource-1} inited
+2021-02-25 14:48:15 -==>  Preparing: SELECT * FROM WINDOW_SERVER ORDER BY status 
+2021-02-25 14:48:15 -==> Parameters: 
+2021-02-25 14:48:16 -<==      Total: 185
+2021-02-25 14:48:16 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60532-1614235695128-0:1) is shutting down
+2021-02-25 14:48:16 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:48:16 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:48:16 -Connector vm://localhost stopped
+2021-02-25 14:48:16 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60532-1614235695128-0:1) uptime 1.068 seconds
+2021-02-25 14:48:16 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60532-1614235695128-0:1) is shutdown
+2021-02-25 14:48:21 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2021-02-25 14:48:21 -Setup of JMS message listener invoker failed for destination 'queueAdd' - trying to recover. Cause: The Session is closed
+2021-02-25 14:48:21 -Setup of JMS message listener invoker failed for destination 'topic' - trying to recover. Cause: The Session is closed
+2021-02-25 14:48:21 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:48:21 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:48:21 -Shutting down Quartz Scheduler
+2021-02-25 14:48:21 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:48:21 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:48:21 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:48:21 -{dataSource-1} closed
+2021-02-25 14:49:08 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:49:08 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:49:08 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:49:08 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f204a1a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2de56eb2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f8e8a9d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5745ca0e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3ad83a66, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cce5371, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17bffc17, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6e535154, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15a34df2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b38c1ec, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@338fc1d8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4722ef0c]
+2021-02-25 14:49:09 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:49:09 -Starting WeixinTest on gnb781 with PID 20388 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:49:09 -The following profiles are active: prod
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:10 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:49:10 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:49:10 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:49:10 -Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2021-02-25 14:49:11 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cce5d132] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:49:11 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:49:12 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:49:12 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:49:12 -Using default implementation for ThreadExecutor
+2021-02-25 14:49:12 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:49:12 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:49:12 -RAMJobStore initialized.
+2021-02-25 14:49:12 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:49:12 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:49:12 -Quartz scheduler version: 2.3.0
+2021-02-25 14:49:12 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3e33b52e
+2021-02-25 14:49:13 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:49:14 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:49:14 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:49:14 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:49:14 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:49:16 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:49:16 -Starting Quartz Scheduler now
+2021-02-25 14:49:16 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:49:16 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:49:16 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:49:16 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:49:17 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60558-1614235756990-0:1) is starting
+2021-02-25 14:49:17 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60558-1614235756990-0:1) started
+2021-02-25 14:49:17 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:49:17 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:49:17 -Connector vm://localhost started
+2021-02-25 14:49:17 -Started WeixinTest in 8.284 seconds (JVM running for 9.539)
+2021-02-25 14:49:17 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60558-1614235756990-0:1) is shutting down
+2021-02-25 14:49:17 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:49:17 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:49:17 -Connector vm://localhost stopped
+2021-02-25 14:49:17 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60558-1614235756990-0:1) uptime 0.510 seconds
+2021-02-25 14:49:17 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60558-1614235756990-0:1) is shutdown
+2021-02-25 14:49:22 -Setup of JMS message listener invoker failed for destination 'queueAdd' - trying to recover. Cause: The Session is closed
+2021-02-25 14:49:22 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:49:22 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:49:22 -Shutting down Quartz Scheduler
+2021-02-25 14:49:22 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:49:22 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:49:22 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:49:46 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:49:46 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:49:46 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:49:46 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@60bdf15d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47da3952, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@51e4ccb3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46e8a539, org.springframework.test.context.support.DirtiesContextTestExecutionListener@495083a0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5fd62371, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28a0fd6c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b62442c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66629f63, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@841e575, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27a5328c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e5f4170]
+2021-02-25 14:49:46 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:49:47 -Starting WeixinTest on gnb781 with PID 39752 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:49:47 -The following profiles are active: prod
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:49:48 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:49:48 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:49:48 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:49:48 -Finished Spring Data repository scanning in 54ms. Found 0 repository interfaces.
+2021-02-25 14:49:49 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$553b162e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:49:49 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:49:50 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:49:50 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:49:51 -Using default implementation for ThreadExecutor
+2021-02-25 14:49:51 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:49:51 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:49:51 -RAMJobStore initialized.
+2021-02-25 14:49:51 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:49:51 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:49:51 -Quartz scheduler version: 2.3.0
+2021-02-25 14:49:51 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5db9f51f
+2021-02-25 14:49:52 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:49:53 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:49:53 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:49:53 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:49:53 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:49:56 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:49:56 -Starting Quartz Scheduler now
+2021-02-25 14:49:56 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:49:57 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:49:57 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:49:57 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:49:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60588-1614235797200-0:1) is starting
+2021-02-25 14:49:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60588-1614235797200-0:1) started
+2021-02-25 14:49:57 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:49:57 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:49:57 -Connector vm://localhost started
+2021-02-25 14:49:57 -Started WeixinTest in 10.824 seconds (JVM running for 12.765)
+2021-02-25 14:49:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60588-1614235797200-0:1) is shutting down
+2021-02-25 14:49:57 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:49:57 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:49:57 -Connector vm://localhost stopped
+2021-02-25 14:49:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60588-1614235797200-0:1) uptime 0.774 seconds
+2021-02-25 14:49:57 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60588-1614235797200-0:1) is shutdown
+2021-02-25 14:50:02 -Setup of JMS message listener invoker failed for destination 'queueAdd' - trying to recover. Cause: The Session is closed
+2021-02-25 14:50:02 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2021-02-25 14:50:02 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:50:02 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:50:02 -Shutting down Quartz Scheduler
+2021-02-25 14:50:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:50:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:50:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:50:21 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:50:21 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:50:21 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:50:21 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f94c4db, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@593e824f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@72ccd81a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6d8792db, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64bc21ac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@493dfb8e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d25e6bb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ce5a68e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9d157ff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f162cc0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5df417a7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c041b41]
+2021-02-25 14:50:21 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:50:21 -Starting WeixinTest on gnb781 with PID 46428 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:50:21 -The following profiles are active: prod
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:50:23 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:50:23 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:50:23 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:50:23 -Finished Spring Data repository scanning in 41ms. Found 0 repository interfaces.
+2021-02-25 14:50:24 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8aaf884a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:50:24 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:50:25 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:50:25 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:50:26 -Using default implementation for ThreadExecutor
+2021-02-25 14:50:26 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:50:26 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:50:26 -RAMJobStore initialized.
+2021-02-25 14:50:26 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:50:26 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:50:26 -Quartz scheduler version: 2.3.0
+2021-02-25 14:50:26 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1f0e2bdc
+2021-02-25 14:50:28 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:50:29 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:50:29 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:50:29 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:50:29 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:50:31 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:50:31 -Starting Quartz Scheduler now
+2021-02-25 14:50:31 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:50:32 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:50:32 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:50:32 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:50:32 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60619-1614235832337-0:1) is starting
+2021-02-25 14:50:32 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60619-1614235832337-0:1) started
+2021-02-25 14:50:32 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:50:32 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:50:32 -Connector vm://localhost started
+2021-02-25 14:50:32 -Started WeixinTest in 11.088 seconds (JVM running for 12.994)
+2021-02-25 14:50:55 -{dataSource-1} inited
+2021-02-25 14:50:57 -==>  Preparing: SELECT * FROM WINDOW_SERVER ORDER BY status 
+2021-02-25 14:50:58 -==> Parameters: 
+2021-02-25 14:50:58 -<==      Total: 185
+2021-02-25 14:51:00 -2021-02-25T14:51:00.018:执行定时任务-com.fuyaogroup.eam.job.AssetStatusMessage,开始...
+2021-02-25 14:51:00 -==>  Preparing: select * from ASSET_SCRAP_TRACKRECORD where "status"!='2' 
+2021-02-25 14:51:00 -==> Parameters: 
+2021-02-25 14:51:00 -<==      Total: 0
+2021-02-25 14:52:00 -2021-02-25T14:52:00.007:执行定时任务-com.fuyaogroup.eam.job.AssetStatusMessage,开始...
+2021-02-25 14:52:00 -==>  Preparing: select * from ASSET_SCRAP_TRACKRECORD where "status"!='2' 
+2021-02-25 14:52:00 -==> Parameters: 
+2021-02-25 14:52:00 -<==      Total: 0
+2021-02-25 14:52:02 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60619-1614235832337-0:1) is shutting down
+2021-02-25 14:52:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:52:02 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:52:02 -Setup of JMS message listener invoker failed for destination 'topic' - trying to recover. Cause: The Session is closed
+2021-02-25 14:52:02 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2021-02-25 14:52:02 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:52:02 -Connector vm://localhost stopped
+2021-02-25 14:52:02 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60619-1614235832337-0:1) uptime 1 minute
+2021-02-25 14:52:02 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60619-1614235832337-0:1) is shutdown
+2021-02-25 14:52:02 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:52:02 -Shutting down Quartz Scheduler
+2021-02-25 14:52:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:52:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:52:02 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:52:02 -{dataSource-1} closed
+2021-02-25 14:52:31 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:52:31 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:52:31 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:52:31 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@669513d8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a1d593e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@361c294e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7859e786, org.springframework.test.context.transaction.TransactionalTestExecutionListener@285d851a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@314b8f2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@664a9613, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5118388b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15a902e7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7876d598, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4a3e3e8b]
+2021-02-25 14:52:32 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:52:32 -Starting WeixinTest on gnb781 with PID 49344 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:52:32 -The following profiles are active: prod
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:52:33 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:52:33 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:52:33 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:52:33 -Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2021-02-25 14:52:34 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$c4163866] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:52:34 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:52:35 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:52:35 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:52:36 -Using default implementation for ThreadExecutor
+2021-02-25 14:52:36 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:52:36 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:52:36 -RAMJobStore initialized.
+2021-02-25 14:52:36 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:52:36 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:52:36 -Quartz scheduler version: 2.3.0
+2021-02-25 14:52:36 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4cd7e993
+2021-02-25 14:52:38 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:52:38 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:52:38 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:52:38 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:52:38 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:52:41 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:52:41 -Starting Quartz Scheduler now
+2021-02-25 14:52:41 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:52:42 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:52:42 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:52:42 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:52:42 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60663-1614235962170-0:1) is starting
+2021-02-25 14:52:42 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60663-1614235962170-0:1) started
+2021-02-25 14:52:42 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:52:42 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:52:42 -Connector vm://localhost started
+2021-02-25 14:52:42 -Started WeixinTest in 10.621 seconds (JVM running for 12.53)
+2021-02-25 14:52:42 -{dataSource-1} inited
+2021-02-25 14:52:43 -==>  Preparing: SELECT * FROM WINDOW_SERVER ORDER BY status 
+2021-02-25 14:52:43 -==> Parameters: 
+2021-02-25 14:52:43 -<==      Total: 185
+2021-02-25 14:52:43 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60663-1614235962170-0:1) is shutting down
+2021-02-25 14:52:43 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:52:43 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:52:43 -Connector vm://localhost stopped
+2021-02-25 14:52:43 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60663-1614235962170-0:1) uptime 1.326 seconds
+2021-02-25 14:52:43 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60663-1614235962170-0:1) is shutdown
+2021-02-25 14:52:48 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2021-02-25 14:52:48 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:52:48 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:52:48 -Shutting down Quartz Scheduler
+2021-02-25 14:52:48 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:52:48 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:52:48 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:52:48 -{dataSource-1} closed
+2021-02-25 14:54:53 -Neither @ContextConfiguration nor @ContextHierarchy found for test class [eam.fusion.WeixinTest], using SpringBootContextLoader
+2021-02-25 14:54:53 -Could not detect default resource locations for test class [eam.fusion.WeixinTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-25 14:54:53 -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-02-25 14:54:53 -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@669513d8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a1d593e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a8a60bc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@361c294e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7859e786, org.springframework.test.context.transaction.TransactionalTestExecutionListener@285d851a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@314b8f2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@664a9613, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5118388b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15a902e7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7876d598, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4a3e3e8b]
+2021-02-25 14:54:54 -
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/gnb781/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/gnb781/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-02-25 14:54:54 -Starting WeixinTest on gnb781 with PID 56016 (started by gnb781 in D:\FYEAM-CODE\EAMCODE)
+2021-02-25 14:54:54 -The following profiles are active: prod
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'andonAssetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AndonAssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetBorrowMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetBorrowMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetErrorCordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetErrorCordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetScrapMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetScrapMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetTransferMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetTransferMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetrPdBatMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdBatMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'assetrPdMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.AssetrPdMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'configMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.ConfigMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'repairRecordMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.RepairRecordMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'windowServerMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WindowServerMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'workOrderMapper' and 'com.fuyaogroup.eam.modules.fusion.dao.WorkOrderMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'andonHisMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'andonHisTempMapper' and 'com.fuyaogroup.eam.modules.mes.dao.AndonHisTempMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -Skipping MapperFactoryBean with name 'repairBillMapper' and 'com.fuyaogroup.eam.modules.mes.dao.RepairBillMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 14:54:56 -No MyBatis mapper was found in '[com.fuyaogroup.eam.modules.*.dao]' package. Please check your configuration.
+2021-02-25 14:54:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-02-25 14:54:56 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-25 14:54:56 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2021-02-25 14:54:57 -Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4d79b3c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-25 14:54:57 -Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-02-25 14:54:58 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:54:58 -oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+2021-02-25 14:54:59 -Using default implementation for ThreadExecutor
+2021-02-25 14:54:59 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2021-02-25 14:54:59 -Quartz Scheduler v.2.3.0 created.
+2021-02-25 14:54:59 -RAMJobStore initialized.
+2021-02-25 14:54:59 -Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2021-02-25 14:54:59 -Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2021-02-25 14:54:59 -Quartz scheduler version: 2.3.0
+2021-02-25 14:54:59 -JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@44492c06
+2021-02-25 14:55:01 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:55:02 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 14:55:02 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 14:55:02 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 14:55:02 -Clear EntityHelper entityTableMap cache.
+2021-02-25 14:55:04 -Initializing ExecutorService 'taskScheduler'
+2021-02-25 14:55:04 -Starting Quartz Scheduler now
+2021-02-25 14:55:04 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2021-02-25 14:55:04 -2021-02-25T14:55:04.993:执行定时任务-com.fuyaogroup.eam.job.AssetStatusMessage,开始...
+2021-02-25 14:55:05 -{dataSource-1} inited
+2021-02-25 14:55:05 -Loaded the Bouncy Castle security provider.
+2021-02-25 14:55:05 -Using Persistence Adapter: MemoryPersistenceAdapter
+2021-02-25 14:55:05 -JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2021-02-25 14:55:05 -==>  Preparing: select * from ASSET_SCRAP_TRACKRECORD where "status"!='2' 
+2021-02-25 14:55:05 -==> Parameters: 
+2021-02-25 14:55:05 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60723-1614236105337-0:1) is starting
+2021-02-25 14:55:05 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60723-1614236105337-0:1) started
+2021-02-25 14:55:05 -For help or more information please see: http://activemq.apache.org
+2021-02-25 14:55:05 -Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: D:\FYEAM-CODE\EAMCODE only has 34157 mb of usable space. - resetting to maximum available disk space: 34157 mb
+2021-02-25 14:55:05 -<==      Total: 0
+2021-02-25 14:55:05 -Connector vm://localhost started
+2021-02-25 14:55:05 -Started WeixinTest in 11.775 seconds (JVM running for 13.845)
+2021-02-25 14:55:05 -==>  Preparing: SELECT * FROM WINDOW_SERVER ORDER BY status 
+2021-02-25 14:55:05 -==> Parameters: 
+2021-02-25 14:55:06 -<==      Total: 185
+2021-02-25 14:55:06 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60723-1614236105337-0:1) is shutting down
+2021-02-25 14:55:06 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:55:06 -Encountered a JMSException - resetting the underlying JMS Connection
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1193)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1159)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+2021-02-25 14:55:06 -Connector vm://localhost stopped
+2021-02-25 14:55:06 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60723-1614236105337-0:1) uptime 1.215 seconds
+2021-02-25 14:55:06 -Apache ActiveMQ 5.15.8 (localhost, ID:gnb781-60723-1614236105337-0:1) is shutdown
+2021-02-25 14:55:11 -Setup of JMS message listener invoker failed for destination 'queue' - trying to recover. Cause: The Session is closed
+2021-02-25 14:55:11 -Shutting down ExecutorService 'taskScheduler'
+2021-02-25 14:55:11 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:55:11 -Shutting down Quartz Scheduler
+2021-02-25 14:55:11 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2021-02-25 14:55:11 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2021-02-25 14:55:11 -Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2021-02-25 14:55:11 -{dataSource-1} closed

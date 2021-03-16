@@ -695,7 +695,7 @@ public class FusionEAMAPIUtil {
 	}
 	
 	/**
-	 * 根据序列号，获取资产
+	 * 根据序列号，获取资产 
 	 * @param assetSerNum
 	 * @return
 	 * @throws Exception
