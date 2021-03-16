@@ -50,10 +50,10 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 <div class="field-wrapper" ><label>归还时间</label><input   id="currentTime" name="currentTime" class="input-style" type="text" value="${waitrbConfirmObj.returnTime}" readonly	/></div>
 <div class="field-wrapper" ><label>状态</label><input   id="status" name="backConfirm" class="input-style" type="text" value="${waitrbConfirmObj.backConfirm}" readonly	/></div>
 <div class="field-wrapper" ><label>联系方式</label><input   id="mobile" name="mobile" class="input-style" type="text" value="${waitrbConfirmObj.mobile}" readonly	/></div>
-<div class="field-wrapper" ><input type="button" class = "verify-button" value="通过申请" onclick="fsubmit('${obj.tools}')"/></div>
+<div class="field-wrapper" ><input type="button" class = "verify-button" value="通过申请" onclick="fsubmit('${waitrbConfirmObj.tableID}')"/></div>
 <p></p>
 
-<div class="field-wrapper" ><input type="button" class = "verify-button" value="取消申请" onclick="reset('${obj.tools}')"/></div>
+<div class="field-wrapper" ><input type="button" class = "verify-button" value="取消申请" onclick="reset('${waitrbConfirmObj.tableID}')"/></div>
 </div>
 </div>
 </form>
