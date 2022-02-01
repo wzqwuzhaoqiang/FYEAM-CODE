@@ -43,7 +43,7 @@
 		<freemarker.version>2.3.28</freemarker.version>
 		<jsch.version>0.1.55</jsch.version>
 		<dom4j.version>1.6.1</dom4j.version>
-		<xstream.version>1.4.11.1</xstream.version>
+		<xstream.version>1.4.19</xstream.version>
         <mapper.starter.version>2.0.3-beta1</mapper.starter.version>
         <pagehelper.starter.version>1.2.5</pagehelper.starter.version>
         <core.version>3.3.3</core.version>
